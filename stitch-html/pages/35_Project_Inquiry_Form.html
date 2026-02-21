@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Project Inquiry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Electric Coral
+                        "background-dark": "#1A1A1A", // Charcoal
+                        "container-gray": "#E8E8E8", // Soft Gray for secondary elements
+                        "text-white": "#FFFFFF", // Pure White
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                        'lg': "8px",
+                        'xl': "12px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        input[type=range] {
+            -webkit-appearance: none; 
+            width: 100%; 
+            background: transparent; 
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+        input[type=range]:focus {
+            outline: none; 
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 6px;
+            cursor: pointer;
+            background: #4b5563;border-radius: 9999px;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #FF6B6B;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -7px; 
+            box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-white font-body antialiased min-h-screen flex flex-col">
+<nav class="sticky top-0 z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b border-gray-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<span class="font-display font-bold text-2xl tracking-tight text-white">ARCADIA STUDIO</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-display text-sm font-medium tracking-wide">
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">PORTFOLIO</a>
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">EXPERTISE</a>
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">STUDIO</a>
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">NEWS</a>
+</div>
+<button class="bg-container-gray text-[#1A1A1A] px-6 py-2.5 rounded-full font-medium text-sm hover:opacity-90 transition-opacity">
+                Start a Project
+            </button>
+</div>
+</nav>
+<main class="flex-grow flex flex-col items-center py-12 px-4 md:px-8">
+<div class="max-w-4xl w-full mb-12 text-center md:text-left">
+<div class="flex items-center gap-2 text-primary font-medium text-sm mb-4 uppercase tracking-widest">
+<span class="w-8 h-[1px] bg-primary block"></span>
+                01 Details
+            </div>
+<h1 class="font-display text-4xl md:text-6xl font-bold mb-4 text-white leading-tight">
+                Start your <span class="text-primary italic">journey</span>
+</h1>
+<p class="text-gray-400 max-w-xl text-lg">
+                Help us understand your vision. We'll curate a proposal tailored to your needs.
+            </p>
+</div>
+<div class="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-7 space-y-10">
+<div class="w-full h-1 bg-gray-700 rounded-full mb-8 overflow-hidden">
+<div class="h-full bg-primary w-1/3 rounded-full"></div>
+</div>
+<div class="space-y-4">
+<label class="block font-display text-sm font-bold uppercase tracking-wider text-gray-300">
+                        Project Location
+                    </label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-3.5 text-gray-500 group-focus-within:text-primary transition-colors">place</span>
+<input class="w-full bg-container-gray border-none rounded-lg py-3 pl-12 pr-4 text-[#1A1A1A] placeholder-gray-500 focus:ring-2 focus:ring-primary outline-none transition-shadow" placeholder="Enter city or address" type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-3.5 text-gray-500 cursor-pointer hover:text-primary transition-colors">search</span>
+</div>
+<button class="flex items-center gap-2 text-sm text-gray-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-base">my_location</span>
+                        Locate me automatically
+                    </button>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-end">
+<label class="block font-display text-sm font-bold uppercase tracking-wider text-gray-300">
+                            Estimated Budget
+                        </label>
+<span class="font-display text-xl font-bold text-primary">$500K - $1M+</span>
+</div>
+<div class="relative pt-2 pb-6">
+<input class="w-full z-20 relative" max="5000" min="100" type="range" value="1000"/>
+<div class="flex justify-between text-xs font-medium text-gray-500 mt-2 font-display">
+<span>$100K</span>
+<span>$1M</span>
+<span>$5M+</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<button class="py-2 px-3 rounded-lg border border-primary bg-primary/20 text-white font-medium text-sm transition-all hover:bg-primary hover:text-white text-center">
+                            $500K - $1M
+                        </button>
+<button class="py-2 px-3 rounded-lg border-none bg-container-gray text-[#1A1A1A] font-medium text-sm transition-all hover:bg-white hover:text-primary text-center">
+                            $1M - $2.5M
+                        </button>
+<button class="py-2 px-3 rounded-lg border-none bg-container-gray text-[#1A1A1A] font-medium text-sm transition-all hover:bg-white hover:text-primary text-center">
+                            $2.5M - $5M
+                        </button>
+<button class="py-2 px-3 rounded-lg border-none bg-container-gray text-[#1A1A1A] font-medium text-sm transition-all hover:bg-white hover:text-primary text-center">
+                            $5M+
+                        </button>
+</div>
+</div>
+<div class="space-y-4">
+<label class="block font-display text-sm font-bold uppercase tracking-wider text-gray-300">
+                        Desired Timeline
+                    </label>
+<div class="relative">
+<select class="w-full appearance-none bg-container-gray border-none rounded-lg py-3 px-4 text-[#1A1A1A] focus:ring-2 focus:ring-primary outline-none cursor-pointer">
+<option>Within 3 months</option>
+<option>3 - 6 months</option>
+<option>6 - 12 months</option>
+<option>1 year +</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-3.5 text-gray-500 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="pt-8 flex items-center justify-between">
+<button class="text-gray-400 font-medium hover:text-white transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">arrow_back</span> Back
+                    </button>
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+                        Continue to Step 2 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="sticky top-28 bg-[#252525] p-6 rounded-xl border border-gray-800 shadow-xl">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-display font-bold text-lg text-white uppercase tracking-wide">Inspiration Board</h3>
+<span class="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">Optional</span>
+</div>
+<div class="border-2 border-dashed border-gray-600 rounded-xl p-8 flex flex-col items-center justify-center text-center group hover:border-primary transition-colors cursor-pointer bg-[#1A1A1A]">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">cloud_upload</span>
+</div>
+<p class="font-medium text-gray-200 mb-1">Click to upload</p>
+<p class="text-sm text-gray-500 mb-4">or drag and drop images here</p>
+<p class="text-xs text-gray-600 uppercase">PDF, PNG, JPG (Max 10MB)</p>
+</div>
+<div class="mt-8">
+<h4 class="text-xs font-bold uppercase text-gray-400 mb-3 tracking-wider">Quick Select Styles</h4>
+<div class="flex flex-wrap gap-2">
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Minimalist</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Industrial</span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Brutalist</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Scandinavian</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Modern</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-8 border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+<p>© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+
+</body></html>

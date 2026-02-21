@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parametric Design Tools - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", 
+                        charcoal: "#1A1A1A", 
+                        "charcoal-light": "#252525", 
+                        "charcoal-lighter": "#333333", 
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 70%, rgba(26,26,26,1) 100%);
+        }
+        .text-justify-custom {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1">Arcadia</span>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[80vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Intricate algorithmic wooden structure ceiling" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnyGZvY2IlHOv4RlgZseQ95cfHK7y_bTl8HDzQKmMI5zxzmnQwI8W-mNzWaN-641ukDqonuzjmGADpIc3Cte0_4ggkAqSyY8LjqcUzL7v9-MCIpMHf5xpaA8Sdi6Y99xGtE4R2El74CdRXDZHo4Adx6LtGxHD1cOwaXVXvkqqe_ur5KLzgNEY3OvJA_38puFYbhYUPaJd08qO1-yWbDtAFtzQ1JctO-Omwkt6IgcFRHa8E85uDZ-wGb8PmJrEThowP1cwXhUL6A84A"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 w-full">
+<div class="max-w-4xl">
+<div class="flex items-center space-x-4 mb-8">
+<span class="inline-block w-8 h-[1px] bg-primary"></span>
+<a class="text-xs font-bold tracking-[0.2em] text-primary uppercase hover:text-white transition-colors" href="#">Technology</a>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-none tracking-tight">Parametric Design Tools:<br/>Algorithmic Architecture</h1>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="flex flex-col lg:flex-row gap-16">
+<aside class="lg:w-1/4 space-y-12 border-b lg:border-b-0 lg:border-r border-charcoal-lighter pb-12 lg:pb-0 pr-0 lg:pr-8">
+<div>
+<h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">Article Data</h3>
+<ul class="space-y-6">
+<li class="flex flex-col">
+<span class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Author</span>
+<span class="text-sm font-medium text-white">Elena Vasquez, Lead Architect</span>
+</li>
+<li class="flex flex-col">
+<span class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Date</span>
+<span class="text-sm font-mono text-white">September 28, 2023</span>
+</li>
+<li class="flex flex-col">
+<span class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Read Time</span>
+<span class="text-sm font-mono text-white">8 Minutes</span>
+</li>
+<li class="flex flex-col">
+<span class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Share</span>
+<div class="flex space-x-4 mt-1">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">content_copy</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+</div>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">Tags</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 border border-charcoal-lighter text-[10px] uppercase tracking-wider text-text-muted hover:text-white hover:border-white cursor-pointer transition-colors">Grasshopper</span>
+<span class="px-2 py-1 border border-charcoal-lighter text-[10px] uppercase tracking-wider text-text-muted hover:text-white hover:border-white cursor-pointer transition-colors">Python</span>
+<span class="px-2 py-1 border border-charcoal-lighter text-[10px] uppercase tracking-wider text-text-muted hover:text-white hover:border-white cursor-pointer transition-colors">Optimization</span>
+<span class="px-2 py-1 border border-charcoal-lighter text-[10px] uppercase tracking-wider text-text-muted hover:text-white hover:border-white cursor-pointer transition-colors">Structure</span>
+</div>
+</div>
+</aside>
+<div class="lg:w-3/4">
+<div class="prose prose-invert prose-lg max-w-none">
+<h2 class="text-3xl font-bold text-white uppercase tracking-wider mb-8">Article Narrative</h2>
+<p class="text-lg text-text-muted leading-relaxed mb-8">
+                        The intersection of computation and creativity has birthed a new era in architectural design. Parametric design tools are no longer merely optional for high-end conceptual work; they have become fundamental instruments for optimizing structural integrity, material efficiency, and environmental responsiveness. At Arcadia Studio, we leverage algorithms not to replace the human hand, but to extend its reach into complexities previously unimaginable.
+                    </p>
+<p class="text-base text-text-muted leading-relaxed mb-8">
+                        Traditional CAD workflows rely on explicit modeling—drawing lines and shapes one by one. Parametric modeling, however, relies on relationships. By defining the parameters and rules that govern a geometry, we can create flexible models that update automatically as variables change. This allows for rapid iteration and the exploration of thousands of design variants in the time it would take to manually model just one.
+                    </p>
+<div class="my-16 border-l-4 border-primary pl-8 py-4 bg-charcoal-light relative">
+<span class="material-symbols-outlined absolute top-4 left-4 text-charcoal-lighter text-6xl opacity-20 -z-10">format_quote</span>
+<h3 class="text-2xl md:text-3xl font-light text-white italic leading-tight mb-4">
+                            "We don't design the building; we design the system that generates the building. The architect becomes the conductor of constraints."
+                        </h3>
+<p class="text-xs font-bold text-primary uppercase tracking-widest">— Elena Vasquez, Lead Architect</p>
+</div>
+<p class="text-base text-text-muted leading-relaxed mb-12">
+                        One of our recent experiments involved the optimization of a timber canopy structure. Using a custom script in Grasshopper, we were able to minimize the total volume of wood required while maximizing the shade coverage based on solar path data for the specific site coordinates. The resulting form, organic and seemingly chaotic, is actually a precise mathematical solution to a set of environmental constraints.
+                    </p>
+</div>
+<div class="mt-16">
+<div class="flex justify-between items-end mb-8 border-b border-charcoal-lighter pb-4">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Visual Documentation</h2>
+<span class="text-xs font-mono text-text-muted">Gallery 01 — 03</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+<div class="group relative aspect-[4/3] overflow-hidden bg-charcoal-light">
+<img alt="Wireframe digital landscape grid" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCybrqM2bXQi9VO5zX9I7AuN9gHEg7B_KZPFsqfF1oFGne02vH82XxQ1CfcPXCeyf9oRH4wrOh61hGS5xTBgpncA7vK_fPgelhoG4mEH_CMYUL_pRtrE5F7Hc4qsB9RXjsLq9FwG-iQBHRrMMbn0wepFUaBAlNqDtemJhyzYfMm8H__nXcY6wa5tCQcFHctB4BJjYDegD-SsJvpPd0VrxSD8TtMeP4Pp2D1KtR_E4n0MOaSmrAaiguE2vRolx4SQjFTBLw6YkMFb3w"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-charcoal to-transparent">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-1">Figure 1.A</span>
+<p class="text-xs text-white">Topological optimization wireframe.</p>
+</div>
+</div>
+<div class="group relative aspect-[4/3] overflow-hidden bg-charcoal-light">
+<img alt="3D printed concrete texture closeup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMt9RW4OJr8c5BClsoFn3OfgZn9cQznzOVMdhowTGRQcC8aVgfjlph7w_6_Jbhh6GktdwfFmrJpTqZCoUx8MJboWKrsNL2HNW3skUG3-Ew5xyUgj_euZECpiWbbGTjgjUwYp-Mygrp_e-7lC20CYRhzlOwtvgEmR4OWiQv5K0LZXSoYOdpLG3K-91QZosdfDgaXAReuCDnUn4ruKNfQOd2V_E7Q90BPrNWD1j2PuzYqp6CGu34kpNPoUwN1tHcopsIgXKvWGaValKv"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-charcoal to-transparent">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-1">Figure 1.B</span>
+<p class="text-xs text-white">Material deposition test patterns.</p>
+</div>
+</div>
+</div>
+<div class="group relative aspect-[21/9] overflow-hidden bg-charcoal-light mb-12">
+<img alt="Abstract geometric patterns on facade" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs3dUzWDTKBeVRRrFhKEwBwr6wse-ntaVAZ38kHvW9_YeyKCGgrC_NE3WRHAFEYHJB2ttCVx2l45OAbFWf_RI0kezfQDiiC0hd8T5e8vUlJkzU0ywN1FsmLB325N2mAdQCtUEYKJWJQjq03IdtNfCtwtGZxEQJ4LQgGOfh8BBR21tRtHwkCAUuXFcXfl4j0Dgpq8dXPI-3lKzLIKBiNfBFoSucQYxME22t-3Nyq4AWVrlI2laeRFBmCyPWKLbbk7KgGPd7L235LErr"/>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-charcoal to-transparent">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-1">Figure 2.0</span>
+<p class="text-xs text-white">Final facade tessellation generated via Voronoi algorithm.</p>
+</div>
+</div>
+<p class="text-base text-text-muted leading-relaxed">
+                        Moving forward, the studio is investigating the use of evolutionary solvers (Galapagos) to automate the search for optimal spatial configurations in multi-family housing projects. By defining fitness criteria such as maximizing daylight and minimizing corridor length, the computer can "evolve" floor plans over thousands of generations, presenting the architect with the fittest options for refinement.
+                    </p>
+</div>
+<div class="mt-20 border-t border-charcoal-lighter pt-12 flex justify-between items-center">
+<a class="group flex items-center" href="#">
+<span class="material-symbols-outlined text-2xl text-text-muted group-hover:text-primary transition-colors mr-4">arrow_back</span>
+<div class="text-right">
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-1">Previous</span>
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">Light as Material</span>
+</div>
+</a>
+<a class="group flex items-center text-right" href="#">
+<div class="text-left">
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-1">Next</span>
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">AIA Design Excellence</span>
+</div>
+<span class="material-symbols-outlined text-2xl text-text-muted group-hover:text-primary transition-colors ml-4">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                    Defining modern living through spatial innovation and minimalist design philosophy.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                    123 Innovation Blvd, <br/>Design District, NY 10012
+                </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

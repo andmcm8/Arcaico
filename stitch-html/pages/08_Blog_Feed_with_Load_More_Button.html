@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - News &amp; Insights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // New main background
+                        "charcoal-light": "#252525", // Slightly lighter for cards
+                        "charcoal-lighter": "#333333", // Borders/lines
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem", // More minimalist/square
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.8) 70%, rgba(26,26,26,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1">Arcadia</span>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[650px] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Moody architectural construction site with steel beams and soft light" class="w-full h-full object-cover opacity-80 grayscale-[30%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbLsIHH0R0GHj7_jnorG7RFuU2evaqIjFZkUjuAuU5Ct8B5tZHpukT2zAxpujLabZ-3YfESTv7QmzuU_1h8qz7vASDnJ1QX8fsig1iem5zlsDobfCPD1yv5R9N-VdRy9ZgCAbQ8V4k5bzT4P9dfvOk4n4lS9RHrKLuXCUFa84FC4JMaHf2IKOVY_nqPuG87F8h5Tg3_kwhs6jbUWJ0a3laHI3VpayIFxX5Lj571blT8ywbMUnz8eaejxPodypRp7CcRDEs4XbutCAR"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full">
+<div class="max-w-4xl">
+<div class="flex items-center space-x-4 mb-6">
+<span class="inline-block w-8 h-[1px] bg-primary"></span>
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Featured Article</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-none tracking-tight">The Vertical Forest:<br/>Redefining Skyline Ecology</h1>
+<p class="text-xl text-gray-300 mb-10 font-light max-w-2xl leading-relaxed">Exploring how incorporating dense vegetation into high-rise architecture is changing the urban microclimate and redefining modern living standards.</p>
+<a class="inline-flex items-center text-white text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors group" href="#">
+                    Read Full Story
+                    <span class="material-symbols-outlined ml-2 text-lg transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="flex flex-col lg:flex-row gap-16">
+<div class="lg:w-3/4">
+<div class="flex justify-between items-end mb-12 border-b border-charcoal-lighter pb-4">
+<h2 class="text-3xl font-bold text-white uppercase tracking-wider">Latest Insights</h2>
+<div class="text-xs font-mono text-text-muted">01 — 06 / 06</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+<article class="group flex flex-col h-full">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Minimalist concrete house in desert landscape" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcQ2-leGA5yJYiOth4uiop8EWFcAOmMnfuqm0P0SXpDV5Wh2E2CWn1lAjWBaWGaTC_uwXyVZHDRy_hIpL7O69PgUowWq4eccx-DoCKWDXDt7RxUEQitNAjt5WCpaET2pdpU4uyei9kggWhZGuJKtmeEqjhM3MiS1aRAXatHMZPymUbKcSDBEF6blbB2TMQ9PZMbV2pq8Kn1kXUl-nMHtMY3RRwyDsaQx6L2HHJKycSDS_qvSGPTk2du9uVWxeBHVL46vI-R0qr9l8H"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Design Thinking</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-3">
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider">Oct 24, 2023</div>
+<span class="w-4 h-[1px] bg-charcoal-lighter group-hover:bg-primary transition-colors"></span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">Minimalism in the Desert</h3>
+<p class="text-text-muted text-sm mb-6 leading-relaxed line-clamp-3">A case study on blending architecture with arid landscapes to create sustainable, cooling habitats without sacrificing luxury.</p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white group-hover:text-primary transition-colors mt-auto" href="#">Read Article</a>
+</div>
+</article>
+<article class="group flex flex-col h-full">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Modern micro-apartment interior with smart furniture" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQn4c8jlN15_m8uax29owN71KPFlnc-0ZK8KwzHGQMiTwv_jx6J7FsTUbWKSqArKWJZEy1XmIXaI8Xfxj7bJ6KxlGNc1doHNe3_U4GjnegLQKHOd29p22vvjlzTZC-d9LsW_WK9sGOHWokiRJ3-1dT4WsOMNAaTlliMOTED7t6V_HvsB_oyxRSrvMFOl0Yj1v9z4_JwOk6gV1LJh1hkcOP4NjC6MoWzDjXbcqpGjNw9kixQj3BYSF6J_1CPNJ-PgeLn1rxPJQAqlsd"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Sustainability</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-3">
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider">Oct 18, 2023</div>
+<span class="w-4 h-[1px] bg-charcoal-lighter group-hover:bg-primary transition-colors"></span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">Future of Urban Living</h3>
+<p class="text-text-muted text-sm mb-6 leading-relaxed line-clamp-3">How micro-apartments are solving the density crisis in mega-cities while providing high quality of life through shared amenities.</p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white group-hover:text-primary transition-colors mt-auto" href="#">Read Article</a>
+</div>
+</article>
+<article class="group flex flex-col h-full">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Large concrete brutalist structure facade" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuYoI5-9vfY0QoeYcRx_qhhQXYhtJhA9NzmFKDxowk3ckkoI7xk2wnKvKI6wsLLTBaT75TN9s4mXgVeC1pXJMqboO9rry4SdQh9j35rEySsrc51aKZOHyxD780DWjixfLE7ZdCzHvL-185iBAKUdnfIXthRiCkQPlmNUYSiUA5hl6NF4_y6lWBWKl8fuORBF7H9iDmpdFDX0Oj3dUlHJZpLy5b33Fxy8YQgCWeOx4e18aTLz7GU_JHy-tr4gOIvQEvVHfKI8Aik7UW"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Theory</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-3">
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider">Oct 10, 2023</div>
+<span class="w-4 h-[1px] bg-charcoal-lighter group-hover:bg-primary transition-colors"></span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">The Return of Brutalism</h3>
+<p class="text-text-muted text-sm mb-6 leading-relaxed line-clamp-3">Why raw concrete and imposing structures are making a comeback in modern commercial architecture design.</p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white group-hover:text-primary transition-colors mt-auto" href="#">Read Article</a>
+</div>
+</article>
+<article class="group flex flex-col h-full">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Complex parametric wooden ceiling structure" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnyGZvY2IlHOv4RlgZseQ95cfHK7y_bTl8HDzQKmMI5zxzmnQwI8W-mNzWaN-641ukDqonuzjmGADpIc3Cte0_4ggkAqSyY8LjqcUzL7v9-MCIpMHf5xpaA8Sdi6Y99xGtE4R2El74CdRXDZHo4Adx6LtGxHD1cOwaXVXvkqqe_ur5KLzgNEY3OvJA_38puFYbhYUPaJd08qO1-yWbDtAFtzQ1JctO-Omwkt6IgcFRHa8E85uDZ-wGb8PmJrEThowP1cwXhUL6A84A"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Technology</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-3">
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider">Sep 28, 2023</div>
+<span class="w-4 h-[1px] bg-charcoal-lighter group-hover:bg-primary transition-colors"></span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">Parametric Design Tools</h3>
+<p class="text-text-muted text-sm mb-6 leading-relaxed line-clamp-3">Leveraging algorithms to generate complex forms that optimize structural integrity and material usage.</p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white group-hover:text-primary transition-colors mt-auto" href="#">Read Article</a>
+</div>
+</article>
+<article class="group flex flex-col h-full">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Interior with dramatic natural light shadows" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSrRdbZLWG5CahU6KVQr3qM7mnavwXE85-lOuavVWXIHCkftT8YsM5rKXPCfOn9Q0x0_DCIZ5SfYEhP_SfWG0rwQFAn7EUIq2_t1NLKGYMoqACLJX-e9hOR5ABUBBro7EarquAobqE3uyLTXHe_fz-odXNeKnhFo_5eTPy3PRgSa9glqVHNHgnvBh81EIXCnS7ay2asbfJXTNtPEIbyZdGtovDYL63tMRIjVA6kfgpc37y4yQRTY4QaY6oBNzwG3k8rhEIuWBuMk9I"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Interior</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-3">
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider">Sep 15, 2023</div>
+<span class="w-4 h-[1px] bg-charcoal-lighter group-hover:bg-primary transition-colors"></span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">Light as Material</h3>
+<p class="text-text-muted text-sm mb-6 leading-relaxed line-clamp-3">Understanding the role of natural light in shaping spatial perception and emotional response in residential design.</p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white group-hover:text-primary transition-colors mt-auto" href="#">Read Article</a>
+</div>
+</article>
+<article class="group flex flex-col h-full">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Sleek modern hotel lobby with golden accents" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVjE2Hmu5aWsUbfP9S39XkkGxOq5Z91cuQ2ZX_2QO0WJxuccgHOnC8Cp3BPXueTwrN0lUPTQE082-fZnDQz4F3cIFy8-TMOUB_zldEpdJturJahUn65pAGj2zQvKJwtmyh4HxSeJOAvVah7iZIayr0E2PX7oGzJK2ZYWuGK4CNrdcKdRVFH9WZ__8Z6wjYcFp8eYgwelm_OzXn30tGbdbEbb6FBIm9AODN_FuwTxMVq7L3q5Eldl-mYzrHhEiT5wj5LDPAcomLbUTY"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Awards</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-3">
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider">Sep 01, 2023</div>
+<span class="w-4 h-[1px] bg-charcoal-lighter group-hover:bg-primary transition-colors"></span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">AIA Design Excellence</h3>
+<p class="text-text-muted text-sm mb-6 leading-relaxed line-clamp-3">Celebrating the recent recognition of our 'Silent House' project at the annual architecture awards.</p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-white group-hover:text-primary transition-colors mt-auto" href="#">Read Article</a>
+</div>
+</article>
+</div><div class="flex justify-center mt-16 mb-8">
+<button class="px-12 py-4 bg-charcoal-light border border-charcoal-lighter text-white hover:bg-primary hover:border-primary transition-all duration-300 text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
+        Load More
+    </button>
+</div>
+</div>
+<aside class="lg:w-1/4 space-y-16 pl-0 lg:pl-8 border-l border-charcoal-lighter lg:border-l lg:border-t-0 border-t pt-12 lg:pt-0">
+<div class="group">
+<h3 class="text-sm font-bold text-white mb-6 uppercase tracking-widest border-l-2 border-primary pl-4">Search</h3>
+<div class="relative">
+<input class="w-full bg-charcoal-light border border-charcoal-lighter text-white px-4 py-3 pl-10 text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all placeholder-text-muted" placeholder="Type keywords..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-text-muted text-lg">search</span>
+</div>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white mb-6 uppercase tracking-widest border-l-2 border-primary pl-4">Categories</h3>
+<ul class="space-y-4">
+<li>
+<a class="flex justify-between items-center text-text-muted hover:text-white transition-colors group cursor-pointer" href="#">
+<span class="text-sm tracking-wide group-hover:translate-x-1 transition-transform">Design Thinking</span>
+<span class="text-xs font-mono text-charcoal-lighter group-hover:text-primary transition-colors">12</span>
+</a>
+</li>
+<li>
+<a class="flex justify-between items-center text-text-muted hover:text-white transition-colors group cursor-pointer" href="#">
+<span class="text-sm tracking-wide group-hover:translate-x-1 transition-transform">Sustainability</span>
+<span class="text-xs font-mono text-charcoal-lighter group-hover:text-primary transition-colors">08</span>
+</a>
+</li>
+<li>
+<a class="flex justify-between items-center text-text-muted hover:text-white transition-colors group cursor-pointer" href="#">
+<span class="text-sm tracking-wide group-hover:translate-x-1 transition-transform">Urban Planning</span>
+<span class="text-xs font-mono text-charcoal-lighter group-hover:text-primary transition-colors">05</span>
+</a>
+</li>
+<li>
+<a class="flex justify-between items-center text-text-muted hover:text-white transition-colors group cursor-pointer" href="#">
+<span class="text-sm tracking-wide group-hover:translate-x-1 transition-transform">Technology</span>
+<span class="text-xs font-mono text-charcoal-lighter group-hover:text-primary transition-colors">09</span>
+</a>
+</li>
+<li>
+<a class="flex justify-between items-center text-text-muted hover:text-white transition-colors group cursor-pointer" href="#">
+<span class="text-sm tracking-wide group-hover:translate-x-1 transition-transform">Awards &amp; Honors</span>
+<span class="text-xs font-mono text-charcoal-lighter group-hover:text-primary transition-colors">04</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="bg-charcoal-light p-8 border border-charcoal-lighter">
+<div class="flex items-center mb-4">
+<span class="material-symbols-outlined text-primary text-2xl mr-3">mail</span>
+<h3 class="text-sm font-bold text-white uppercase tracking-widest">Weekly Digest</h3>
+</div>
+<p class="text-text-muted text-xs mb-6 leading-relaxed">Curated architectural insights delivered to your inbox. No spam, only substance.</p>
+<form class="space-y-4">
+<input class="w-full bg-charcoal border border-charcoal-lighter px-4 py-3 text-sm text-white focus:border-primary focus:ring-0 placeholder-text-muted transition-colors" placeholder="Email Address" type="email"/>
+<button class="w-full bg-white hover:bg-primary text-charcoal hover:text-white text-xs font-bold py-3 transition-colors uppercase tracking-widest" type="button">
+                            Subscribe
+                        </button>
+</form>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white mb-6 uppercase tracking-widest border-l-2 border-primary pl-4">Popular Tags</h3>
+<div class="flex flex-wrap gap-3">
+<a class="px-3 py-1 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">minimalism</a>
+<a class="px-3 py-1 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">concrete</a>
+<a class="px-3 py-1 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">residential</a>
+<a class="px-3 py-1 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">LEED</a>
+<a class="px-3 py-1 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">skyscrapers</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                        Defining modern living through spatial innovation and minimalist design philosophy.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                        123 Innovation Blvd, <br/>Design District, NY 10012
+                    </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

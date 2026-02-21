@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Light as Material - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // Main background
+                        "charcoal-light": "#252525", // Cards/Sections
+                        "charcoal-lighter": "#333333", // Borders
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 60%, rgba(26,26,26,1) 100%);
+        }
+        .text-justified {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1">Arcadia</span>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[85vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Dramatic sunlight casting sharp geometric shadows in a minimalist concrete room" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSrRdbZLWG5CahU6KVQr3qM7mnavwXE85-lOuavVWXIHCkftT8YsM5rKXPCfOn9Q0x0_DCIZ5SfYEhP_SfWG0rwQFAn7EUIq2_t1NLKGYMoqACLJX-e9hOR5ABUBBro7EarquAobqE3uyLTXHe_fz-odXNeKnhFo_5eTPy3PRgSa9glqVHNHgnvBh81EIXCnS7ay2asbfJXTNtPEIbyZdGtovDYL63tMRIjVA6kfgpc37y4yQRTY4QaY6oBNzwG3k8rhEIuWBuMk9I"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full">
+<div class="max-w-4xl">
+<div class="flex items-center space-x-4 mb-8">
+<a class="flex items-center text-xs font-bold tracking-[0.2em] text-primary uppercase hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm mr-2">arrow_back</span>
+                            Back to Insights
+                        </a>
+<span class="text-charcoal-lighter">|</span>
+<span class="text-xs font-mono text-text-muted uppercase tracking-wider">Sep 15, 2023</span>
+<span class="text-charcoal-lighter">|</span>
+<span class="text-xs font-mono text-text-muted uppercase tracking-wider">Interior</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-bold text-white mb-8 leading-none tracking-tight">Light as<br/>Material</h1>
+<p class="text-2xl text-gray-300 font-light max-w-2xl leading-relaxed">Understanding the role of natural light in shaping spatial perception and emotional response.</p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="flex flex-col lg:flex-row gap-20">
+<aside class="lg:w-1/4 order-2 lg:order-1">
+<div class="sticky top-32 space-y-12">
+<div class="border-t border-primary pt-6">
+<h3 class="text-xs font-bold text-white uppercase tracking-[0.2em] mb-6">Article Data</h3>
+<dl class="space-y-6">
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-1">Author</dt>
+<dd class="text-sm text-white font-medium">Elena Voss</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-1">Photography</dt>
+<dd class="text-sm text-white font-medium">Marcus Chen</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-1">Read Time</dt>
+<dd class="text-sm text-white font-medium">8 Minutes</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-1">Tags</dt>
+<dd class="flex flex-wrap gap-2 mt-2">
+<span class="text-[10px] border border-charcoal-lighter px-2 py-1 text-text-muted">Daylighting</span>
+<span class="text-[10px] border border-charcoal-lighter px-2 py-1 text-text-muted">Phenomenology</span>
+<span class="text-[10px] border border-charcoal-lighter px-2 py-1 text-text-muted">Sensory</span>
+</dd>
+</div>
+</dl>
+</div>
+<div class="border-t border-charcoal-lighter pt-6">
+<h3 class="text-xs font-bold text-white uppercase tracking-[0.2em] mb-4">Share</h3>
+<div class="flex space-x-4">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+</div>
+</div>
+</div>
+</aside>
+<article class="lg:w-3/4 order-1 lg:order-2">
+<div class="prose prose-invert prose-lg max-w-none mb-20">
+<p class="text-xl leading-relaxed text-gray-300 font-light mb-10 first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:float-left first-letter:mr-3 first-letter:mt-[-10px]">
+                            Architecture is often defined by its physical boundaries—walls, floors, ceilings. Yet, it is the intangible element of light that breathes life into these static forms. At Arcadia, we treat light not merely as a utility for visibility, but as a primary building material, as tangible and manipulable as concrete or timber. It carves volume, defines depth, and dictates the rhythm of a space throughout the day.
+                        </p>
+<h2 class="text-3xl font-bold text-white mt-12 mb-6">The Ephemeral Sculptor</h2>
+<p class="text-text-muted leading-relaxed mb-8">
+                            When we approach a new project, particularly in residential design, our solar studies begin before the first sketch is drawn. We map the heliodon, understanding exactly how the sun will traverse the site at the winter solstice versus the summer peak. This data informs the orientation of glazing, the depth of overhangs, and the placement of light wells.
+                        </p>
+<p class="text-text-muted leading-relaxed mb-8">
+                            By manipulating aperture sizes and positions, we can curate the user's experience of time. A morning breakfast nook might be flooded with the crisp, blue-toned light of the east, awakening the senses. Conversely, a living area designed for evening relaxation captures the warm, horizontal rays of the setting sun, casting long shadows that emphasize texture and warmth.
+                        </p>
+</div>
+<div class="my-20 border-l-4 border-primary pl-8 py-4 bg-charcoal-light/30 relative">
+<span class="material-symbols-outlined absolute -top-4 -left-4 text-4xl text-primary bg-charcoal p-2">format_quote</span>
+<blockquote class="text-2xl md:text-3xl font-serif text-white italic leading-relaxed">
+                            "Light is not just about seeing. It is about feeling. It is the silent language that connects the interior soul of a building with the exterior universe."
+                        </blockquote>
+<cite class="block mt-6 text-sm font-bold text-primary uppercase tracking-widest not-italic">— Elena Voss, Principal Architect</cite>
+</div>
+<div class="prose prose-invert prose-lg max-w-none mb-24">
+<h2 class="text-3xl font-bold text-white mt-12 mb-6">Shadow as Contrast</h2>
+<p class="text-text-muted leading-relaxed mb-8">
+                            There is no light without shadow. Modernism often erred on the side of over-illumination, creating flat, sterile environments. We embrace the shadow. In our 'Silent House' project, we utilized deep recessed windows and louvers to create pockets of darkness. These shadows provide visual rest and mystery, inviting the inhabitant to move from the known to the unknown within their own home.
+                        </p>
+<p class="text-text-muted leading-relaxed">
+                            The interplay of light and shadow creates a dynamic pattern that changes constantly. It turns a plain white wall into a canvas for nature's cinema—swaying tree branches, passing clouds, and the slow march of the sun become part of the interior decor.
+                        </p>
+</div>
+<div class="border-t border-charcoal-lighter pt-16">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Visual Documentation</h2>
+<span class="text-xs font-mono text-text-muted">Gallery 01 — 03</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative overflow-hidden aspect-[4/5] bg-charcoal-light cursor-pointer md:col-span-1">
+<img alt="Curved architectural structure reflecting light in abstract patterns" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7cDUEoXAgelQlxz9gXjUAVeJ_3Q-A2Qa-NdSMbhUrHBkNguS9C56T7CNQ3XcjCrUyu-n6a-JrFjDMvJmnFBMzsnNhLDIqqMfDjKLiVwnH80c6r_FOT6Z_QsU7ZRifpuHZ-T7kjqwtji3JDAdlywptPrmPd85o-1ahhsk4hpnKglp_8VLYUQ-Fs95vGfxdIT0wrUIGOz2pIXOVdODMMj6JcDAr4v8Xd6a7ySa8S9UVl_iI949wNdSlUVDOAbSWs6_bkfH-HZ1p8I3g"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-charcoal to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-xs font-bold text-white uppercase tracking-widest">The Curved Oculus</p>
+</div>
+</div>
+<div class="space-y-8 md:col-span-1">
+<div class="group relative overflow-hidden aspect-square bg-charcoal-light cursor-pointer">
+<img alt="Detailed white architectural scale model showing light interaction" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzC5NbeS0KQIM2HgXAzUJxxyDNfYmByvwdZ-wGoBHMY4yZbLnKQqQEc4f5GPsEWWbqPERLv7pr7ZxJaqqqSOz_vf2DnoayO9O-4DgkNqluNAz9LgRNcSL9f2V2ag9XFaqXYn-8exhTSA8YabKAjgB3dXlf3m-kP1km059c4BrvpXgMCg4AZB7j4VVCDJitkLZsF_kZWN7xz8IJffCn4i3lAYX4mlycIoTyamS8pmep9qYqiblkvtXzNgq5jEGIWm8KUxVucdsdigdL"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-charcoal to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-xs font-bold text-white uppercase tracking-widest">Study Models</p>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square bg-charcoal-light cursor-pointer">
+<img alt="Renovated brick warehouse interior with steel beams and dramatic light shafts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XJ7fgOl-5adKusIAi0a7u8AOQs5oNLIJn-U6Hb-dBR0oKTvnZEpbf0KFe0a2JRwkJG_FlA95VL-QV3dKlwQQXULUIEJyDYRy2fTJekToCdSKETuOabh7lcSjw2VaVesKcQqksCjDeocPx5otkE1qzOdCEtmP-p0CdHIdwxDYTt0JwErAmztSvZOnot_ZVXkFffZUpsxm6nk6H5ZDCx5yNUs4bXaLNDvw82aqbHmiFXAwGHRDnjRaSpNu6YJtdYa8gBB7dG8jOjj5"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-charcoal to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-xs font-bold text-white uppercase tracking-widest">Industrial Diffusion</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<div class="group relative overflow-hidden h-[400px] w-full bg-charcoal-light cursor-pointer">
+<img alt="Modern interior with smart furniture and ambient lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQn4c8jlN15_m8uax29owN71KPFlnc-0ZK8KwzHGQMiTwv_jx6J7FsTUbWKSqArKWJZEy1XmIXaI8Xfxj7bJ6KxlGNc1doHNe3_U4GjnegLQKHOd29p22vvjlzTZC-d9LsW_WK9sGOHWokiRJ3-1dT4WsOMNAaTlliMOTED7t6V_HvsB_oyxRSrvMFOl0Yj1v9z4_JwOk6gV1LJh1hkcOP4NjC6MoWzDjXbcqpGjNw9kixQj3BYSF6J_1CPNJ-PgeLn1rxPJQAqlsd"/>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-charcoal to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-xs font-bold text-white uppercase tracking-widest">Artificial &amp; Natural Balance</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-24 pt-12 border-t border-charcoal-lighter flex flex-col md:flex-row justify-between items-center gap-6">
+<a class="group text-left" href="#">
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-2 group-hover:text-primary transition-colors">Previous Article</span>
+<h4 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Parametric Design Tools</h4>
+</a>
+<a class="group text-right" href="#">
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-2 group-hover:text-primary transition-colors">Next Article</span>
+<h4 class="text-xl font-bold text-white group-hover:text-primary transition-colors">AIA Design Excellence</h4>
+</a>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                        Defining modern living through spatial innovation and minimalist design philosophy.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                        123 Innovation Blvd, <br/>Design District, NY 10012
+                    </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

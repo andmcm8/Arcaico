@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Circular Economy in Construction - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // Main background
+                        "charcoal-light": "#252525", // Cards/Sections
+                        "charcoal-lighter": "#333333", // Borders
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    typography: (theme) => ({
+                        DEFAULT: {
+                            css: {
+                                color: theme('colors.text-muted'),
+                                h1: { color: theme('colors.white') },
+                                h2: { color: theme('colors.white') },
+                                h3: { color: theme('colors.white') },
+                                strong: { color: theme('colors.white') },
+                                blockquote: { 
+                                    color: theme('colors.white'),
+                                    borderLeftColor: theme('colors.primary')
+                                },
+                            },
+                        },
+                    }),
+                },
+            },
+        };
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 60%, rgba(26,26,26,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1" href="#">Arcadia</a>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[85vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Stacked sustainable timber construction materials close up" class="w-full h-full object-cover opacity-90 grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyRFBIhzuv-1Zl07_btuuaKgyZNeUhiZESr8BDM_fyZ4vtVX0k8idxxAYF0RqU6CEmE0RrivmeopEfxbOgPver6OEenFwa_uqY7vhcsrOwZu7OjGeCM5coQbgEcG1b9y9wnsgXRwAca39Cj5mAa59IhYZVs4JFTwgm9ALnVbn0zJ251YGAKUGmQ7Ai42BJ1FJ3645QF0MlrDdMhXmpl0BdzYSCoPRZHZXV7zSYz2LGPJ26qOK9tfmQk6zBKYlNzshNp1OPkIVCo5-s"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full">
+<div class="max-w-4xl animate-fade-in-up">
+<div class="flex items-center space-x-4 mb-6">
+<span class="inline-block w-12 h-[2px] bg-primary"></span>
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Sustainability</span>
+<span class="text-xs font-mono text-text-muted">August 15, 2023</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-none tracking-tight">Circular Economy<br/>in Construction</h1>
+<p class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl leading-relaxed border-l border-charcoal-lighter pl-6">
+                    Moving beyond the linear "take-make-waste" industrial model to a regenerative approach that redefines waste as a resource.
+                </p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="flex flex-col lg:flex-row gap-20">
+<aside class="lg:w-1/4 order-2 lg:order-1">
+<div class="sticky top-32 space-y-12">
+<div>
+<h3 class="text-xs font-bold text-white uppercase tracking-widest border-b border-charcoal-lighter pb-3 mb-6">Article Data</h3>
+<dl class="space-y-6">
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Author</dt>
+<dd class="text-sm text-white font-medium">Elena Rostova</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Read Time</dt>
+<dd class="text-sm text-white font-medium">8 Minutes</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Category</dt>
+<dd class="text-sm text-white font-medium">Sustainability / Innovation</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Tags</dt>
+<dd class="flex flex-wrap gap-2 mt-2">
+<span class="px-2 py-1 bg-charcoal-light text-[10px] text-text-muted border border-charcoal-lighter">#CircularEconomy</span>
+<span class="px-2 py-1 bg-charcoal-light text-[10px] text-text-muted border border-charcoal-lighter">#Reuse</span>
+<span class="px-2 py-1 bg-charcoal-light text-[10px] text-text-muted border border-charcoal-lighter">#Materials</span>
+</dd>
+</div>
+</dl>
+</div>
+<div>
+<h3 class="text-xs font-bold text-white uppercase tracking-widest border-b border-charcoal-lighter pb-3 mb-6">Share</h3>
+<div class="flex space-x-4">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">bookmark</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">print</span></a>
+</div>
+</div>
+</div>
+</aside>
+<div class="lg:w-3/4 order-1 lg:order-2">
+<article class="prose prose-invert prose-lg max-w-none text-text-muted">
+<h2 class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Article Narrative</h2>
+<h3 class="text-3xl text-white font-bold mb-8">Designing for Disassembly</h3>
+<p class="lead text-xl text-gray-300 font-light mb-10">
+                        The construction industry is one of the world's largest consumers of raw materials. To mitigate this impact, we must fundamentally shift how we conceive of buildings—not as permanent monuments, but as material banks for the future.
+                    </p>
+<p class="mb-8">
+                        The concept of the circular economy in architecture revolves around the principle of closing resource loops. Instead of the traditional linear model—extraction, production, usage, and disposal—we advocate for a system where materials are kept in use for as long as possible, extracting the maximum value from them whilst in use, then recovering and regenerating products and materials at the end of each service life.
+                    </p>
+<p class="mb-12">
+                        At Arcadia Studio, we are pioneering "Design for Disassembly" (DfD). This methodology ensures that building components can be easily deconstructed and reused without losing value. By using mechanical fixings instead of chemical adhesives, and standardizing components, we transform buildings into depots of valuable resources ready for their next life cycle.
+                    </p>
+<div class="my-16 relative py-10 px-8 bg-charcoal-light border-l-4 border-primary">
+<span class="material-symbols-outlined absolute top-6 left-4 text-4xl text-charcoal-lighter opacity-50">format_quote</span>
+<blockquote class="relative z-10">
+<p class="text-2xl font-light text-white italic leading-relaxed mb-6">
+                                "We need to stop looking at demolition as the end of a building's life, and start viewing it as the harvest of materials for the next generation of architecture."
+                            </p>
+<footer class="flex items-center space-x-3">
+<div class="w-8 h-[1px] bg-primary"></div>
+<cite class="not-italic text-xs font-bold uppercase tracking-widest text-text-muted">Marcus Thorne, Principal Architect</cite>
+</footer>
+</blockquote>
+</div>
+<h3 class="text-2xl text-white font-bold mb-6">Material Passports &amp; Digital Tracking</h3>
+<p class="mb-8">
+                        Technology plays a crucial role in this transition. We utilize Building Information Modeling (BIM) to create "Material Passports" for our projects. These digital datasets track the composition, quality, and location of every material used in a structure.
+                    </p>
+<p class="mb-8">
+                        When a building reaches the end of its utility, the Material Passport acts as a catalog for urban mining, identifying exactly what can be salvaged. This transforms waste management into resource management, drastically reducing the carbon footprint associated with manufacturing new construction materials.
+                    </p>
+</article>
+<div class="mt-24 border-t border-charcoal-lighter pt-16">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Visual Documentation</h2>
+<span class="text-xs font-mono text-primary">Fig 1.0 — 3.0</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative aspect-[4/5] bg-charcoal-light overflow-hidden">
+<img alt="Renovated brick warehouse interior with steel beams" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XJ7fgOl-5adKusIAi0a7u8AOQs5oNLIJn-U6Hb-dBR0oKTvnZEpbf0KFe0a2JRwkJG_FlA95VL-QV3dKlwQQXULUIEJyDYRy2fTJekToCdSKETuOabh7lcSjw2VaVesKcQqksCjDeocPx5otkE1qzOdCEtmP-p0CdHIdwxDYTt0JwErAmztSvZOnot_ZVXkFffZUpsxm6nk6H5ZDCx5yNUs4bXaLNDvw82aqbHmiFXAwGHRDnjRaSpNu6YJtdYa8gBB7dG8jOjj5"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-charcoal to-transparent">
+<span class="block text-[10px] font-mono text-primary mb-1">01</span>
+<p class="text-sm font-bold text-white uppercase tracking-wide">Adaptive Reuse Strategy</p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] bg-charcoal-light overflow-hidden mt-0 md:mt-16">
+<img alt="Prefabricated modular units being stacked" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqoiLuopH2qkXPie8laMoPCxN6_zZ-J4PepcGTGNx-WlACddEignRRRmKGP2zUQwdYvaVmhcXzTl8KaQGERGaz8z-oQr58nb9nKgU-5tcLjl1i72HT9NrpPG22VmmH09-k7ydATfjg8GTKcAlQfX1-p-7eqVtnJZhB6vcwhn0ondneoWYFNj-mYYyFxQD0ojdhMcesbY_0_8TIbN-Mll28Xhemhf7HPtIxLZ9ObR2C-sXrv4ipOV7BImZJl3fMxOYvQ5mdvWRtySLS"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-charcoal to-transparent">
+<span class="block text-[10px] font-mono text-primary mb-1">02</span>
+<p class="text-sm font-bold text-white uppercase tracking-wide">Modular Components</p>
+</div>
+</div>
+<div class="col-span-1 md:col-span-2 mt-8">
+<div class="group relative h-96 bg-charcoal-light overflow-hidden">
+<img alt="Tall mass timber building under construction" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2R0F-ya34fXwgw8IQdzpShWcKXxgmDEV0J-FhWfY_roOiN-vBZOQUlKPYhB-Vubt8GpTDh7LELkQkUXwHNzKBkYQ5qHPadwfbiN24REnr4vqZKCOlXt5Am_q792lkSzOG1AeXrlxtv5xQtNQchI4dYgbyN71quLF39PhXbxzUj5QhMToqG0tco-eePfULpyym2FqFJIx_hbBtBAfaXwofdv5Qg35CtyxEKqdbgInnFuxmHC5h0EBXbUPwOLGdlV3zcNdlt5RlVbPK"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-charcoal to-transparent">
+<span class="block text-[10px] font-mono text-primary mb-1">03</span>
+<p class="text-sm font-bold text-white uppercase tracking-wide">Structural Timber Framework</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center mt-24 pt-8 border-t border-charcoal-lighter">
+<a class="group flex items-center" href="#">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors mr-2">arrow_back</span>
+<div>
+<span class="block text-[10px] text-text-muted uppercase tracking-wider mb-1">Previous</span>
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">Biophilic Office Design</span>
+</div>
+</a>
+<a class="group flex items-center text-right" href="#">
+<div>
+<span class="block text-[10px] text-text-muted uppercase tracking-wider mb-1">Next</span>
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">Adaptive Reuse in London</span>
+</div>
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                    Defining modern living through spatial innovation and minimalist design philosophy.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

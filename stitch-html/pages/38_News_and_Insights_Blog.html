@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - 3D Printing in Architecture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // New main background
+                        "charcoal-light": "#252525", // Slightly lighter for cards
+                        "charcoal-lighter": "#333333", // Borders/lines
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem", // More minimalist/square
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 50%, rgba(26,26,26,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1">Arcadia</span>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[85vh] w-full">
+<div class="absolute inset-0 z-0">
+<img alt="Large scale 3D printed concrete structure with layered texture" class="w-full h-full object-cover grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5n2lnpD12UYmm2AiV9If3C5iv7hESSMyttY7Rul70vJ7qWceqkhCyOflKuuovr0Y2p3-WpiVlH9QElL2I8lZZhBQwRiU9Qgs4gWiq1-rak-gkw7oDcBc0fS-5FWtIENT8aBRNvcSapdJlnoqQhK-KPMhY7rDRS2lbCeG6jgD2CB2R2vWlJzntWQ9JOx2ZxtZ1jYP0zVBZGpUdjizv7A-_IFxPwyNIR6CniKGukjQyUeDxxjjCKpjIHL1fx9XLqqa6BDm9tSy5PMMq"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pb-24">
+<div class="flex items-center space-x-4 mb-6">
+<span class="inline-block w-12 h-[1px] bg-primary"></span>
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Innovation Series</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-none tracking-tight max-w-4xl">
+                3D Printing in Architecture:<br/>Form Follows Algorithm
+            </h1>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<aside class="lg:col-span-3 space-y-12">
+<div class="border-t border-charcoal-lighter pt-4">
+<h3 class="text-[10px] text-text-muted uppercase tracking-widest mb-2">Published</h3>
+<p class="text-sm text-white font-medium">July 15, 2023</p>
+</div>
+<div class="border-t border-charcoal-lighter pt-4">
+<h3 class="text-[10px] text-text-muted uppercase tracking-widest mb-2">Category</h3>
+<p class="text-sm text-white font-medium">Technology / Innovation</p>
+</div>
+<div class="border-t border-charcoal-lighter pt-4">
+<h3 class="text-[10px] text-text-muted uppercase tracking-widest mb-2">Author</h3>
+<p class="text-sm text-white font-medium">Dr. Elena Rostova</p>
+<p class="text-xs text-text-muted mt-1">Head of R&amp;D</p>
+</div>
+<div class="border-t border-charcoal-lighter pt-4">
+<h3 class="text-[10px] text-text-muted uppercase tracking-widest mb-2">Read Time</h3>
+<p class="text-sm text-white font-medium">8 Minutes</p>
+</div>
+<div class="pt-8">
+<h3 class="text-[10px] text-text-muted uppercase tracking-widest mb-4">Share</h3>
+<div class="flex space-x-4">
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">link</span></a>
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+</aside>
+<div class="lg:col-span-9">
+<div class="prose prose-invert prose-lg max-w-none text-gray-300 font-light leading-relaxed mb-20">
+<p class="text-xl text-white font-normal mb-10 leading-relaxed border-l-2 border-primary pl-6">
+                        Additive manufacturing is no longer a futuristic concept confined to small-scale prototyping. It has evolved into a formidable construction methodology, challenging our fundamental understanding of tectonics, material efficiency, and architectural form.
+                    </p>
+<p class="mb-8">
+                        The traditional constraints of construction—rectilinear forms dictated by timber framing, the labor intensity of masonry, and the heavy carbon footprint of cast-in-place concrete—are being reimagined through the lens of robotic fabrication. At Arcadia Studio, our latest research into large-scale 3D printing demonstrates not just a new way to build, but a new way to conceive space itself.
+                    </p>
+<h3 class="text-white text-2xl font-bold mt-12 mb-6 tracking-wide uppercase text-sm">Beyond Standard Geometry</h3>
+<p class="mb-8">
+                        Where conventional concrete casting requires expensive and wasteful formwork, 3D printing allows for the deposition of material only where it is structurally necessary. This "topology optimization" results in organic, bone-like structures that are incredibly strong yet significantly lighter than their solid counterparts. The layered aesthetic, once seen as a defect, is now celebrated as a testament to the process—a digital craft that leaves its fingerprint on the built environment.
+                    </p>
+<p class="mb-8">
+                        We are currently experimenting with bio-based aggregates and geopolymer composites that reduce the carbon footprint of the printing material by up to 60%. This shift transforms the building from a carbon emitter into a potential carbon sink.
+                    </p>
+</div>
+<div class="bg-charcoal-light border border-charcoal-lighter p-12 mb-20 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+<span class="material-symbols-outlined absolute top-6 right-6 text-charcoal-lighter text-8xl opacity-20 transform -rotate-12 select-none group-hover:text-primary group-hover:opacity-10 transition-all duration-700">format_quote</span>
+<blockquote class="relative z-10">
+<p class="text-2xl md:text-3xl font-light text-white italic mb-8 leading-normal">
+                            "The printer is not just a tool; it is a collaborator. It dictates a new language of curves and continuous lines that human hands alone would find cost-prohibitive to produce."
+                        </p>
+<footer class="flex items-center space-x-4">
+<div class="h-[1px] w-12 bg-charcoal-lighter"></div>
+<cite class="not-italic text-xs font-bold tracking-widest uppercase text-text-muted">
+                                Sarah Chen, Lead Architect
+                            </cite>
+</footer>
+</blockquote>
+</div>
+<div class="mb-20">
+<div class="flex items-end justify-between mb-8 border-b border-charcoal-lighter pb-4">
+<h2 class="text-sm font-bold text-white uppercase tracking-widest">Visual Documentation</h2>
+<span class="text-xs font-mono text-text-muted">Gallery 01 — 04</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<figure class="group relative aspect-[4/3] overflow-hidden bg-charcoal-light cursor-zoom-in">
+<img alt="Robotic arm printing nozzle detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcY3OhSkmGKhrCk55_bxtXlizprEWKm6wWOEkA5CCzL7atfSK13KFvcFlZcs7VIfWOU7XpUsnYb1m3behgNISPPWwoYS6Tqq_5WwqKLhS_iYSDFHeirVSxiI2MXHMYIuMCvr8_DH81LlOp71z5MZ0r-R0jJIG4cs6WxGhr2iabqiEhG-QUdIjJjK93p0z4r-R8yI7XKoEahge7B95Rq1K_I37hzPP4IVELd2Czr0QVEe0IVNz89Oqt1C3ynQq8VvbmoEpOpzEgZ_in"/>
+<div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-[10px] font-mono bg-charcoal text-white px-2 py-1 uppercase tracking-wider">Nozzle Detail</span>
+</div>
+</figure>
+<figure class="group relative aspect-[4/3] overflow-hidden bg-charcoal-light cursor-zoom-in">
+<img alt="Layered concrete wall texture close-up" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC93ZTEtJZt-5pi5IrI3uyqGPlLoSA-KqucoLoq97DWJ1Qjp6IRSdb6AQRC7QNimz34CKNctjlbr3ZnNztShYX8enmdD9QkD2ylHuZd6R1EAjNXQgkR6PpN1WoGemnQcwjcL3Usgsp-FRqDe95A0GehNSIOMa8XQP8DT1ewhhMzuEtaLsS6SFT4OJ44OciLAktj1Y7jPaC_dyvX8_LpGAElstpMd5S-4lG48sYO3Lfey7lf8OTu_6zFQT5EfuACxbHq4QfI6FK90i1"/>
+<div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-[10px] font-mono bg-charcoal text-white px-2 py-1 uppercase tracking-wider">Layer Adhesion</span>
+</div>
+</figure>
+<figure class="group relative aspect-[4/3] overflow-hidden bg-charcoal-light cursor-zoom-in">
+<img alt="Interior view of printed structure" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-woHFZdKftvD6VONAOMhRWzfIT_TzzvRtWzmiZX--OZ2uVn9rLi_ewwO6dSMwE2duM3KHmDFvUF4vH0VAVF-6ZbxuZcN6HfWzqQuVIx_CogYaFi2agearWVloH_z5AYwSNRG2RI8kt9uUgMqxvOWZmr7vYpb5mBcKZ3YDekqV9df6t-dsfRBGMLbCqUuugO-RY6aqEbIldwDCK-6szFGKkF5WDfQTRPiyZGhE0bDnOHVK1ATrtPmDl0MOonBPyNEgoAhP43UJIeGE"/>
+<div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-[10px] font-mono bg-charcoal text-white px-2 py-1 uppercase tracking-wider">Interior Finish</span>
+</div>
+</figure>
+<figure class="group relative aspect-[4/3] overflow-hidden bg-charcoal-light cursor-zoom-in">
+<img alt="Scale model of printed habitat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS-_Bt0dTy67bo78D0klKS3RpNihZZFQ8_o1Cljm5Z2AQexNezLRZuUTapelY4wCvs6TGo24fhqt9CrWxNHT1cwjZmiiNoISQHTCVhPAWOqWpTAMs2Bjpnk1C22dKoOzzAFhDWOBk5CT3yDDrrnYJjffOz36ePcQX_lPl44drc8RrCqik2MMmJDZu8qbYZ19dQsGTYrTQE_nrGoopidTVvEiUAKdesIdDzeBYFautCe2Ult80CwT7c3ogNwApXS0OWmwPPczJqCLaQ"/>
+<div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="text-[10px] font-mono bg-charcoal text-white px-2 py-1 uppercase tracking-wider">Prototype Model</span>
+</div>
+</figure>
+</div>
+</div>
+<div class="prose prose-invert prose-lg max-w-none text-gray-300 font-light leading-relaxed">
+<h3 class="text-white text-2xl font-bold mt-12 mb-6 tracking-wide uppercase text-sm">Future Implications</h3>
+<p class="mb-8">
+                        The implications for affordable housing are profound. With the ability to erect the shell of a house in under 24 hours with minimal waste and labor, we can address housing shortages in rapidly urbanizing regions with speed and dignity.
+                    </p>
+<p>
+                        However, the true potential lies in the freedom of form. We are moving away from the "box" as the default unit of habitation. Walls can curve to deflect wind, thicken to provide thermal mass, and become porous to admit light—all in a single continuous print path. This is the new vernacular of the machine age.
+                    </p>
+</div>
+<div class="mt-20 pt-10 border-t border-charcoal-lighter flex flex-col md:flex-row justify-between items-center gap-6">
+<a class="group flex items-center space-x-4 text-text-muted hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined transform rotate-180 group-hover:-translate-x-2 transition-transform">arrow_right_alt</span>
+<div class="text-right">
+<span class="block text-[10px] uppercase tracking-widest text-charcoal-lighter group-hover:text-primary mb-1">Previous</span>
+<span class="block text-sm font-bold">The Mass Timber Revolution</span>
+</div>
+</a>
+<a class="px-8 py-3 border border-charcoal-lighter text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all" href="#">Back to News</a>
+<a class="group flex items-center space-x-4 text-text-muted hover:text-white transition-colors text-right" href="#">
+<div>
+<span class="block text-[10px] uppercase tracking-widest text-charcoal-lighter group-hover:text-primary mb-1">Next</span>
+<span class="block text-sm font-bold">Museums as Public Forums</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                    Defining modern living through spatial innovation and minimalist design philosophy.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                    123 Innovation Blvd, <br/>Design District, NY 10012
+                </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

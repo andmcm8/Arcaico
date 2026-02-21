@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Glass Pavilion - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B",
+                        "charcoal": "#1A1A1A",
+                        "charcoal-dark": "#141414",
+                        "charcoal-light": "#262626",
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Manrope', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1A1A1A; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF6B6B; 
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white transition-colors duration-300">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a class="text-2xl font-bold tracking-tighter uppercase font-display text-white" href="#">
+                Arcadia<span class="text-primary">.</span>
+</a>
+<div class="hidden md:flex space-x-12 text-sm font-medium tracking-wide uppercase">
+<a class="text-gray-300 hover:text-white hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Projects</a>
+<a class="text-gray-300 hover:text-white hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Studio</a>
+<a class="text-gray-300 hover:text-white hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Expertise</a>
+<a class="text-gray-300 hover:text-white hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="p-2 hover:bg-white/10 rounded-full transition-colors text-white">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+<button class="md:hidden p-2 hover:bg-white/10 rounded-full transition-colors text-white">
+<span class="material-symbols-outlined text-xl">menu</span>
+</button>
+<a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-white bg-primary hover:opacity-90 transition-opacity rounded-sm" href="#">
+                    Inquire
+                </a>
+</div>
+</div>
+</nav>
+<header class="relative w-full h-screen min-h-[700px] flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="The Glass Pavilion Exterior at Dusk" class="w-full h-full object-cover object-center brightness-50 grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8ISG6SPUor96LZFcsxCSIC7jue9T8IHLyiaQQraQvDWQfYi0BmISo0lnCoyV3P-kmgUHHUtZUgIrBimcmLqGK7WuOAq-jK3IjptzQhi0NFjqs6Ilo8zMZiLwI3ccnl0Qj-Hm7pghtYspoB87rADmunORvItLQ1nayEp4yIsihh6xV1ApoUQqKEvCyB82bQmyxy6w7XhxZb0gTv23tOabZma0h4s0iTGTocpRx1YSjA8rEUq8WyMS8IGLaKb1TK94DF0MtiwDOVDkg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-6 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<div class="flex items-center space-x-4 mb-6">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">Featured</span>
+<span class="px-3 py-1 border border-white/30 text-[10px] font-bold uppercase tracking-widest rounded-sm text-gray-300">Residential</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-tight mb-6 text-white">
+                    The Glass <br/> Pavilion
+                </h1>
+<div class="flex items-center text-sm tracking-wide text-gray-300 space-x-2">
+<span class="material-symbols-outlined text-lg">location_on</span>
+<span>Montecito, California</span>
+</div>
+</div>
+<div class="lg:col-span-4">
+<div class="bg-charcoal-light/95 backdrop-blur-sm p-8 shadow-2xl border border-white/5 rounded-sm">
+<h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6 border-b border-white/10 pb-4">Project Data</h3>
+<div class="grid grid-cols-3 gap-6 text-center">
+<div>
+<span class="material-symbols-outlined text-primary mb-2">square_foot</span>
+<div class="text-2xl font-serif font-semibold text-white">4,500</div>
+<div class="text-[10px] uppercase tracking-wider text-gray-500">SQFT</div>
+</div>
+<div>
+<span class="material-symbols-outlined text-primary mb-2">attach_money</span>
+<div class="text-2xl font-serif font-semibold text-white">3.2M</div>
+<div class="text-[10px] uppercase tracking-wider text-gray-500">Budget</div>
+</div>
+<div>
+<span class="material-symbols-outlined text-primary mb-2">check_circle</span>
+<div class="text-2xl font-serif font-semibold text-white">2023</div>
+<div class="text-[10px] uppercase tracking-wider text-gray-500">Done</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-white/10">
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-500">Client</span>
+<span class="font-medium text-gray-200">Private Residence</span>
+</div>
+<div class="flex justify-between items-center text-sm mt-3">
+<span class="text-gray-500">Architect</span>
+<span class="font-medium text-gray-200">James Sterling</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full max-w-7xl mx-auto px-6 py-20 lg:py-32 bg-charcoal">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-32">
+<div class="lg:col-span-7">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-4 block">Project Narrative</span>
+<h2 class="text-3xl md:text-4xl font-serif mb-8 leading-snug text-white">
+                    A seamless integration of indoor and outdoor living, this pavilion challenges the boundaries of traditional residential architecture.
+                </h2>
+<div class="prose prose-lg prose-invert font-light text-gray-400">
+<p>
+                        The structure floats above the landscape, minimizing its footprint while maximizing panoramic views of the Pacific coastline. Utilizing a cantilevered steel frame and floor-to-ceiling thermal glass curtains, the residence dissolves the barrier between the inhabitant and nature.
+                    </p>
+<p>
+                        The material palette—polished concrete, warm walnut, and matte black steel—provides a grounding contrast to the ethereal transparency of the envelope. Every room is designed to capture specific light throughout the day, turning the home into a living sundial.
+                    </p>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="absolute -left-8 top-0 bottom-0 w-[1px] bg-white/10 hidden lg:block"></div>
+<div class="sticky top-32">
+<span class="text-gray-500 text-xs font-bold uppercase tracking-widest mb-6 block">Design Philosophy</span>
+<blockquote class="text-xl italic font-serif text-gray-200 mb-8 border-l-4 border-primary pl-6">
+                        "Minimalism isn't about absence; it's about the perfect amount of something. We strip away the unnecessary to reveal the essential beauty of structure and light."
+                    </blockquote>
+<ul class="space-y-6">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-4 mt-1">auto_awesome</span>
+<div>
+<h4 class="font-bold text-sm uppercase mb-1 text-white">Biophilic Integration</h4>
+<p class="text-sm text-gray-400 leading-relaxed">Direct visual connection to nature reduces stress and enhances cognitive function.</p>
+</div>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-4 mt-1">tune</span>
+<div>
+<h4 class="font-bold text-sm uppercase mb-1 text-white">Adaptive Spaces</h4>
+<p class="text-sm text-gray-400 leading-relaxed">Operable walls allow the layout to breathe and adapt to social gatherings or solitude.</p>
+</div>
+</li>
+</ul>
+<div class="mt-12">
+<button class="w-full group flex items-center justify-between p-4 bg-charcoal-light rounded-sm hover:bg-primary hover:text-white transition-all duration-300 border border-white/5 hover:border-primary">
+<span class="flex items-center gap-3">
+<span class="material-symbols-outlined">picture_as_pdf</span>
+<span class="text-sm font-bold uppercase tracking-wide text-white group-hover:text-white">Download Project PDF</span>
+</span>
+<span class="material-symbols-outlined text-white opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<section class="mb-32">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 block">Visual Documentation</span>
+<h3 class="text-3xl font-serif text-white">Gallery</h3>
+</div>
+<div class="hidden md:flex space-x-2">
+<button class="p-2 border border-white/10 hover:border-primary hover:text-primary rounded-full transition-colors text-gray-400">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-2 border border-white/10 hover:border-primary hover:text-primary rounded-full transition-colors text-gray-400">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1 bg-charcoal-dark p-1 border border-white/5">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden cursor-zoom-in">
+<img alt="Interior Living Room View" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK8UpC_AtEUuFYnzh9u4WsV0tZrgk4fa9UnS6zUFxMPt_pIuY2dUtn_B13S6MhBGiq_iChVUkfsuRsABH_sFIXtC67QidBeqmUpGm4ClC8foZ2Dm9LfnBs0TymRZ7rFo2XGlTmaoI1LZTBztEYRomHfLjTwhX4znZhAyv8VSuaAFaV1TLlp1qH-CNbv9zRy72oXjrzYKc88UZSZv7YamCXCDUCF4F5_UiNdMxRB6ZRjz_P2s9ZZ-UdYwt2--qLohsdRPa8_RAfXNsU"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="bg-charcoal text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-white/20">View Fullscreen</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white text-sm font-bold uppercase tracking-widest drop-shadow-md">Main Living Area</p>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-2 relative group overflow-hidden">
+<img alt="Staircase Detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_9fRzU7EnpQlYOByK_R-T_cL5X-6zE4971cUB9qMr0j3blLU83Q4wbzKmLVPwv1BNqqPBz-gJ-CKlEE6UDTyWuQnsQCrsV7B33YdLegSxWeWcEi4frIs8P_V3rtUt7k3fHJE2b8rKv0kzbTBI4dK8s0a8aWd78H1BhVSU4KXK6hfS5JGDypP9Dr_I5rdlARXO9AYjWqKcQRCW_epnw6rjBD0gdlQ-0jdBBjbkEgHL9n-CU9cq4pvIXV_7E-uyisZ95H_WFzQLW6gU"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white text-sm font-bold uppercase tracking-widest drop-shadow-md">Material Detail</p>
+</div>
+</div>
+<div class="md:col-span-1 relative group overflow-hidden">
+<img alt="Night Exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiiTXm7-MTKcbprYoDsA0Jaw2Iwt5GiA7dGRMCRjO6-xvhexCBFrJAFVokH0jD9E9bCwXigoPzZPu5L0sUJlf9gsv0D3aUEBQ-VPkHGWHX-JfS7y9ljUgVpwrJRrviXTVQpB2rSawFvJGKla385FkNLgEoVySH11DzbDXZSgjssU8IdyTVViTnOmfogy0cJ8VCb9CWuTtokwjheTFmPNSCtgJWhfW9XR2EsY3wki4Urz9lGgr8R95a3vhk6cciIsbYLQmT1oUZxCSp"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white text-sm font-bold uppercase tracking-widest drop-shadow-md">Nocturnal View</p>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden">
+<img alt="Kitchen Detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzL43GAhYZiu-TZXJa28CD3dCRVQRwIgkJo7_r5jrlxs2MmIZjvUVC0d2RzwMNy5-Ly7KFd5cK6pM2Jfat4ZSgafVYPy4RYHYCWQSXTCuoPeiIjCt3DOuxg6rcYZmGbLnx5RzX51qhmerQqHszwPxCnlPlxtDtWLWNNny75Ys8Gi7HpkPX0CcrbIryR6lnW2mrJXfb9xcKy5_7PUXDCTMONxueQOfRMqDDesvYGOBDHZa_T-y_WyuOfj7gsTljX9Mzl0dOEctLQM_O"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white text-sm font-bold uppercase tracking-widest drop-shadow-md">The Kitchen</p>
+</div>
+</div>
+</div>
+</section>
+<section class="border-t border-white/10 pt-20 pb-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-10">
+<div class="text-center md:text-left">
+<span class="text-gray-500 text-xs font-bold uppercase tracking-widest mb-2 block">Next Project</span>
+<h4 class="text-2xl font-serif text-white hover:text-primary transition-colors cursor-pointer">Vertex Tower, Oslo</h4>
+</div>
+<a class="inline-flex items-center justify-center px-10 py-4 text-sm font-bold uppercase tracking-widest text-white bg-charcoal-light border border-white/10 hover:bg-primary hover:border-primary transition-all rounded-sm shadow-lg" href="#">
+                    View Project
+                </a>
+</div>
+</section>
+</main>
+<footer class="bg-charcoal-dark py-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-1">
+<a class="text-2xl font-bold tracking-tighter uppercase font-display text-white mb-6 block" href="#">
+                        Arcadia<span class="text-primary">.</span>
+</a>
+<p class="text-sm text-gray-500 leading-relaxed">
+                        Defining modern living through spatial innovation. We create spaces that inspire and endure.
+                    </p>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-white mb-6">Studio</h5>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-white mb-6">Social</h5>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">LinkedIn</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pinterest</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Behance</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-white mb-6">Newsletter</h5>
+<form class="flex flex-col gap-3">
+<input class="bg-transparent border-b border-gray-700 py-2 text-sm focus:outline-none focus:border-primary text-white placeholder-gray-600" placeholder="Email Address" type="email"/>
+<button class="text-left text-xs font-bold uppercase tracking-widest text-primary mt-2 hover:text-white hover:bg-primary px-4 py-2 self-start rounded-sm transition-all">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 uppercase tracking-wider">
+<p>© 2024 Arcadia Studio. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Use</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

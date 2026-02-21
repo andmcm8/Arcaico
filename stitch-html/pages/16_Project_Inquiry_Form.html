@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Project Inquiry Step 2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Electric Coral
+                        "background-dark": "#1A1A1A", // Charcoal
+                        "container-gray": "#E8E8E8", // Soft Gray for secondary elements
+                        "text-white": "#FFFFFF", // Pure White
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                        'lg': "8px",
+                        'xl': "12px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>.custom-checkbox:checked {
+            background-color: #FF6B6B;
+            border-color: #FF6B6B;
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+        }.tag-checkbox:checked + span {
+            background-color: #FF6B6B;
+            color: white;
+            border-color: #FF6B6B;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-white font-body antialiased min-h-screen flex flex-col">
+<nav class="sticky top-0 z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b border-gray-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<span class="font-display font-bold text-2xl tracking-tight text-white">ARCADIA STUDIO</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-display text-sm font-medium tracking-wide">
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">PORTFOLIO</a>
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">EXPERTISE</a>
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">STUDIO</a>
+<a class="text-gray-300 hover:text-primary transition-colors" href="#">NEWS</a>
+</div>
+<button class="bg-container-gray text-[#1A1A1A] px-6 py-2.5 rounded-full font-medium text-sm hover:opacity-90 transition-opacity">
+                Start a Project
+            </button>
+</div>
+</nav>
+<main class="flex-grow flex flex-col items-center py-12 px-4 md:px-8">
+<div class="max-w-4xl w-full mb-12 text-center md:text-left">
+<div class="flex items-center gap-2 text-primary font-medium text-sm mb-4 uppercase tracking-widest">
+<span class="w-8 h-[1px] bg-primary block"></span>
+                02 Scope
+            </div>
+<h1 class="font-display text-4xl md:text-6xl font-bold mb-4 text-white leading-tight">
+                Scope &amp; <span class="text-primary italic">Ambition</span>
+</h1>
+<p class="text-gray-400 max-w-xl text-lg">
+                Visualizing the scale of your architectural journey.
+            </p>
+</div>
+<div class="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-7 space-y-10">
+<div class="w-full h-1 bg-gray-700 rounded-full mb-8 overflow-hidden">
+<div class="h-full bg-primary w-2/3 rounded-full"></div>
+</div>
+<div class="space-y-4">
+<label class="block font-display text-sm font-bold uppercase tracking-wider text-gray-300">
+                        Number of Floors
+                    </label>
+<div class="flex items-center gap-4">
+<button class="w-12 h-12 rounded-lg bg-container-gray text-[#1A1A1A] flex items-center justify-center hover:bg-white transition-colors" onclick="const input = document.getElementById('floors'); input.value = Math.max(1, parseInt(input.value) - 1)">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<input class="w-24 bg-[#252525] border border-gray-700 rounded-lg py-3 text-center text-white font-display text-xl focus:ring-2 focus:ring-primary outline-none" id="floors" min="1" readonly="" type="number" value="2"/>
+<button class="w-12 h-12 rounded-lg bg-container-gray text-[#1A1A1A] flex items-center justify-center hover:bg-white transition-colors" onclick="const input = document.getElementById('floors'); input.value = parseInt(input.value) + 1">
+<span class="material-symbols-outlined">add</span>
+</button>
+<span class="text-gray-400 text-sm ml-2">Stories above ground</span>
+</div>
+</div>
+<div class="space-y-4">
+<label class="block font-display text-sm font-bold uppercase tracking-wider text-gray-300">
+                        Key Rooms / Spaces
+                    </label>
+<div class="flex flex-wrap gap-3">
+<label class="cursor-pointer">
+<input class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Master Suite</span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Home Office</span>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Guest Wing</span>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Wine Cellar</span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Open Kitchen</span>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Library</span>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Gym / Wellness</span>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only tag-checkbox" type="checkbox"/>
+<span class="px-4 py-2.5 rounded-lg border border-gray-700 bg-[#252525] text-gray-300 text-sm font-medium hover:border-gray-500 transition-all select-none block">Media Room</span>
+</label>
+</div>
+</div>
+<div class="space-y-4">
+<label class="block font-display text-sm font-bold uppercase tracking-wider text-gray-300">
+                        Sustainability Goals
+                    </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex items-center space-x-3 p-4 rounded-lg border border-gray-800 bg-[#252525] hover:border-gray-600 transition-colors cursor-pointer">
+<input class="w-5 h-5 rounded border-gray-600 bg-transparent text-primary focus:ring-offset-[#252525] focus:ring-primary custom-checkbox" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-white font-medium text-sm">Net Zero Energy</span>
+<span class="text-gray-500 text-xs mt-0.5">Produce as much energy as consumed</span>
+</div>
+</label>
+<label class="flex items-center space-x-3 p-4 rounded-lg border border-gray-800 bg-[#252525] hover:border-gray-600 transition-colors cursor-pointer">
+<input class="w-5 h-5 rounded border-gray-600 bg-transparent text-primary focus:ring-offset-[#252525] focus:ring-primary custom-checkbox" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-white font-medium text-sm">Passive House</span>
+<span class="text-gray-500 text-xs mt-0.5">Rigorous energy efficiency</span>
+</div>
+</label>
+<label class="flex items-center space-x-3 p-4 rounded-lg border border-gray-800 bg-[#252525] hover:border-gray-600 transition-colors cursor-pointer">
+<input class="w-5 h-5 rounded border-gray-600 bg-transparent text-primary focus:ring-offset-[#252525] focus:ring-primary custom-checkbox" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-white font-medium text-sm">LEED Certification</span>
+<span class="text-gray-500 text-xs mt-0.5">Leadership in Energy and Environmental Design</span>
+</div>
+</label>
+<label class="flex items-center space-x-3 p-4 rounded-lg border border-gray-800 bg-[#252525] hover:border-gray-600 transition-colors cursor-pointer">
+<input checked="" class="w-5 h-5 rounded border-gray-600 bg-transparent text-primary focus:ring-offset-[#252525] focus:ring-primary custom-checkbox" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-white font-medium text-sm">Sustainable Materials</span>
+<span class="text-gray-500 text-xs mt-0.5">Locally sourced, recycled, or renewable</span>
+</div>
+</label>
+</div>
+</div>
+<div class="pt-8 flex items-center justify-between">
+<button class="text-gray-400 font-medium hover:text-white transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">arrow_back</span> Back
+                    </button>
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+                        Continue to Step 3 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="sticky top-28 bg-[#252525] p-6 rounded-xl border border-gray-800 shadow-xl">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-display font-bold text-lg text-white uppercase tracking-wide">Inspiration Board</h3>
+<span class="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">Optional</span>
+</div>
+<div class="border-2 border-dashed border-gray-600 rounded-xl p-8 flex flex-col items-center justify-center text-center group hover:border-primary transition-colors cursor-pointer bg-[#1A1A1A]">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">cloud_upload</span>
+</div>
+<p class="font-medium text-gray-200 mb-1">Click to upload</p>
+<p class="text-sm text-gray-500 mb-4">or drag and drop images here</p>
+<p class="text-xs text-gray-600 uppercase">PDF, PNG, JPG (Max 10MB)</p>
+</div>
+<div class="mt-8">
+<h4 class="text-xs font-bold uppercase text-gray-400 mb-3 tracking-wider">Quick Select Styles</h4>
+<div class="flex flex-wrap gap-2">
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Minimalist</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Industrial</span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Brutalist</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Scandinavian</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<span class="px-3 py-1.5 rounded-full border border-gray-700 text-xs font-medium text-gray-400 peer-checked:bg-white peer-checked:text-[#1A1A1A] peer-checked:border-white transition-all select-none hover:bg-gray-800">Modern</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-8 border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+<p>© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+
+</body></html>

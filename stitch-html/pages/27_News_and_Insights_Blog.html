@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Architecture as Sculpture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // New main background
+                        "charcoal-light": "#252525", // Slightly lighter for cards
+                        "charcoal-lighter": "#333333", // Borders/lines
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem", 
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 70%, rgba(26,26,26,1) 100%);
+        }.prose {
+            max-width: 65ch;
+            color: #d4d4d4;
+        }
+        .prose h2, .prose h3 {
+            color: white;
+            font-weight: 700;
+        }
+        .prose strong {
+            color: white;
+        }
+        .prose a {
+            color: #FF6B6B;
+            text-decoration: none;
+            border-bottom: 1px solid #FF6B6B;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1" href="#">Arcadia</a>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[85vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Highly sculptural organic building entrance with curved concrete" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7cDUEoXAgelQlxz9gXjUAVeJ_3Q-A2Qa-NdSMbhUrHBkNguS9C56T7CNQ3XcjCrUyu-n6a-JrFjDMvJmnFBMzsnNhLDIqqMfDjKLiVwnH80c6r_FOT6Z_QsU7ZRifpuHZ-T7kjqwtji3JDAdlywptPrmPd85o-1ahhsk4hpnKglp_8VLYUQ-Fs95vGfxdIT0wrUIGOz2pIXOVdODMMj6JcDAr4v8Xd6a7ySa8S9UVl_iI949wNdSlUVDOAbSWs6_bkfH-HZ1p8I3g"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 w-full">
+<div class="max-w-5xl">
+<div class="flex items-center space-x-4 mb-8">
+<a class="text-xs font-bold tracking-[0.2em] text-primary uppercase hover:text-white transition-colors" href="#">← Back to News</a>
+<span class="text-charcoal-lighter">|</span>
+<span class="text-xs font-mono text-text-muted tracking-widest uppercase">Variant 03/05</span>
+</div>
+<h1 class="text-5xl md:text-8xl font-bold text-white mb-8 leading-[0.9] tracking-tighter uppercase">Architecture<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-text-muted">As Sculpture</span></h1>
+<p class="text-xl md:text-2xl text-gray-300 font-light max-w-3xl leading-relaxed border-l-4 border-primary pl-6">
+                    When functional buildings transcend their utility to become large-scale public art pieces, reshaping the urban fabric through fluidity and form.
+                </p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="flex flex-col lg:flex-row gap-20">
+<div class="lg:w-2/3">
+<div class="mb-16">
+<h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-8 flex items-center">
+<span class="w-8 h-[1px] bg-primary mr-4"></span>
+                        Article Narrative
+                    </h2>
+<div class="prose prose-lg prose-invert text-text-muted leading-8 font-light">
+<p class="first-letter:text-5xl first-letter:font-bold first-letter:text-white first-letter:mr-2 first-letter:float-left">
+                            The boundary between architecture and sculpture has always been porous. Throughout history, the greatest monuments were not merely shelters but statements of form, volume, and void. Today, however, with the advent of parametric design tools and advanced material fabrication, this boundary is dissolving entirely.
+                        </p>
+<p>
+                            In our latest exploration of form-finding, we examine the "Liquid Stone" cultural center. Here, the concrete does not simply support; it flows. It mimics the erosion of riverbeds, creating spaces that feel discovered rather than constructed. This shift towards the organic represents a departure from the strict Cartesian grids that defined the previous century of modernism.
+                        </p>
+<h3 class="text-2xl text-white mt-10 mb-6 font-bold tracking-tight">The Fluidity of Concrete</h3>
+<p>
+                            Concrete is often viewed as a rigid, brutal material. Yet, in its liquid state, it holds infinite potential. By utilizing fabric formwork and 3D-printed molds, we are able to freeze this liquidity in time. The resulting structures possess a tactile quality that invites touch, breaking down the sterility often associated with contemporary institutional buildings.
+                        </p>
+<p>
+                            "We wanted the building to feel like it grew from the site," explains lead architect Elena Rostova. "The curves aren't arbitrary; they follow the wind patterns and sun paths, sculpting the building to optimize its environmental performance while delivering a striking visual impact."
+                        </p>
+<h3 class="text-2xl text-white mt-10 mb-6 font-bold tracking-tight">Public Space as Art</h3>
+<p>
+                            When a building acts as sculpture, it changes the public's relationship with the city. It becomes a landmark, a meeting point, and a source of civic pride. The plaza surrounding the center is an extension of the building's geometry, blurring the line between inside and outside, object and landscape.
+                        </p>
+</div>
+</div>
+<div class="mb-16">
+<h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-8 flex items-center">
+<span class="w-8 h-[1px] bg-primary mr-4"></span>
+                        Visual Documentation
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="relative group overflow-hidden">
+<img alt="Close up of curved white concrete facade texture" class="w-full h-80 object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzC5NbeS0KQIM2HgXAzUJxxyDNfYmByvwdZ-wGoBHMY4yZbLnKQqQEc4f5GPsEWWbqPERLv7pr7ZxJaqqqSOz_vf2DnoayO9O-4DgkNqluNAz9LgRNcSL9f2V2ag9XFaqXYn-8exhTSA8YabKAjgB3dXlf3m-kP1km059c4BrvpXgMCg4AZB7j4VVCDJitkLZsF_kZWN7xz8IJffCn4i3lAYX4mlycIoTyamS8pmep9qYqiblkvtXzNgq5jEGIWm8KUxVucdsdigdL"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-xs uppercase tracking-widest text-white border border-white px-3 py-1">Detail 01</span>
+</div>
+</div>
+<div class="relative group overflow-hidden">
+<img alt="Abstract view of structural steel and glass curves" class="w-full h-64 object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs3dUzWDTKBeVRRrFhKEwBwr6wse-ntaVAZ38kHvW9_YeyKCGgrC_NE3WRHAFEYHJB2ttCVx2l45OAbFWf_RI0kezfQDiiC0hd8T5e8vUlJkzU0ywN1FsmLB325N2mAdQCtUEYKJWJQjq03IdtNfCtwtGZxEQJ4LQgGOfh8BBR21tRtHwkCAUuXFcXfl4j0Dgpq8dXPI-3lKzLIKBiNfBFoSucQYxME22t-3Nyq4AWVrlI2laeRFBmCyPWKLbbk7KgGPd7L235LErr"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-xs uppercase tracking-widest text-white border border-white px-3 py-1">Detail 03</span>
+</div>
+</div>
+</div>
+<div class="space-y-4 pt-8">
+<div class="relative group overflow-hidden">
+<img alt="Shadows playing on a complex geometric wall" class="w-full h-64 object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSrRdbZLWG5CahU6KVQr3qM7mnavwXE85-lOuavVWXIHCkftT8YsM5rKXPCfOn9Q0x0_DCIZ5SfYEhP_SfWG0rwQFAn7EUIq2_t1NLKGYMoqACLJX-e9hOR5ABUBBro7EarquAobqE3uyLTXHe_fz-odXNeKnhFo_5eTPy3PRgSa9glqVHNHgnvBh81EIXCnS7ay2asbfJXTNtPEIbyZdGtovDYL63tMRIjVA6kfgpc37y4yQRTY4QaY6oBNzwG3k8rhEIuWBuMk9I"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-xs uppercase tracking-widest text-white border border-white px-3 py-1">Detail 02</span>
+</div>
+</div>
+<div class="relative group overflow-hidden">
+<img alt="Parametric ceiling design from below" class="w-full h-80 object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnyGZvY2IlHOv4RlgZseQ95cfHK7y_bTl8HDzQKmMI5zxzmnQwI8W-mNzWaN-641ukDqonuzjmGADpIc3Cte0_4ggkAqSyY8LjqcUzL7v9-MCIpMHf5xpaA8Sdi6Y99xGtE4R2El74CdRXDZHo4Adx6LtGxHD1cOwaXVXvkqqe_ur5KLzgNEY3OvJA_38puFYbhYUPaJd08qO1-yWbDtAFtzQ1JctO-Omwkt6IgcFRHa8E85uDZ-wGb8PmJrEThowP1cwXhUL6A84A"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-xs uppercase tracking-widest text-white border border-white px-3 py-1">Detail 04</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-12 flex justify-between items-center">
+<a class="group flex items-center text-text-muted hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined mr-3 text-xl group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<div class="flex flex-col text-left">
+<span class="text-[10px] uppercase tracking-widest text-primary mb-1">Previous</span>
+<span class="text-sm font-bold uppercase tracking-wider">Rewilding Urban Spaces</span>
+</div>
+</a>
+<a class="group flex items-center text-text-muted hover:text-white transition-colors text-right" href="#">
+<div class="flex flex-col items-end">
+<span class="text-[10px] uppercase tracking-widest text-primary mb-1">Next</span>
+<span class="text-sm font-bold uppercase tracking-wider">Designing the Metaverse</span>
+</div>
+<span class="material-symbols-outlined ml-3 text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<aside class="lg:w-1/3 space-y-16">
+<div class="bg-charcoal-light p-8 border border-charcoal-lighter sticky top-24">
+<h3 class="text-xs font-bold text-white mb-6 uppercase tracking-[0.2em] border-b border-charcoal-lighter pb-4">Article Data</h3>
+<ul class="space-y-6">
+<li class="flex justify-between items-center group">
+<span class="text-xs text-text-muted uppercase tracking-wider flex items-center">
+<span class="material-symbols-outlined text-sm mr-2 text-charcoal-lighter group-hover:text-primary transition-colors">calendar_month</span> 
+                                Date
+                            </span>
+<span class="text-sm font-mono text-white">May 12, 2023</span>
+</li>
+<li class="flex justify-between items-center group">
+<span class="text-xs text-text-muted uppercase tracking-wider flex items-center">
+<span class="material-symbols-outlined text-sm mr-2 text-charcoal-lighter group-hover:text-primary transition-colors">category</span> 
+                                Category
+                            </span>
+<span class="text-sm font-mono text-white">Art &amp; Design</span>
+</li>
+<li class="flex justify-between items-center group">
+<span class="text-xs text-text-muted uppercase tracking-wider flex items-center">
+<span class="material-symbols-outlined text-sm mr-2 text-charcoal-lighter group-hover:text-primary transition-colors">schedule</span> 
+                                Read Time
+                            </span>
+<span class="text-sm font-mono text-white">6 Min Read</span>
+</li>
+<li class="flex justify-between items-center group">
+<span class="text-xs text-text-muted uppercase tracking-wider flex items-center">
+<span class="material-symbols-outlined text-sm mr-2 text-charcoal-lighter group-hover:text-primary transition-colors">person</span> 
+                                Author
+                            </span>
+<span class="text-sm font-mono text-white">Elena Rostova</span>
+</li>
+</ul>
+<div class="mt-8 pt-6 border-t border-charcoal-lighter">
+<div class="flex justify-between items-center">
+<span class="text-xs text-text-muted uppercase tracking-wider">Share</span>
+<div class="flex space-x-4">
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="text-xs font-bold">TW</span></a>
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="text-xs font-bold">LI</span></a>
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="text-xs font-bold">FB</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="relative pt-12">
+<span class="absolute top-0 left-0 text-9xl text-charcoal-lighter font-serif opacity-30 select-none">"</span>
+<h3 class="text-xs font-bold text-primary mb-6 uppercase tracking-[0.2em]">Key Insight</h3>
+<blockquote class="text-2xl md:text-3xl font-serif italic text-white leading-snug relative z-10">
+                        "The goal isn't to build a structure that contains art, but to construct an environment where the building itself is the primary exhibit."
+                    </blockquote>
+<div class="flex items-center mt-6">
+<div class="w-10 h-[1px] bg-primary mr-3"></div>
+<span class="text-xs font-bold uppercase tracking-widest text-text-muted">Chief Design Officer</span>
+</div>
+</div>
+<div>
+<h3 class="text-xs font-bold text-white mb-6 uppercase tracking-[0.2em] border-l-2 border-primary pl-4">Related Topics</h3>
+<div class="flex flex-wrap gap-2">
+<a class="px-3 py-2 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">Form Finding</a>
+<a class="px-3 py-2 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">Concrete</a>
+<a class="px-3 py-2 bg-charcoal-light border border-charcoal-lighter text-text-muted text-[10px] uppercase tracking-wider hover:border-primary hover:text-white transition-colors" href="#">Sculptural</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                        Defining modern living through spatial innovation and minimalist design philosophy.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                        123 Innovation Blvd, <br/>Design District, NY 10012
+                    </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+
+</body></html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Return of Brutalism - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B",
+                        charcoal: "#1A1A1A",
+                        "charcoal-light": "#252525",
+                        "charcoal-lighter": "#333333",
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.8) 70%, rgba(26,26,26,1) 100%);
+        }
+        .prose-custom p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #d4d4d4;
+        }
+        .prose-custom h3 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1">Arcadia</span>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[600px] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Large concrete brutalist structure facade" class="w-full h-full object-cover opacity-90 grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuYoI5-9vfY0QoeYcRx_qhhQXYhtJhA9NzmFKDxowk3ckkoI7xk2wnKvKI6wsLLTBaT75TN9s4mXgVeC1pXJMqboO9rry4SdQh9j35rEySsrc51aKZOHyxD780DWjixfLE7ZdCzHvL-185iBAKUdnfIXthRiCkQPlmNUYSiUA5hl6NF4_y6lWBWKl8fuORBF7H9iDmpdFDX0Oj3dUlHJZpLy5b33Fxy8YQgCWeOx4e18aTLz7GU_JHy-tr4gOIvQEvVHfKI8Aik7UW"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 w-full">
+<div class="max-w-4xl">
+<div class="flex items-center space-x-4 mb-6">
+<a class="inline-flex items-center text-xs font-bold tracking-[0.2em] text-text-muted hover:text-primary uppercase transition-colors" href="#">
+<span class="material-symbols-outlined text-sm mr-2">arrow_back</span>
+                            Back to Insights
+                        </a>
+<span class="inline-block w-1 h-4 bg-charcoal-lighter"></span>
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Theory</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-none tracking-tight">The Return of<br/>Brutalism</h1>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="flex flex-col lg:flex-row gap-16">
+<aside class="lg:w-1/4 space-y-12">
+<div class="border-t border-primary pt-6">
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Article Data</h4>
+<dl class="space-y-6">
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Author</dt>
+<dd class="text-sm font-medium text-white">Sarah Jenkins</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Date</dt>
+<dd class="text-sm font-medium text-white">October 10, 2023</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Read Time</dt>
+<dd class="text-sm font-medium text-white">8 Minutes</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-text-muted mb-1">Tags</dt>
+<dd class="flex flex-wrap gap-2 mt-2">
+<span class="px-2 py-1 bg-charcoal-light border border-charcoal-lighter text-[10px] uppercase tracking-wider text-text-muted">Concrete</span>
+<span class="px-2 py-1 bg-charcoal-light border border-charcoal-lighter text-[10px] uppercase tracking-wider text-text-muted">History</span>
+<span class="px-2 py-1 bg-charcoal-light border border-charcoal-lighter text-[10px] uppercase tracking-wider text-text-muted">Commercial</span>
+</dd>
+</div>
+</dl>
+</div>
+<div class="border-t border-charcoal-lighter pt-6">
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Share</h4>
+<div class="flex space-x-4">
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">link</span></a>
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">bookmark</span></a>
+</div>
+</div>
+</aside>
+<div class="lg:w-3/4">
+<div class="prose-custom text-lg font-light text-gray-300">
+<h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-8">Article Narrative</h4>
+<p class="text-xl leading-relaxed text-white mb-10 font-normal">
+                            Once derided as cold and inhuman, Brutalist architecture is experiencing a renaissance in the digital age. This resurgence isn't merely nostalgic; it's a re-evaluation of honesty in materials and structural integrity in an era of superficial facades.
+                        </p>
+<p>
+                            Emerging in the 1950s as a rejection of the frivolous ornamentation of the past, Brutalism—derived from the French <em>béton brut</em>, or "raw concrete"—prioritized function and raw materiality. For decades, these imposing concrete structures were maligned, often associated with bureaucratic dystopias or decaying urban infrastructure. However, a new generation of architects and designers is rediscovering the sculptural power and emotional weight of these monolithic forms.
+                        </p>
+<p>
+                            The contemporary return to Brutalism differs from its mid-century predecessor. Where the original movement was often driven by post-war economic necessity and socialist ideals of communal living, today's "Neo-Brutalism" is often a luxury aesthetic. It appears in high-end retail spaces, boutique hotels, and private residences where the texture of concrete is celebrated as a premium finish, akin to marble or mahogany.
+                        </p>
+<div class="my-16 border-l-4 border-primary pl-8 py-4 bg-charcoal-light/50">
+<span class="text-primary material-symbols-outlined text-4xl mb-4">format_quote</span>
+<blockquote class="text-2xl font-medium text-white italic leading-relaxed">
+                                "In a digital world of fleeting pixels and smooth glass screens, the tactile permanence of concrete offers a grounding, almost spiritual, anchor to physical reality."
+                            </blockquote>
+<cite class="block mt-6 text-sm font-bold uppercase tracking-widest text-text-muted not-italic">— Marcus Thorne, Principal Architect at Arcadia</cite>
+</div>
+<h3>The Texture of Permanence</h3>
+<p>
+                            The appeal lies in the texture. Modern formwork technologies allow for unprecedented control over the concrete finish, ranging from mirror-smooth surfaces to deeply grained timber imprints. This tactile quality invites touch and interaction, breaking the visual barrier that often separates users from modern glass-and-steel architecture.
+                        </p>
+<p>
+                             Furthermore, the environmental conversation around concrete is shifting. While traditional cement production is carbon-intensive, innovations in green concrete, carbon-sequestering mixtures, and the longevity of these structures present a compelling argument for their sustainability. A building that lasts 100 years without needing a facade replacement is, in many ways, more sustainable than a lightweight structure with a 20-year lifespan.
+                        </p>
+</div>
+<div class="mt-20">
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-8 border-b border-charcoal-lighter pb-4">Visual Documentation</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<figure class="group">
+<div class="relative h-80 overflow-hidden bg-charcoal-light mb-4">
+<img alt="Detail shot of raw concrete texture with light and shadow" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcQ2-leGA5yJYiOth4uiop8EWFcAOmMnfuqm0P0SXpDV5Wh2E2CWn1lAjWBaWGaTC_uwXyVZHDRy_hIpL7O69PgUowWq4eccx-DoCKWDXDt7RxUEQitNAjt5WCpaET2pdpU4uyei9kggWhZGuJKtmeEqjhM3MiS1aRAXatHMZPymUbKcSDBEF6blbB2TMQ9PZMbV2pq8Kn1kXUl-nMHtMY3RRwyDsaQx6L2HHJKycSDS_qvSGPTk2du9uVWxeBHVL46vI-R0qr9l8H"/>
+</div>
+<figcaption class="flex justify-between items-start">
+<span class="text-xs font-bold text-white uppercase tracking-widest">Fig 01. Texture</span>
+<span class="text-[10px] text-text-muted max-w-[60%] text-right">Light interplay on board-marked concrete surfaces.</span>
+</figcaption>
+</figure>
+<figure class="group">
+<div class="relative h-80 overflow-hidden bg-charcoal-light mb-4">
+<img alt="Structural geometric concrete forms" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMt9RW4OJr8c5BClsoFn3OfgZn9cQznzOVMdhowTGRQcC8aVgfjlph7w_6_Jbhh6GktdwfFmrJpTqZCoUx8MJboWKrsNL2HNW3skUG3-Ew5xyUgj_euZECpiWbbGTjgjUwYp-Mygrp_e-7lC20CYRhzlOwtvgEmR4OWiQv5K0LZXSoYOdpLG3K-91QZosdfDgaXAReuCDnUn4ruKNfQOd2V_E7Q90BPrNWD1j2PuzYqp6CGu34kpNPoUwN1tHcopsIgXKvWGaValKv"/>
+</div>
+<figcaption class="flex justify-between items-start">
+<span class="text-xs font-bold text-white uppercase tracking-widest">Fig 02. Form</span>
+<span class="text-[10px] text-text-muted max-w-[60%] text-right">Geometric rigor in modern structural supports.</span>
+</figcaption>
+</figure>
+<figure class="group md:col-span-2">
+<div class="relative h-[500px] overflow-hidden bg-charcoal-light mb-4">
+<img alt="Wide shot of a modern brutalist interior hall" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuYoI5-9vfY0QoeYcRx_qhhQXYhtJhA9NzmFKDxowk3ckkoI7xk2wnKvKI6wsLLTBaT75TN9s4mXgVeC1pXJMqboO9rry4SdQh9j35rEySsrc51aKZOHyxD780DWjixfLE7ZdCzHvL-185iBAKUdnfIXthRiCkQPlmNUYSiUA5hl6NF4_y6lWBWKl8fuORBF7H9iDmpdFDX0Oj3dUlHJZpLy5b33Fxy8YQgCWeOx4e18aTLz7GU_JHy-tr4gOIvQEvVHfKI8Aik7UW"/>
+</div>
+<figcaption class="flex justify-between items-start">
+<span class="text-xs font-bold text-white uppercase tracking-widest">Fig 03. Scale</span>
+<span class="text-[10px] text-text-muted max-w-[60%] text-right">The monolithic scale of the central atrium space creates a sense of awe.</span>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="mt-24 border-t border-charcoal-lighter pt-12 flex justify-between items-center">
+<a class="group flex flex-col items-start" href="#">
+<span class="text-[10px] uppercase tracking-widest text-text-muted mb-2 group-hover:text-primary transition-colors">Previous Article</span>
+<span class="text-lg font-bold text-white group-hover:underline decoration-primary underline-offset-4">Light as Material</span>
+</a>
+<a class="group flex flex-col items-end text-right" href="#">
+<span class="text-[10px] uppercase tracking-widest text-text-muted mb-2 group-hover:text-primary transition-colors">Next Article</span>
+<span class="text-lg font-bold text-white group-hover:underline decoration-primary underline-offset-4">Parametric Design Tools</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                        Defining modern living through spatial innovation and minimalist design philosophy.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                        123 Innovation Blvd, <br/>Design District, NY 10012
+                    </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

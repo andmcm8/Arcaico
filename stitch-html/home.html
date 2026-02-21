@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Spatial Innovation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B",
+                        "background-charcoal": "#1A1A1A",
+                        "surface-dark": "#242424",
+                        "text-white": "#FFFFFF",
+                        "text-muted": "#A3A3A3", 
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Manrope', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                        'lg': '8px',
+                        'xl': '12px',
+                    },
+                    letterSpacing: {
+                        widest: '.2em',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+        .hover-reveal .reveal-content {
+            opacity: 0;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            transform: translateY(20px);
+        }
+        .hover-reveal:hover .reveal-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hover-scale img {
+            transition: transform 0.6s ease;
+        }
+        .hover-scale:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-background-charcoal text-text-white transition-colors duration-300">
+<nav class="fixed w-full z-50 transition-all duration-300 bg-background-charcoal/90 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="text-2xl font-light tracking-widest uppercase font-display text-white" href="#">
+                        ARCADIA<span class="text-primary font-bold">.</span>
+</a>
+</div>
+<div class="hidden md:flex space-x-12 items-center">
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors" href="#">News</a>
+<a class="bg-primary text-white px-6 py-2 text-xs font-semibold uppercase tracking-widest hover:bg-red-500 transition-colors" href="#">
+                        Start Project
+                    </a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-gray-300 hover:text-primary focus:outline-none" type="button">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Modern concrete and glass architecture at dusk" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcKJZ57D-y6fo5tm6XEn0j6w6KcgGJRPdJ7yQmOnttIQaDB6V0j82DF6mZp1uzK3z7YhuEXgRocSkz97wYgGiemtt1kHaeVhYF2uqFjEF0AyltXfhlFPW8wAg-z96-uWRqCnOpr4ANq3WM9vdxUQJWX8m5DeosevZmutU3Mzq9Myg8KR5KAXHWHboQ2wBeJ8nb-1R2JVZ_0YOFxAWnOWaSEh909bxZHItKArvxz5W6a6jftZbotxk23m077NFk8RMJuUHUJLSbMVO6"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-background-charcoal"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+<div class="max-w-3xl">
+<div class="flex items-center space-x-4 mb-6">
+<div class="h-px w-12 bg-primary"></div>
+<span class="text-primary uppercase tracking-[0.3em] text-sm font-semibold">Architecture &amp; Design</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-light text-white leading-tight mb-8 font-serif">
+                    Spatial <br/>
+<span class="font-bold">Innovation.</span>
+</h1>
+<p class="text-xl text-gray-200 font-light max-w-xl mb-10 leading-relaxed">
+                    Designing spaces that breathe. Defining futures through sustainable luxury and minimalist precision.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-sm font-medium text-white bg-primary hover:bg-red-500 transition-all duration-300 uppercase tracking-widest group" href="#projects">
+                        View Projects
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform text-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 border border-white/30 hover:border-white text-sm font-medium text-white hover:bg-white/10 transition-all duration-300 uppercase tracking-widest backdrop-blur-sm" href="#studio">
+                        Our Philosophy
+                    </a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10 text-white/50 scroll-indicator">
+<span class="text-[10px] uppercase tracking-widest mb-2">Scroll</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</header>
+<section class="py-20 bg-background-charcoal border-b border-white/5">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+<div class="text-center md:text-left border-l-2 border-primary pl-6">
+<div class="text-4xl font-serif font-bold text-white mb-2">150+</div>
+<div class="text-xs uppercase tracking-widest text-text-muted">Completed Projects</div>
+</div>
+<div class="text-center md:text-left border-l-2 border-white/10 pl-6 hover:border-primary transition-colors duration-300">
+<div class="text-4xl font-serif font-bold text-white mb-2">18</div>
+<div class="text-xs uppercase tracking-widest text-text-muted">Intl. Awards</div>
+</div>
+<div class="text-center md:text-left border-l-2 border-white/10 pl-6 hover:border-primary transition-colors duration-300">
+<div class="text-4xl font-serif font-bold text-white mb-2">12</div>
+<div class="text-xs uppercase tracking-widest text-text-muted">Years Experience</div>
+</div>
+<div class="text-center md:text-left border-l-2 border-white/10 pl-6 hover:border-primary transition-colors duration-300">
+<div class="text-4xl font-serif font-bold text-white mb-2">4</div>
+<div class="text-xs uppercase tracking-widest text-text-muted">Global Offices</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-charcoal" id="projects">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-primary uppercase tracking-widest text-sm font-bold mb-3">Portfolio</h2>
+<h3 class="text-3xl md:text-5xl font-light text-white font-serif">Selected Works</h3>
+</div>
+<a class="hidden md:flex items-center text-sm uppercase tracking-widest font-semibold text-white hover:text-primary transition-colors group" href="#">
+                    View All Projects 
+                    <span class="material-symbols-outlined ml-2 text-primary group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group cursor-pointer hover-reveal hover-scale">
+<div class="relative overflow-hidden aspect-[4/5] bg-gray-800 mb-6">
+<img alt="The Glass Pavilion" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjvUkLsFEdOLAodownW_zTxKNeBJzlTphAqzTrDwcKk50dgTX7MrNCHpv6VCaAvSLSRmYTWoKSu-UO2vCwNjQGHR_VfrdS2iXC3QM4tF0a134fGYFMI3Jc9Pfndez9GqmJii4awSvnCiGYJZVPBaHEBXGRmpm6gaY9CzpPPUeULAFJOM2YmAhe0vFJGGOBFIRsf3zudFV8xsPCkoVdXzWmUW7RMxebuAVJWbeBhO6IQefNLGnbsqAhL7MkPhOfYl-CT_AxmTaw63lK"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="h-16 w-16 rounded-full bg-primary flex items-center justify-center text-white transform scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+<span class="material-symbols-outlined">arrow_outward</span>
+</div>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1">Residential</span>
+</div>
+</div>
+<div class="reveal-content">
+<h4 class="text-xl font-serif text-white mb-1">The Glass Pavilion</h4>
+<p class="text-sm text-text-muted uppercase tracking-wide">Montecito, California</p>
+</div>
+</div>
+<div class="group cursor-pointer hover-reveal hover-scale lg:mt-16">
+<div class="relative overflow-hidden aspect-[4/5] bg-gray-800 mb-6">
+<img alt="Vertex Tower" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3jeF8GtzhxQKphEsXa0V3f_GNLeRyQdYCYqBHDws-VRdLvxiMAhlXsH3fV5p7mh9VPFNVkvS3oxuP6664OU0FC-IQo_7GP-Mx3F5vZ8hedLg3jqpzHuBUkDXDOyNCDW9kpsFyBbtZV9Miwx2fAh8tFMPir_l5dKYuKEGY4qm42h8kQsHoL17rwzfVgibI46GmMvo0qTgMZNreGokRqKHIZkMeDLPKwiAld1-NxUZWXLdGAkIQpzktzO5LEWDCxk7T24UVNIX5KgLq"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="h-16 w-16 rounded-full bg-primary flex items-center justify-center text-white transform scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+<span class="material-symbols-outlined">arrow_outward</span>
+</div>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/10 backdrop-blur-md text-white border border-white/20 text-[10px] font-bold uppercase tracking-wider px-2 py-1">Commercial</span>
+</div>
+</div>
+<div class="reveal-content">
+<h4 class="text-xl font-serif text-white mb-1">Vertex Tower</h4>
+<p class="text-sm text-text-muted uppercase tracking-wide">Berlin, Germany</p>
+</div>
+</div>
+<div class="group cursor-pointer hover-reveal hover-scale">
+<div class="relative overflow-hidden aspect-[4/5] bg-gray-800 mb-6">
+<img alt="Ossis Villa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6U8J8wBPZdX7Qom8_pWABPxKHcsz5m7GZsIMWyFXgZeDRFTyj267C-U1k3iiBioSOVqHmbr_hqxhUlzPKrRrEBJhMf5I5nNWODBJrqCbnlhIv_h3DFW5iKh90T9q8Oe57tSJRj0coknfUdLBlMGAW0wUqcvp8icamGVLXL0r_fVIn7OU9GnBFPlJ9j6hoJ93qu2XF9ZAhQ5BVsrDLeUCqm3VlNcLdjOurcccsyBF5EbCjrqJJlklAtGUUH-BrqIoTLVVAhjNQRMNp"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="h-16 w-16 rounded-full bg-primary flex items-center justify-center text-white transform scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+<span class="material-symbols-outlined">arrow_outward</span>
+</div>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/10 backdrop-blur-md text-white border border-white/20 text-[10px] font-bold uppercase tracking-wider px-2 py-1">Hospitality</span>
+</div>
+</div>
+<div class="reveal-content">
+<h4 class="text-xl font-serif text-white mb-1">Ossis Villa</h4>
+<p class="text-sm text-text-muted uppercase tracking-wide">MALIBU, CA</p>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center md:hidden">
+<a class="inline-flex items-center text-sm uppercase tracking-widest font-semibold text-white hover:text-primary transition-colors group" href="#">
+                    View All Projects 
+                    <span class="material-symbols-outlined ml-2 text-primary">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-charcoal overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
+<img alt="Interior Architecture Detail" class="relative z-10 w-full rounded-sm shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrRvcXucums1iDqESZtQ4IDKBHmldtJEL1r8heN4c7kQp36aFj_1maOLHIJIZONooj3nBwguAmkDYAV6bK6BgZzTk5HI7l_d4cm2fMknylGERkEWbkaWea8lLmgYI8auxwve7jAatSsIudLhP2o-UZwTGnXR_uV2JbDnRlT3TtvAV9oVPXV_-fPT_iMTahJEyvvjdZcG94IlWbDwYKyaTnuBm9mfwQ-Yy6dN4c6-jfWLVcy7fjU8jB9-M6Rfz4LySWwUxDCXLfi_V4"/>
+<div class="absolute -bottom-10 -right-10 z-20 bg-surface-dark p-6 shadow-xl max-w-xs hidden md:block border-l-4 border-primary">
+<div class="flex items-center mb-4">
+<span class="material-symbols-outlined text-primary mr-2">verified</span>
+<span class="text-xs font-bold uppercase tracking-wider text-white">Leed Platinum</span>
+</div>
+<p class="text-xs text-text-muted leading-relaxed">
+                                Our commitment to sustainability ensures that every project meets the highest environmental standards.
+                            </p>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="flex items-center space-x-4 mb-6">
+<div class="h-px w-12 bg-primary"></div>
+<span class="text-primary uppercase tracking-[0.3em] text-sm font-semibold">Our Approach</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-light text-white leading-tight mb-8 font-serif">
+                        Where Form Meets <br/><span class="font-bold italic">Functionality.</span>
+</h2>
+<p class="text-text-muted mb-8 leading-relaxed">
+                        We believe space is not just occupied, but experienced. Our approach merges function with high-end spatial innovation, creating environments that inspire and endure. Minimalism isn't about absence; it's about the perfect amount of something.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 bg-surface-dark border border-white/5 hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-3xl text-primary mb-4 group-hover:scale-110 transition-transform block">architecture</span>
+<h3 class="text-lg font-serif font-medium text-white mb-2">Architectural Design</h3>
+<p class="text-sm text-text-muted">Comprehensive planning and visualization for structural integrity.</p>
+</div>
+<div class="p-6 bg-surface-dark border border-white/5 hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-3xl text-primary mb-4 group-hover:scale-110 transition-transform block">grid_view</span>
+<h3 class="text-lg font-serif font-medium text-white mb-2">Interior Planning</h3>
+<p class="text-sm text-text-muted">Curated internal spaces that reflect personality and purpose.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-charcoal">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex justify-between items-center mb-12">
+<h2 class="text-3xl font-serif text-white">Latest Insights</h2>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">View Archive</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="flex flex-col group">
+<div class="overflow-hidden aspect-[16/10] mb-4">
+<img alt="Office Space" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOWVMp3MEZWAnVwVSDdf2aVY8daKftivNbdT_w7xNN41BmdzxOD0PEdwBEQlSO4tUWq83VJG4rYJbbCyD-iqPsKXblUa474P46ZW8BSLuD8KtAsVXUsp07myimMRF--9HF5u-yjpEhNXjmLzfB1s_wfOZBXWVAsehJgpwrNpRQt9Fwi6CgqGlC9AvX5L7IpStThP7bL0tQaFVfFmsLgFuvMc_je2ro4FC3IJNHMrgPwrjcgKpkSgnNNbW2ykjBUJzEEdeUDKRwWuk_"/>
+</div>
+<div class="flex items-center text-xs text-primary font-bold uppercase tracking-wider mb-2">
+<span>Urban Design</span>
+<span class="mx-2 text-gray-500">•</span>
+<span>Oct 12, 2023</span>
+</div>
+<h3 class="text-xl font-medium text-white mb-2 group-hover:text-primary transition-colors">Future of Urban Living</h3>
+<p class="text-sm text-text-muted line-clamp-2">How micro-apartments are solving the density crisis in mega-cities while maintaining quality of life.</p>
+</article>
+<article class="flex flex-col group">
+<div class="overflow-hidden aspect-[16/10] mb-4">
+<img alt="Concrete Texture" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhuXxt7uGv7lSet8j3wCYds2L286LAI9YTgDsXLQ8JZ4LgVw_1y8EifO5HmKwOoHhNLaWx5WNbPpkz790gkOvWRYRg73kZIwuafMWxGWPgimRuidzltgaAGtlzgT5BsvxToNsD9vJo-RHeMz9WsWaOimLzZq7qgxa9kjkm-044E6mErEkxZj3WfaT9yyDxAnt5CIoFC80JXwnqLKZwMr2PLS1dtlXAKIRiipQZUGLPmBR_iVEl3I746XCxpQBTlq3rFIgPvF03FFU5"/>
+</div>
+<div class="flex items-center text-xs text-primary font-bold uppercase tracking-wider mb-2">
+<span>Technology</span>
+<span class="mx-2 text-gray-500">•</span>
+<span>Sep 28, 2023</span>
+</div>
+<h3 class="text-xl font-medium text-white mb-2 group-hover:text-primary transition-colors">Material Innovation: Self-Healing Concrete</h3>
+<p class="text-sm text-text-muted line-clamp-2">Exploring the latest bio-materials that extend building lifecycles and reduce carbon footprints.</p>
+</article>
+<article class="flex flex-col group">
+<div class="overflow-hidden aspect-[16/10] mb-4">
+<img alt="Desert Architecture" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPj2uX6_XzkNq9T04RJr6teSvlTBnwbGT83XEEk5J0U-rgUBLTyLnc3tV2y6_YVmKrsA5Guu-reuwL4JymwY0Tp0aBN7nOZwzle3ATEaIAuKe6PS0SEtw82HWS6-pOIpQGKCV8ZB0-_vhlsgf5rp4VENCtoMI3IC6wHTWEyJqEJDgF_7UAqIEA78wP0aLCWFL58CzGW5jM3xmcWNuKLvaKpoB6rdQJ3bnslHGzi-lv57-txHzRx1HAcRSUhLa1ssxrxbN1ufc9jDz7"/>
+</div>
+<div class="flex items-center text-xs text-primary font-bold uppercase tracking-wider mb-2">
+<span>Residential</span>
+<span class="mx-2 text-gray-500">•</span>
+<span>Aug 15, 2023</span>
+</div>
+<h3 class="text-xl font-medium text-white mb-2 group-hover:text-primary transition-colors">Minimalism in the Desert</h3>
+<p class="text-sm text-text-muted line-clamp-2">A case study on blending architecture with arid landscapes to create sustainable oases.</p>
+</article>
+</div>
+</div>
+</section>
+<footer class="bg-surface-dark text-white pt-20 pb-10 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+<div>
+<h2 class="text-4xl md:text-5xl font-light font-serif mb-6">Ready to build your <span class="text-primary italic">vision?</span></h2>
+<p class="text-gray-400 max-w-md mb-8">Let's discuss your project and bring it to life with our team of expert architects and designers.</p>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-sm font-semibold uppercase tracking-widest hover:bg-white hover:text-background-charcoal transition-all duration-300" href="#">
+                        Start a Project
+                    </a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Visit Us</h4>
+<address class="not-italic text-gray-300 leading-relaxed">
+                            123 Innovation Blvd,<br/>
+                            Design District, NY 10012<br/>
+                            United States
+                        </address>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Contact</h4>
+<ul class="space-y-2 text-gray-300">
+<li><a class="hover:text-primary transition-colors" href="mailto:hello@arcadiastudio.com">hello@arcadiastudio.com</a></li>
+<li><a class="hover:text-primary transition-colors" href="tel:+15550192834">+1 (555) 019-2834</a></li>
+</ul>
+<div class="flex space-x-4 mt-6">
+<a class="text-gray-400 hover:text-white transition-colors" href="#"><i class="material-symbols-outlined">photo_camera</i></a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#"><i class="material-symbols-outlined">work</i></a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#"><i class="material-symbols-outlined">public</i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-wider">
+<div class="mb-4 md:mb-0">
+                    © 2023 Arcadia Studio. All rights reserved.
+                </div>
+<div class="flex space-x-8">
+<a class="hover:text-white transition-colors" href="#">Privacy</a>
+<a class="hover:text-white transition-colors" href="#">Terms</a>
+<a class="hover:text-white transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

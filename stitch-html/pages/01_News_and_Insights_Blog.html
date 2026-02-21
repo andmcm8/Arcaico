@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Universal Design Principles - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // Main background
+                        "charcoal-light": "#252525", // Cards/sections
+                        "charcoal-lighter": "#333333", // Borders
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 60%, rgba(26,26,26,1) 100%);
+        }
+        .content-gradient {
+            background: linear-gradient(0deg, rgba(26,26,26,1) 0%, rgba(26,26,26,0) 100%);
+        }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1A1A1A; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF6B6B; 
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1 hover:bg-white hover:text-charcoal transition-colors" href="#">Arcadia</a>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[85vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Elegant accessible ramp winding through a lush forest setting with modern architectural elements" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaGCLPwB18FFfkYlVhbf3wvcO-znoqIXjk3huS4ehBA6MeAtmU-5mR5TXgQHkUco4wlQB2ZpehD3HWA40kWqVUAyEeqnJQmsLAlI88-yizvOD8kPuPE24TP6wA8l4_TQR2GpSVuxJtxzYOT1Hl0dYwKg70iWQFX4hQHvh9kQI2nxrYOxczaRwFHkhFu5-c2LMqDU2BeHC_aO18rSqngTttu0ZJ5E4R9AwDTTfAErh7bEOUwEIC_dPb5zEkUVCgBJmdcbKPSd02Opsy"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 w-full">
+<div class="max-w-5xl">
+<div class="flex items-center space-x-4 mb-8 animate-fade-in-up">
+<a class="inline-flex items-center text-xs font-bold tracking-[0.2em] text-text-muted hover:text-white uppercase transition-colors" href="#">
+<span class="material-symbols-outlined text-sm mr-2">arrow_back</span>
+                        Back to Journal
+                    </a>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-none tracking-tight">Universal Design<br/>Principles</h1>
+<p class="text-xl md:text-2xl text-gray-300 font-light max-w-3xl leading-relaxed border-l-2 border-primary pl-6">
+                    Beyond compliance: How creating accessible environments enhances the architectural experience for everyone, not just those with disabilities.
+                </p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="flex flex-col lg:flex-row gap-20">
+<div class="lg:w-2/3">
+<div class="prose prose-lg prose-invert max-w-none text-gray-300">
+<h3 class="text-white uppercase tracking-widest text-sm font-bold mb-8">Article Narrative</h3>
+<p class="first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:float-left first-letter:mr-4 first-letter:mt-[-10px]">
+                        The paradigm of modern architecture is shifting. For decades, accessibility was treated as an add-on—a checklist of ramps and grab bars implemented reluctantly to meet code requirements. Today, we are witnessing a fundamental transformation where inclusivity drives the initial design concept, creating spaces that are not only functional for all but aesthetically superior.
+                    </p>
+<p>
+                        Universal design operates on a simple yet profound premise: the built environment should be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design. This philosophy doesn't just benefit wheelchair users; it helps parents with strollers, travelers with luggage, and anyone navigating a space with temporary injuries.
+                    </p>
+<h4 class="text-white mt-12 mb-6 text-xl font-bold">The Invisible Ramp</h4>
+<p>
+                        One of the most striking examples of this principle is the "invisible ramp." Instead of segregating access into stairs for the able-bodied and a mechanical lift or steep ramp for others, contemporary projects are integrating gradual slopes into the landscape itself. The path becomes the architecture.
+                    </p>
+<p>
+                        In our recent <span class="text-white font-medium">Forest Pavilion</span> project, the primary circulation route is a continuous, gentle incline that winds through the canopy. It eliminates the hierarchy of movement. Everyone experiences the same journey, the same views, and the same sense of arrival.
+                    </p>
+<h4 class="text-white mt-12 mb-6 text-xl font-bold">Multi-Sensory Wayfinding</h4>
+<p>
+                        Visual cues are standard in architecture, but true universal design engages all senses. We are now incorporating tactile paving that isn't just a warning strip but a texture change in flooring materials—shifting from smooth polished concrete to textured slate to signal a transition or threshold.
+                    </p>
+<p>
+                        Acoustic zoning plays a crucial role as well. By using sound-absorbing materials in high-traffic corridors and reflective surfaces in gathering spots, we create auditory maps that assist the visually impaired while reducing noise pollution for neurodivergent individuals who may be sensitive to sensory overload.
+                    </p>
+</div>
+<div class="mt-24">
+<div class="flex items-center justify-between mb-8 border-b border-charcoal-lighter pb-4">
+<h3 class="text-white uppercase tracking-widest text-sm font-bold">Visual Documentation</h3>
+<span class="text-xs font-mono text-text-muted">Gallery 01 — 03</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 auto-rows-[300px]">
+<div class="relative group overflow-hidden md:col-span-1 md:row-span-2 bg-charcoal-light">
+<img alt="Close up detail of textured tactile paving stone" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY-ZdwSYOT6-RsSseUnyMAp8OUjY5iTyS9Hj7uBklvuFoMloycJ0i7-S5ce8GQ9_s0DU7N1I8ZDUHSrdAytvAD4bpuX1zIXf2flwnyWdrRnWNsj3pODrUqqL_Jbj1HJBPwdwaqm-S0P5R3_5YYZhQKr6wbrHxQBFrZA8tAjxZOx2YCrxuKwOL77hzNOyPQ4ECqZsSUvYyQBwjLLtXXqkxlJ48niKbooP8msZNDZtaH7gptqTmYl3OFnjCKLuiiVgneb26QdXAqM3SD"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-black/90 to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<span class="text-[10px] uppercase tracking-widest text-primary font-bold block mb-1">Detail 01</span>
+<p class="text-white text-sm font-medium">Tactile Transitions</p>
+</div>
+</div>
+<div class="relative group overflow-hidden md:col-span-1 bg-charcoal-light">
+<img alt="Wide minimalist corridor with plenty of turning space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-vX3pz2P0RBBxB-y0Dxco9JcCvVDvVQM8_ISZqp0Ci5KojQHmPJz-FllrMuvq0B_ipKmbSdNVUAcopE2stq47LQ1PyGEijll1ZQGLuvOidjSLzCUMVu1L9pSvRqHBl2GHlLwtMfdkmd5Lq-1lznQbO-6BoAO8GJdPw_q6SxjYld9qan5AFnEjrh9WjYraNf5PTlg1io66ljuyUw6pKaMRJeBtC5Ytj3vCYXGAgUH2APqxnj_LamN1olmmcOasx-2pN7xqpOkqINLV"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-black/90 to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<span class="text-[10px] uppercase tracking-widest text-primary font-bold block mb-1">Detail 02</span>
+<p class="text-white text-sm font-medium">Circulation Width</p>
+</div>
+</div>
+<div class="relative group overflow-hidden md:col-span-1 bg-charcoal-light">
+<img alt="High contrast braille signage on concrete wall" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvKOZHjO1wPTjvXf0dO70kMCwrzDv8C6L1dm88b4izRmrPycWaLXUHaSWG44zrnVLwhIbzzMbTFNnewDEkHU5B3wP926-3DXOZ-XECjGksQjSyKBs0sDi0AJ05ifK0NXOnXexiEQAn_xEmW_XyajdLajENeL1pboIs26fu5gSkfU6zdsmDf9t3lxv4rIoNeMM2Wb-XicvFJ_b4U3vIAwzQAceZSr_XFjQ2B-j3_5_hV0I5L5CT-UBD1yFDcQKlo5UK9AfuHszh16v5"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-black/90 to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<span class="text-[10px] uppercase tracking-widest text-primary font-bold block mb-1">Detail 03</span>
+<p class="text-white text-sm font-medium">Haptic Information</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="lg:w-1/3 space-y-16">
+<div class="border-t border-charcoal-lighter pt-8 sticky top-24">
+<h3 class="text-white uppercase tracking-widest text-sm font-bold mb-8 flex items-center">
+<span class="w-2 h-2 bg-primary mr-3 rounded-full"></span>
+                        Article Data
+                    </h3>
+<dl class="space-y-8">
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-2 font-mono">Published</dt>
+<dd class="text-xl text-white font-light">April 28, 2023</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-2 font-mono">Category</dt>
+<dd class="text-xl text-white font-light flex items-center">
+                                Inclusive Design
+                                <span class="material-symbols-outlined text-sm ml-2 text-primary">accessibility_new</span>
+</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-2 font-mono">Read Time</dt>
+<dd class="text-xl text-white font-light">6 Minutes</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-widest text-text-muted mb-2 font-mono">Author</dt>
+<dd class="flex items-center mt-3">
+<div class="h-10 w-10 bg-charcoal-light border border-charcoal-lighter overflow-hidden mr-4">
+<img alt="Elena Ross profile" class="h-full w-full object-cover grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcJOFhNLd_Ov_d8Tcy89ys1AowyuJ0Jw09BiQDPMlCgzEveJAbAH_xTlfeu7u1w9KF0GstKycNL9Xkk2hkpjkVkSjG5gzVO_7-Uz9FcDCQ-OusmSyBuOCKgYdzgPPSpYJJCWMUOUDajI-cdgNPu4xxO8rLe4BxbCTeK_IT1dZHJALskEBp13eIrxXuUuU12B_FB1WPZ1I3J6wPjIa8bC0eITwfMGmMBM3eFQXHUoSpm01j2rIJnPwHSdI4sF9aFNvSa43UKr9gO-z2"/>
+</div>
+<div>
+<span class="block text-white text-sm font-bold">Elena Ross</span>
+<span class="block text-text-muted text-xs">Senior Architect</span>
+</div>
+</dd>
+</div>
+</dl>
+<div class="mt-12 pt-12 border-t border-charcoal-lighter">
+<h3 class="text-white uppercase tracking-widest text-sm font-bold mb-6">Key Insight</h3>
+<blockquote class="relative p-6 bg-charcoal-light border-l-2 border-primary">
+<span class="text-6xl text-charcoal-lighter absolute top-[-20px] left-2 font-serif">“</span>
+<p class="text-lg text-white font-light italic leading-relaxed relative z-10">
+                                 True accessibility is invisible. It creates a seamless experience where the design serves the user without announcing its function.
+                             </p>
+<footer class="mt-4 text-xs font-bold text-primary uppercase tracking-widest">— Design Philosophy</footer>
+</blockquote>
+</div>
+<div class="mt-12 flex space-x-4">
+<button class="flex-1 py-3 border border-charcoal-lighter text-text-muted hover:text-white hover:border-white transition-colors uppercase text-xs font-bold tracking-widest flex justify-center items-center">
+<span class="material-symbols-outlined text-base mr-2">share</span> Share
+                         </button>
+<button class="flex-1 py-3 border border-charcoal-lighter text-text-muted hover:text-primary hover:border-primary transition-colors uppercase text-xs font-bold tracking-widest flex justify-center items-center">
+<span class="material-symbols-outlined text-base mr-2">bookmark</span> Save
+                         </button>
+</div>
+</div>
+</aside>
+</div>
+<div class="border-t border-charcoal-lighter mt-24 pt-16">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-3xl font-bold text-white uppercase tracking-wider">Related Articles</h2>
+<a class="text-xs font-bold uppercase tracking-widest text-text-muted hover:text-primary transition-colors flex items-center" href="#">
+                    View All <span class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="group flex flex-col h-full cursor-pointer">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Modern colorful social housing complex facade" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsu5s-MvpBaksRx4xzV7q4R9_3viYWKaljIqSVkD6AiphPok0Wek3g_4Sqg1DvaEr0cIBzGoIY0ENLJYsgp6idhA42eEkYKkjMS8xh9RCrHZbyxxQj4Sqq-Q2r2ENk0A28fBYEJbzU-wYhHwKoAMkmyBoT3J7RyATdYE-aZdNuTkABU60mmKz4I8BvTczbtE60zGNXs_ZxySVP6gkzZ8Q1sgzejzkRV5JWvJkZEkV-5q7Pxj5x1IiGIAeVGdXSp_3GLdeFghjDbF--"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Social</span>
+</div>
+</div>
+<div>
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider mb-2">Jun 18, 2023</div>
+<h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Dignified Social Housing</h3>
+<p class="text-text-muted text-sm line-clamp-2">Case studies of affordable housing projects that prioritize community.</p>
+</div>
+</article>
+<article class="group flex flex-col h-full cursor-pointer">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Office interior filled with plants and green walls" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiMSpTBNFkbj1dyOmC5GsMR7vjquWD7c-JYc4bghtgSde-SZlHZmVv3W6srh9SmKrNnT667Pg_z8njoHGYCurgzX844bze0N4pHup8cqxhXhx_GOfpnuFVhF-V3W4J0T0rGJBm-pX6Cv3CaXIN9skSCt2TmiGhQV2FwcnoGfnZ8neHUgFnISpIuupTL2G8szUQ1KMemn116HzQG_9Pp1MrU-uXLppPKUmH9SKwXSIJG2eir3RwlMoecSPXnbrNsj4pMU3-eaF-vAcE"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Wellbeing</span>
+</div>
+</div>
+<div>
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider mb-2">Aug 08, 2023</div>
+<h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Biophilic Office Design</h3>
+<p class="text-text-muted text-sm line-clamp-2">Integrating nature into the workplace to boost productivity.</p>
+</div>
+</article>
+<article class="group flex flex-col h-full cursor-pointer">
+<div class="relative h-64 overflow-hidden bg-charcoal-light mb-6">
+<img alt="Modern eco-home with solar panels and green roof" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvRbnidjc2YzCchonqi-GWMEwskrsZ1ZKPTeeW_XETns87xmRcMg5Meo2uZ6C2nF4dvj2oFBFjswaCMqS-VHRThM6lTwFoS2Zyv9YJIRc3O0j8OA5rv0v8QP02qc_XzMJyFYrDt_U3Y7Mqwo00I2cBbeAfP4GEDBhh39xv_mJiLIiD-JAIaeoINURG-VBM-XTpXCxvtFplLY-RlDXdC1pFv9g--iMZ5Zk3snxRVnUt1ZUqJ-YnyeOBU3q9NRU3AcjQyN7ezT3Mlw8v"/>
+<div class="absolute top-0 left-0 p-4">
+<span class="px-3 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-widest">Sustainability</span>
+</div>
+</div>
+<div>
+<div class="text-[10px] font-mono text-text-muted uppercase tracking-wider mb-2">May 28, 2023</div>
+<h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Net-Zero Energy Homes</h3>
+<p class="text-text-muted text-sm line-clamp-2">Designing residential properties that produce as much energy as they consume.</p>
+</div>
+</article>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                    Defining modern living through spatial innovation and minimalist design philosophy.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                    123 Innovation Blvd, <br/>Design District, NY 10012
+                </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

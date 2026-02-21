@@ -1,0 +1,169 @@
+.page-hero {
+    padding: clamp(4rem, 8vw, 8rem) 0 clamp(2rem, 4vw, 4rem);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.page-hero h1 {
+    margin-bottom: 1rem;
+}
+
+.page-hero__desc {
+    max-width: 600px;
+    font-size: 1.125rem;
+}
+
+.project-form-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-section h3 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 0.875rem 1rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    color: var(--color-text);
+    font-size: 0.875rem;
+    transition: border-color var(--transition);
+    resize: vertical;
+    appearance: none;
+}
+
+.form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a0a0a0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--color-accent);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+.btn-full {
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.project-info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+}
+
+.sidebar-card {
+    padding: 1.5rem;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.sidebar-card__icon {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.sidebar-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-card p {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.sidebar-card--cta {
+    background: var(--color-bg-elevated);
+    border-color: var(--color-accent);
+}
+
+.sidebar-card__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    transition: color var(--transition);
+}
+
+.contact-link:hover {
+    color: var(--color-accent);
+}
+
+.contact-link .material-icons {
+    font-size: 1.125rem;
+    color: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+    .project-form-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info-sidebar {
+        position: relative;
+        top: 0;
+    }
+}

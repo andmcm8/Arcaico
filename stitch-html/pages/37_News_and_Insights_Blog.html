@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Modular Construction</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // New main background
+                        "charcoal-light": "#252525", // Slightly lighter for cards
+                        "charcoal-lighter": "#333333", // Borders/lines
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem", // More minimalist/square
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.8) 70%, rgba(26,26,26,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1">Arcadia</span>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[80vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Construction site at sunset with cranes lifting prefabricated modular units onto a steel frame" class="w-full h-full object-cover opacity-80 grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGkbqFXG5maXkYvbG_WRohLPzjy2ZoOSW6EZkepU993zCLORB4XYGfRIuL2iXuKV4zjUozn9qu2pV53er5ij5JsRzyXECbQl-BmMsZayuZJ91b58YhWHWpzrVwCMmP5as_YNP9Zr5plgxfXSTJ8k5Ef-zyU2g7FmqMw43D0turkiCNk5OBGFoVSFzSjioM5F8wHyb-A3ts0NrD90S-eE-_boBnfHT6C90GaKhwmSvP7FjRGXaM-mPApwi9f4GQo0gSeNPJ8hYvx8Ab"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full">
+<div class="max-w-4xl">
+<div class="flex items-center space-x-4 mb-6">
+<span class="inline-block w-8 h-[1px] bg-primary"></span>
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Innovation</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-none tracking-tight">Modular Construction:<br/>Precision at Scale</h1>
+<p class="text-xl text-gray-300 mb-0 font-light max-w-2xl leading-relaxed">Redefining urban development through off-site fabrication and rapid on-site assembly.</p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="flex flex-col lg:flex-row gap-16">
+<aside class="lg:w-1/4 order-2 lg:order-1">
+<div class="sticky top-32 space-y-12">
+<div>
+<h3 class="text-xs font-bold text-primary uppercase tracking-widest mb-6 border-b border-charcoal-lighter pb-2">Article Data</h3>
+<ul class="space-y-6">
+<li>
+<span class="block text-[10px] text-text-muted uppercase tracking-wider mb-1">Published</span>
+<span class="text-sm text-white font-medium">June 05, 2023</span>
+</li>
+<li>
+<span class="block text-[10px] text-text-muted uppercase tracking-wider mb-1">Category</span>
+<span class="text-sm text-white font-medium">Innovation / Tech</span>
+</li>
+<li>
+<span class="block text-[10px] text-text-muted uppercase tracking-wider mb-1">Reading Time</span>
+<span class="text-sm text-white font-medium">6 Minutes</span>
+</li>
+<li>
+<span class="block text-[10px] text-text-muted uppercase tracking-wider mb-1">Author</span>
+<span class="text-sm text-white font-medium">Sarah Chen, Lead Architect</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xs font-bold text-primary uppercase tracking-widest mb-6 border-b border-charcoal-lighter pb-2">Share</h3>
+<div class="flex space-x-4">
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">link</span></a>
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-xs font-bold text-primary uppercase tracking-widest mb-6 border-b border-charcoal-lighter pb-2">Related</h3>
+<ul class="space-y-4">
+<li>
+<a class="group block" href="#">
+<span class="text-xs text-text-muted group-hover:text-primary transition-colors block mb-1">Sep 28, 2023</span>
+<span class="text-sm text-white group-hover:text-primary transition-colors leading-tight">Parametric Design Tools</span>
+</a>
+</li>
+<li>
+<a class="group block" href="#">
+<span class="text-xs text-text-muted group-hover:text-primary transition-colors block mb-1">Jul 15, 2023</span>
+<span class="text-sm text-white group-hover:text-primary transition-colors leading-tight">3D Printing in Architecture</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+<article class="lg:w-3/4 order-1 lg:order-2">
+<div class="prose prose-invert prose-lg max-w-none mb-16">
+<h2 class="text-xs font-bold text-primary uppercase tracking-widest mb-8">Article Narrative</h2>
+<p class="text-text-muted leading-relaxed mb-8">
+                            The construction industry is undergoing a paradigmatic shift. For decades, the process of building has remained largely unchanged: raw materials are transported to a site, and labor-intensive assembly takes place in variable weather conditions. Modular construction challenges this norm by moving 80% of the construction activity into a controlled factory environment.
+                        </p>
+<p class="text-text-muted leading-relaxed mb-8">
+                            At Arcadia Studio, we view modularity not as a constraint, but as a liberator of form. By standardizing structural components, we can focus our creative energy on spatial quality, facade articulation, and the human experience. The result is a building that is manufactured with the precision of an automobile but inhabited with the warmth of a bespoke home.
+                        </p>
+<h3 class="text-2xl text-white font-bold mt-12 mb-6">Efficiency Meets Aesthetics</h3>
+<p class="text-text-muted leading-relaxed mb-8">
+                            The primary advantage of modular construction is speed. Parallel processing—where site work and foundation pouring occur simultaneously with module fabrication—can reduce project timelines by up to 50%. However, speed often carries a stigma of poor quality. Our 'Stack &amp; Interlock' system proves otherwise.
+                        </p>
+<p class="text-text-muted leading-relaxed mb-8">
+                            Using high-tolerance steel frames, we ensure that every module aligns perfectly. This precision eliminates the compounding errors typical of traditional concrete pours. Furthermore, factory production significantly reduces material waste, contributing to a more circular economy in the built environment.
+                        </p>
+</div>
+<div class="border-l-4 border-primary pl-8 py-4 my-16 bg-charcoal-light/30">
+<h3 class="text-xs font-bold text-primary uppercase tracking-widest mb-4">Key Insight</h3>
+<blockquote class="text-2xl md:text-3xl font-light text-white italic leading-relaxed">
+                            "Modularity is not about repetition; it is about the intelligent assembly of unique parts to create a cohesive, adaptive whole."
+                        </blockquote>
+</div>
+<div class="mb-20">
+<div class="flex justify-between items-end mb-8 border-b border-charcoal-lighter pb-4">
+<h2 class="text-xs font-bold text-primary uppercase tracking-widest">Visual Documentation</h2>
+<div class="text-xs font-mono text-text-muted">Gallery 01 — 04</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="group relative h-72 overflow-hidden bg-charcoal-light">
+<img alt="High-tech factory fabrication of wall panels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrHFjuOtYRChzhdP1vZfurq_1XUn0PdHlUNJ5hSEHm2ZKgVAkdtTnJS7rYd7JEb4QNycPpTMVYB-6d9Dq7HkNULwTVQYJ1glb7lyn-2r29j-xIjUGl4V9jQtVPU7tm5LLdluyq3Erhfs2snDChkqzHZI__8DSHbnLxp-a4p5OJ5dQiUWfzjXltyhMStK4lfWC0NwtxllzHYXOna1qrqJ1ic1lMF_RJfFOsATFiMHUF53zN1igPdSxCmRT0YFFBLDG3--MmCu7q3c7P"/>
+<div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">01. Fabrication</span>
+</div>
+</div>
+<div class="group relative h-72 overflow-hidden bg-charcoal-light">
+<img alt="Precision assembly of modules on site" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfgvMLsyz6Z8RaNsDdxYJo5C0vU5Q9ocmAA-i80BqvlqSmg7HJG3MF5b7Bs0PGChBToRSdRcdhKJlKcnu6ECsEzPCjkfVXyonnIFlCZQ7ZUcLCivXMZ5C6rtfX1xiXF1SIqVwI5GIG9kllXlnbBuKr_ysyJqgYk4XeOtdam6cP-me7pMlLWYZXzK4Aq_n4I8LF1KueTaMzG1nHyIcetCH2um3Y5jB6Ijdc5_mdBmqVJTqM6ZUU90NXXwnkGVOFHl3yvFim5ambcTK0"/>
+<div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">02. Assembly</span>
+</div>
+</div>
+<div class="group relative h-72 overflow-hidden bg-charcoal-light">
+<img alt="Modern interior of a finished modular unit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm85BTclfu7_UJFI16a4AUbDLln6nIcumVyXB9YHGdh8LNYbTg6_CeZyfxrfHhNVcifUkiVAkNl0_sUaHGSASRJa_wi4SKxaCkZJ_gwf3sjAfd1FhnEO3zIZ1boNsGeDwCpX6vj46zscgGBDREYt5lpJuGQoZZGROh-Mg3oK12meYvL-F-tUMd0Bu7JNFVleCb0V1pfr-SLgC3FvNayl0cT0yMBiaQIXrNj1S4K6eDXAWPjBTspdWbqu9CsLbELDaRYDBJmQIt4B0Q"/>
+<div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">03. Interior Detail</span>
+</div>
+</div>
+<div class="group relative h-72 overflow-hidden bg-charcoal-light">
+<img alt="Transportation of large modular unit on a truck" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHVbn1gtOaL8KXhb68Xx21vsPwJPocQPlhOFWrMiRRrtC1PhY6BqAdny0xNG55JxQOe43uhn28peH4-TeamVsTwLZSOLwRA28SGOSIPOo2Y-y5qp4DxbPhDdo7sGN3Joa33aCuDBVj-SUSUlKBPOVoIDOTSVZvDLByP3A7f3Rp59s1nTnQwfy0tLfoXWFnwyxA0XhY0LGD61xJb9wmfkuLJEMI6jkxLa_7mi6Sz-tN-LUw_rL6upLpp4risFQrJaRKcAhdB7f8FHPG"/>
+<div class="absolute bottom-0 left-0 p-4 w-full bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">04. Logistics</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-between border-t border-charcoal-lighter pt-12">
+<a class="group flex flex-col items-start" href="#">
+<span class="text-[10px] font-bold text-text-muted uppercase tracking-wider mb-2 group-hover:text-primary transition-colors">Previous Article</span>
+<span class="text-lg text-white font-medium group-hover:text-primary transition-colors">The Return of Brutalism</span>
+</a>
+<a class="group flex flex-col items-end text-right" href="#">
+<span class="text-[10px] font-bold text-text-muted uppercase tracking-wider mb-2 group-hover:text-primary transition-colors">Next Article</span>
+<span class="text-lg text-white font-medium group-hover:text-primary transition-colors">Rewilding Urban Spaces</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                        Defining modern living through spatial innovation and minimalist design philosophy.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                        123 Innovation Blvd, <br/>Design District, NY 10012
+                    </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

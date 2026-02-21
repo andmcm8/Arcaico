@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rewilding Urban Spaces - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // New main background
+                        "charcoal-light": "#252525", // Slightly lighter for cards
+                        "charcoal-lighter": "#333333", // Borders/lines
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        mono: ["Courier New", "Courier", "monospace"], 
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                    typography: (theme) => ({
+                        DEFAULT: {
+                            css: {
+                                color: theme('colors.text-muted'),
+                                h2: {
+                                    color: theme('colors.white'),
+                                    fontFamily: theme('fontFamily.sans'),
+                                    fontWeight: '700',
+                                    textTransform: 'uppercase',
+                                    letterSpacing: '0.05em',
+                                },
+                                h3: {
+                                    color: theme('colors.white'),
+                                    fontWeight: '600',
+                                },
+                                strong: {
+                                    color: theme('colors.white'),
+                                },
+                                a: {
+                                    color: theme('colors.primary'),
+                                    '&:hover': {
+                                        color: theme('colors.white'),
+                                    },
+                                },
+                            },
+                        },
+                    }),
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 70%, rgba(26,26,26,1) 100%);
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1 hover:bg-white hover:text-charcoal transition-colors" href="#">Arcadia</a>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[80vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Aerial view of a lush green park integrated into a dense modern city block" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaS0WQsn9dxKeTfIrajruXOQDGbyZoTYeMJaCM5iPJmSQiNtk3oaGRQDKsdTYpn9BbJ7psmRIY_GsqtG22WddOELoz45MxPGzl4cbEnGI-AUhIUFFJO6ZvZ3jgdYulaF2i4knheNN_vzCrHDJg8y1GjmofFQgvHGQ_8--mtqDquVFxBX_clbbFimVCs89r5R0lDjdhNWvyK2Ihgzz6n1dxA23jO6svP0ES-G_ZnZVMGO8Uz-AsVMduJRA7B_oxGDXcQe7TXzeNCGPc"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 w-full">
+<div class="max-w-5xl">
+<div class="flex items-center space-x-4 mb-6">
+<a class="inline-flex items-center text-xs font-bold tracking-[0.2em] text-text-muted hover:text-white uppercase transition-colors" href="#">
+<span class="material-symbols-outlined text-sm mr-2">arrow_back</span>
+                            Back to Journal
+                        </a>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-none tracking-tight">Rewilding<br/>Urban Spaces</h1>
+<p class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl leading-relaxed border-l-2 border-primary pl-6">
+                        How strategic biodiversity corridors are transforming concrete jungles into breathing ecosystems.
+                    </p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+<div class="lg:col-span-8">
+<div class="flex items-center mb-12">
+<span class="w-12 h-[1px] bg-primary mr-4"></span>
+<h2 class="text-sm font-bold text-white uppercase tracking-[0.2em]">Article Narrative</h2>
+</div>
+<div class="prose prose-lg prose-invert max-w-none text-text-muted font-light leading-loose">
+<p class="first-letter:text-5xl first-letter:font-bold first-letter:text-white first-letter:float-left first-letter:mr-3 first-letter:mt-[-6px]">
+                            The concept of the city has long been defined in opposition to nature. Concrete, steel, and glass have been the materials of human dominance, pushing the wild to the periphery. However, as urbanization accelerates and climate resilience becomes paramount, a paradigm shift is underway. We are no longer designing cities that resist nature, but cities that invite it back in.
+                        </p>
+<p>
+                            "Rewilding" in an urban context is not merely about planting street trees or maintaining manicured lawns. It is a radical reimagining of urban infrastructure as a host for biodiversity. It involves creating continuous ecological corridors that allow flora and fauna to thrive alongside human density.
+                        </p>
+<h3 class="text-white text-2xl mt-12 mb-6 font-normal">The Green Artery</h3>
+<p>
+                            At Arcadia Studio, our approach to the "Green Artery" project in downtown Seattle exemplifies this shift. By reclaiming underutilized alleyways and rooftops, we created a multi-layered vertical park system. This isn't just aesthetic; the interconnected green spaces reduce the urban heat island effect by up to 4°C in the immediate vicinity.
+                        </p>
+<p>
+                            The project utilizes native plant species specifically chosen for their resilience to urban pollutants and their ability to support local pollinators. This creates a self-sustaining ecosystem that requires minimal human intervention once established.
+                        </p>
+<h3 class="text-white text-2xl mt-12 mb-6 font-normal">Symbiotic Architecture</h3>
+<p>
+                            Designing for rewilding means architecture must become porous. Facades are no longer sealed barriers but living skins. In our recent mixed-use development, "The Apiary," the building envelope incorporates nesting cavities for solitary bees and birds, integrated seamlessly into the brickwork.
+                        </p>
+<p>
+                            The challenge lies in balancing this wildness with the functional requirements of a modern city. It requires a new collaborative model between architects, ecologists, and urban planners. We must accept a certain level of "messiness" that comes with natural cycles—leaf litter, seasonal die-back, and unpruned growth—redefining our aesthetic expectations of the urban environment.
+                        </p>
+</div>
+<div class="mt-24 pt-12 border-t border-charcoal-lighter">
+<div class="flex items-center mb-12">
+<span class="w-12 h-[1px] bg-primary mr-4"></span>
+<h2 class="text-sm font-bold text-white uppercase tracking-[0.2em]">Visual Documentation</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="md:col-span-2 relative h-96 group overflow-hidden bg-charcoal-light">
+<img alt="Interior biophilic design with moss walls" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6MQMBWE9HGBYJy0xBkDw7MXaUailGQEF5DLB8hANn33KkDU8bHGuP0LRYm834e-CwA0WTGAPmKSwr5MFIMDHllWtJIyle551rkrI2-eNc3OAFkL3gfu5JP3FcqLwdhqVykVada_M51xMkvPJ6mj2gWD_5CeEksSod74eBcxdfI5p4g0kbGZWS69Rvs286ROUZLaTM4MHqD7XgNxvTv1ydS7_DySNvvuFcFu0GtYLh7n7FZu0dW6cMbfi1pe61dDqd3W4ihJhWJIcy"/>
+<div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-charcoal to-transparent w-full">
+<span class="text-xs font-mono text-primary uppercase tracking-wider">Fig 1.0 — Interior Integration</span>
+</div>
+</div>
+<div class="relative h-64 group overflow-hidden bg-charcoal-light">
+<img alt="Eco-home with green roof details" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgpGFeOyY6AJMRlSsjvhMrthdFNGny6s38eGzV0CuWQ4jthV8eWBKGhgPsKVhs8ITtIOaSJDA5mRJKHzY2zSZHrFYKusgVqFIE_ZmBmQIBfOess_Gp9j73K4jrMzsSMVUeuSAUaWR23Xa6_00aeJVZWNkm1fezjAhON3PJ4tGIoRROesEKSWc9ipvmw0y9IFeJzjb6qDw_U9XxMxDMtcdGOZDHAolfutJNG5-ReHClAIHdefc7GyoOswy-pXp9dw1XVswE5rsWoceM"/>
+<div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-charcoal to-transparent w-full">
+<span class="text-xs font-mono text-primary uppercase tracking-wider">Fig 1.1 — Roof Systems</span>
+</div>
+</div>
+<div class="relative h-64 group overflow-hidden bg-charcoal-light">
+<img alt="Waterfront rewilding project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkhcEGOuly5BOPciC0UHxNGpDnUSa00E8yRDP9jC3BUvTIxccIlr5EJ-vha0G27yoM2rwCXlpLnYbqxKxVKc6Qma2FYuk1YE6-KWU0kLf58dMAlrZguJlJbsLgiOL5_-GX6SalGEzQKnuczo1veKyp2zlIYkW3n7cUVmtbqSPk0MDWWpjawKsUulYyag6ZfN-Kt3zGw-RixwrE0eTzjQt1Uh6eBBV8kYaLUDStVq-SCarZQSbuW0GXKbqgJ_Iov9_co9xXn6BF6AJu"/>
+<div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-charcoal to-transparent w-full">
+<span class="text-xs font-mono text-primary uppercase tracking-wider">Fig 1.2 — Aquatic Edge</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="lg:col-span-4 space-y-16">
+<div class="border-t border-charcoal-lighter pt-6">
+<div class="flex items-center mb-8">
+<span class="w-8 h-[1px] bg-primary mr-3"></span>
+<h3 class="text-xs font-bold text-white uppercase tracking-[0.2em]">Article Data</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-8 gap-x-4">
+<div>
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-1">Published</span>
+<span class="text-sm text-white font-mono">May 20, 2023</span>
+</div>
+<div>
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-1">Category</span>
+<span class="text-sm text-white font-mono">Landscape</span>
+</div>
+<div>
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-1">Read Time</span>
+<span class="text-sm text-white font-mono">6 Min Read</span>
+</div>
+<div>
+<span class="block text-[10px] text-text-muted uppercase tracking-widest mb-1">Author</span>
+<span class="text-sm text-white font-mono">Elena Ross</span>
+</div>
+</div>
+</div>
+<div class="bg-charcoal-light p-8 border border-charcoal-lighter relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-6xl text-white">format_quote</span>
+</div>
+<div class="flex items-center mb-6">
+<span class="w-8 h-[1px] bg-primary mr-3"></span>
+<h3 class="text-xs font-bold text-white uppercase tracking-[0.2em]">Key Insight</h3>
+</div>
+<blockquote class="relative z-10">
+<p class="text-lg md:text-xl text-white font-serif italic leading-relaxed mb-6">
+                                "We are no longer designing cities that resist nature, but cities that invite it back in. The future metropolis is a hybrid organism."
+                            </p>
+<footer class="flex items-center">
+<div class="h-8 w-8 bg-gray-500 rounded-full mr-3 overflow-hidden">
+<div class="w-full h-full bg-gradient-to-br from-primary to-charcoal"></div>
+</div>
+<div>
+<cite class="not-italic block text-xs font-bold text-white uppercase tracking-wider">Elena Ross</cite>
+<span class="block text-[10px] text-text-muted uppercase tracking-wide">Lead Landscape Architect</span>
+</div>
+</footer>
+</blockquote>
+</div>
+<div>
+<div class="flex items-center mb-6">
+<span class="w-8 h-[1px] bg-primary mr-3"></span>
+<h3 class="text-xs font-bold text-white uppercase tracking-[0.2em]">Keywords</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<a class="px-3 py-1 bg-transparent border border-charcoal-lighter text-[10px] font-mono text-text-muted hover:text-primary hover:border-primary transition-colors uppercase" href="#">Biophilia</a>
+<a class="px-3 py-1 bg-transparent border border-charcoal-lighter text-[10px] font-mono text-text-muted hover:text-primary hover:border-primary transition-colors uppercase" href="#">Urbanism</a>
+<a class="px-3 py-1 bg-transparent border border-charcoal-lighter text-[10px] font-mono text-text-muted hover:text-primary hover:border-primary transition-colors uppercase" href="#">Sustainability</a>
+<a class="px-3 py-1 bg-transparent border border-charcoal-lighter text-[10px] font-mono text-text-muted hover:text-primary hover:border-primary transition-colors uppercase" href="#">Ecology</a>
+</div>
+</div>
+<div class="pt-8 border-t border-charcoal-lighter">
+<div class="flex items-center justify-between">
+<h3 class="text-xs font-bold text-white uppercase tracking-[0.2em]">Share Article</h3>
+<div class="flex space-x-4">
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-text-muted hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">content_copy</span></a>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<div class="mt-32 border-t border-charcoal-lighter pt-16">
+<div class="flex justify-between items-center mb-8">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Next Story</h2>
+<a class="text-xs font-bold text-primary uppercase tracking-widest hover:text-white transition-colors" href="#">View All</a>
+</div>
+<div class="group relative h-80 w-full overflow-hidden bg-charcoal-light cursor-pointer">
+<div class="absolute inset-0">
+<img alt="Architecture as sculpture" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7cDUEoXAgelQlxz9gXjUAVeJ_3Q-A2Qa-NdSMbhUrHBkNguS9C56T7CNQ3XcjCrUyu-n6a-JrFjDMvJmnFBMzsnNhLDIqqMfDjKLiVwnH80c6r_FOT6Z_QsU7ZRifpuHZ-T7kjqwtji3JDAdlywptPrmPd85o-1ahhsk4hpnKglp_8VLYUQ-Fs95vGfxdIT0wrUIGOz2pIXOVdODMMj6JcDAr4v8Xd6a7ySa8S9UVl_iI949wNdSlUVDOAbSWs6_bkfH-HZ1p8I3g"/>
+</div>
+<div class="absolute inset-0 flex flex-col justify-center items-center text-center p-8 z-10">
+<span class="text-xs font-mono text-primary uppercase tracking-widest mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Up Next</span>
+<h3 class="text-4xl md:text-5xl font-bold text-white mb-4 transform scale-95 group-hover:scale-100 transition-transform duration-500">Architecture as Sculpture</h3>
+<span class="inline-flex items-center text-white text-xs font-bold uppercase tracking-widest mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                            Read Now <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                        Defining modern living through spatial innovation and minimalist design philosophy.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                        123 Innovation Blvd, <br/>Design District, NY 10012
+                    </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

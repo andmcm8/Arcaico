@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Architecture on Water</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // Main background
+                        "charcoal-light": "#252525", // Slightly lighter
+                        "charcoal-lighter": "#333333", // Borders
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1 hover:border-primary hover:text-primary transition-colors" href="#">Arcadia</a>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<article>
+<div class="relative w-full h-[85vh]">
+<img alt="Futuristic floating minimalist residence on calm water at dusk" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN-Amqie5KkN91zW-y_y-5bJE9zs3GdxD7SxviZOVfiweUWlkzjcFEA5-a-G8QRD5touYjR5sKOp4r_LdW_uVE1JL4WLVNacPr7b8P5hjSEf3ZA4v2hSribJNzhCd1QORpzbBbiM2Aw-H6N4cVPD1-_CGZx6jqojgCv5EPG_TDkTZZ48DqRp2yk0BDE3otI5eBAOmZYoNkvRMHdTsUusmTnNd4mMVp9xrl6KZgjiMKygU1_EAS_OYnWXRnneg1mV-qSQHwcEuWiHC9"/>
+<div class="absolute inset-0 bg-gradient-to-b from-charcoal/30 via-transparent to-charcoal"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 md:p-16 max-w-7xl mx-auto">
+<div class="flex items-center space-x-4 mb-6">
+<span class="inline-block w-12 h-[1px] bg-primary"></span>
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Futurism</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-none tracking-tight">Architecture<br/>on Water</h1>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<aside class="lg:col-span-3 order-2 lg:order-1">
+<div class="sticky top-32">
+<div class="border-t border-charcoal-lighter pt-6 mb-10">
+<h3 class="text-xs font-bold text-text-muted uppercase tracking-widest mb-4">Article Data</h3>
+<dl class="space-y-6">
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-charcoal-lighter mb-1">Published</dt>
+<dd class="text-sm text-white font-medium">June 30, 2023</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-charcoal-lighter mb-1">Written By</dt>
+<dd class="text-sm text-white font-medium">Elena Vasquez</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-charcoal-lighter mb-1">Read Time</dt>
+<dd class="text-sm text-white font-medium">8 Minutes</dd>
+</div>
+<div>
+<dt class="text-[10px] uppercase tracking-wider text-charcoal-lighter mb-1">Tags</dt>
+<dd class="flex flex-wrap gap-2 mt-2">
+<span class="text-[10px] border border-charcoal-lighter px-2 py-1 text-text-muted">Hydro-Design</span>
+<span class="text-[10px] border border-charcoal-lighter px-2 py-1 text-text-muted">Sustainability</span>
+<span class="text-[10px] border border-charcoal-lighter px-2 py-1 text-text-muted">Innovation</span>
+</dd>
+</div>
+</dl>
+</div>
+<div class="border-t border-charcoal-lighter pt-6">
+<h3 class="text-xs font-bold text-text-muted uppercase tracking-widest mb-4">Share</h3>
+<div class="flex space-x-4">
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">link</span></a>
+<a class="text-white hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">bookmark</span></a>
+</div>
+</div>
+</div>
+</aside>
+<div class="lg:col-span-8 lg:col-start-5 order-1 lg:order-2">
+<div class="prose prose-invert prose-lg max-w-none">
+<h2 class="text-sm font-bold text-primary uppercase tracking-widest mb-8">Article Narrative</h2>
+<p class="text-2xl text-white font-light leading-relaxed mb-10">
+                                As sea levels rise and coastal populations swell, the frontier of urban development is shifting from solid ground to the open water. 'Architecture on Water' is not merely a survivalist concept but an evolution of luxury living and sustainable adaptability.
+                            </p>
+<p class="text-text-muted font-light leading-loose mb-8">
+                                The concept of living on water has transitioned from vernacular houseboat traditions to high-tech, amphibious structures capable of withstanding tidal shifts and rising oceans. Our latest research into hydro-centric architecture explores how modular floating foundations can support multi-story structures that function entirely off-grid. By utilizing ocean thermal energy conversion and advanced desalination systems, these floating habitats become self-sufficient ecosystems.
+                            </p>
+<p class="text-text-muted font-light leading-loose mb-12">
+                                Unlike land reclamation projects that damage marine biodiversity, floating architecture sits lightly on the surface. The 'Blue Estate' project envisions a series of interconnected platforms that allow light to penetrate to the ocean floor, preserving coral reefs and marine life below. This symbiotic relationship between structure and environment defines the next generation of coastal design.
+                            </p>
+</div>
+<blockquote class="border-l-2 border-primary pl-8 my-16 py-2">
+<p class="text-3xl font-serif italic text-white mb-4">"Water is no longer a boundary to build against, but a foundation to build upon. The ocean is the next great public space."</p>
+<footer class="text-sm text-primary uppercase tracking-widest font-bold">— Dr. Aris Thorne, Lead Architect</footer>
+</blockquote>
+<div class="prose prose-invert prose-lg max-w-none mb-20">
+<p class="text-text-muted font-light leading-loose">
+                                Materiality plays a crucial role in this transition. Corrosion-resistant composites, recycled marine plastics, and self-healing concrete form the skin of these structures. The aesthetic is one of fluid minimalism—curved forms that deflect wind and waves, large glazing that dissolves the barrier between interior and horizon, and open decks that serve as the primary living spaces.
+                            </p>
+</div>
+<div class="border-t border-charcoal-lighter pt-20">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-3xl font-bold text-white uppercase tracking-wider">Visual Documentation</h2>
+<span class="text-xs font-mono text-text-muted">FIG 01 — 03</span>
+</div>
+<div class="grid grid-cols-1 gap-12">
+<figure class="group">
+<div class="overflow-hidden bg-charcoal-light mb-4">
+<img alt="Detailed render of a floating modular home interior with ocean view" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-1000 grayscale-[20%] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNLzGf4PJXgY8Sl5qwDY6TvFULoBePWMpOtTXu2uBRZk8sWVcFTjwfAoJatGE3amSE7O5C4ICy7nuFnanmyAovKLva9-CIcSZ6mo6zCgYfV-QXc-UT2JEYF_vWk0KFTlR50mz9QCZ0ThwW0enuCiOvdtkEPYU53KOYo7kY425x2tPSLSR6Jj4stMRVw2wNol6kMTPt2MXTLUv8bFVOxo4Nv2Irtlzv55d_v5EU6Kf1-6ejXbZd7CeypPiRkSUslBl33iGchpr28s7c"/>
+</div>
+<figcaption class="flex justify-between items-start border-t border-charcoal-lighter pt-3">
+<span class="text-xs font-bold text-white uppercase tracking-widest">Interior Horizon</span>
+<span class="text-[10px] text-text-muted w-1/3 text-right">Seamless integration of the aquatic environment into the living space through floor-to-ceiling structural glass.</span>
+</figcaption>
+</figure>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<figure class="group">
+<div class="overflow-hidden bg-charcoal-light mb-4">
+<img alt="Technical drawing of amphibious foundation systems" class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-1000 grayscale-[20%] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8X-XFs9yxKowELYSnlFpXY98TLGmcJwGkS41aSbdjldKMVg55YnPpLW7TIC8-alDOgIbSMKQQOD97Xhq66PRqjB8PQadpVJP1SfRCwcmwow5rqKCRoHZDjeY9AsqaBl0SpWoHBg58oMTAF4kk4qEbhcd7Z5mC9syDMz4dGg81CzbyPjsd4glmWiuUl9Hz_wHwwySYq_a52YH4xUcPr_qmCYGhrkni9JIXpp40TJR7kMnN5eWG9gRwmK0aE7vv7wX267rruNg5LL8t"/>
+</div>
+<figcaption class="flex justify-between items-start border-t border-charcoal-lighter pt-3">
+<span class="text-xs font-bold text-white uppercase tracking-widest">Foundation Schematics</span>
+<span class="text-[10px] text-text-muted w-1/3 text-right">Modular buoyant concrete caissons.</span>
+</figcaption>
+</figure>
+<figure class="group">
+<div class="overflow-hidden bg-charcoal-light mb-4">
+<img alt="Aerial view of a concept floating community interconnected by walkways" class="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-1000 grayscale-[20%] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX33A9IV0cOr_9h2ZwDxpTovKD69UEbpLS1Ruy3zK66vEy_JH6strCLL1PtqmYRTNQ-435fxO0vwBcQwhbufLVKFLBADX5wdNhroZnRsJpplfCbmxBMzgL9NvfHnl3rR7Qc1L9pYGncokz7zI5I2NiwHr57kF-3PsynPJ27hgdoy8FXMh1B4GwIxFbKp6ohILAYriEaumE37O0JnvaZ4k4IDFI1r6pWb8uR-eMqGzBKPCseloZQcun9is-wpeJjYDJ3s8JiMF1PR-B"/>
+</div>
+<figcaption class="flex justify-between items-start border-t border-charcoal-lighter pt-3">
+<span class="text-xs font-bold text-white uppercase tracking-widest">The Archipelago</span>
+<span class="text-[10px] text-text-muted w-1/3 text-right">Masterplan for a scalable water-based community.</span>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-charcoal-light py-20 border-t border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center mb-12">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Related Insights</h2>
+<a class="text-xs font-bold text-primary uppercase tracking-widest hover:text-white transition-colors" href="#">View All News</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="group cursor-pointer">
+<div class="relative h-64 overflow-hidden bg-charcoal mb-6">
+<img alt="Futuristic skyscraper concept" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9nkOAXwg7yOWGdgfvd5KBC9EH6q8DaC49VDqFacM1gyY-s7tHdi04NlCv7zR36KQeEus7C7FAqfxFCUI7q5roIWg20hjUeADml6w-fT8uzRh3LuzQbFj3yolWFEWqL6abPdByiNpvVqc6FhaYfmjyj80KE115P10QSOzsdFnhcocPc1T_pCUVoXIWPZCXKiVEzwMl8tZkOWx0J9t8Ezke1JSUEKQuw7asmgqxmWyML1xI-1VjsB04z7L3ti-5tko5exM1gEMbWmEV"/>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter uppercase tracking-widest">Urbanism</span>
+</div>
+</div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">The Future of Skyscrapers</h3>
+<p class="text-text-muted text-xs line-clamp-2">Reimagining vertical cities with mixed-use spaces that integrate living, working, and urban farming.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="relative h-64 overflow-hidden bg-charcoal mb-6">
+<img alt="Zero energy house" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkJj50mt9b_MhzoVMXdeLH5k6GW6S99f-uyonz3m143ezZpVkF1Xazj_9aHRP1qFMlf41APsjnk8SXxnNRI7hrfHUYP4NV0-K1xYpVEkckTEPLMk_dUAqHFbgvvjTtOHfJbZ5tR4zQc_e4wXVeQKrrjaUz9p-mhvM-soioEfmGk7HnksvelT6z9JQNQAHpKUwodaBnB6zdeC0rwZUAUFfdxyO4KaKLjO5_ir9W2GDrJtvokutX1VSVzyAYudXPQZk2FIVhw5jm5W1s"/>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter uppercase tracking-widest">Sustainability</span>
+</div>
+</div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Net-Zero Energy Homes</h3>
+<p class="text-text-muted text-xs line-clamp-2">Designing residential properties that produce as much energy as they consume through renewables.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="relative h-64 overflow-hidden bg-charcoal mb-6">
+<img alt="Smart city network diagram" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_l_SFDGF85Eu2yLEJNISRO2kMxYTtSvFq7AdVuGDVqv9xgt3tG41BzjkbCINPJosfAg_TYoOPVxXXuWSo-2rQf-bNYoI0BrvvaiilHj_EOOyh7xPCQW5TZW2-sHgn2LEIzYgc8lNLQDl0kg9s9VH53K6AxDnhRPokPNdHWtLNF0m6Y-oYiKS52UHS7WMkkeuKySFoGkzFJOytjkLVIUjF1sxBDLQSDoMZebnDYgdKtvNiW5AWwIYJLSz6NXmCKOdnZrfvJhSnYn5z"/>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 text-[10px] font-bold bg-charcoal text-white border border-charcoal-lighter uppercase tracking-widest">Innovation</span>
+</div>
+</div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">Smart Cities: Data &amp; Design</h3>
+<p class="text-text-muted text-xs line-clamp-2">Leveraging IoT and big data to create responsive urban environments that adapt to citizens.</p>
+</article>
+</div>
+</div>
+</div>
+</article>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                        Defining modern living through spatial innovation and minimalist design philosophy.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                        123 Innovation Blvd, <br/>Design District, NY 10012
+                    </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

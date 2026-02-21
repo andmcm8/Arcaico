@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Dignified Social Housing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // Main background
+                        "charcoal-light": "#252525", // Cards/Sections
+                        "charcoal-lighter": "#333333", // Borders
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 70%, rgba(26,26,26,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1">Arcadia</span>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[85vh] w-full">
+<div class="absolute inset-0 z-0">
+<img alt="Modern social housing complex with warm lighting and community spaces" class="w-full h-full object-cover opacity-90 grayscale-[10%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnUar8SJRzFYpxbjrX5kiwoheWCkNmHi97IYCN2qzTEsZJ_RM2h-_g1bYQ9r1b4c-yHEch0kJErvTt26oVxRMSi6RBDMehf1lu2EbiNwPFqXwnUPbwzYv04KYNKefJJ4_bt5PvgilLW_NDAYupfyDLpBDW4wrMUac0Tiqerrrfaj_4eRBpWcF_sZfxCb77WJDJpnFrmJX_uwaK9yGQ5dkOilYhb2gcEFFY6M26zjOZ_70ol8_mqXWEuDM2YqUy50rxBHy7MvMrAIQV"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-20">
+<div class="max-w-4xl">
+<div class="flex items-center space-x-4 mb-6">
+<span class="inline-block w-8 h-[1px] bg-primary"></span>
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase">Social Architecture</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">Dignified Social Housing:<br/>A New Standard</h1>
+<p class="text-xl text-gray-300 font-light max-w-2xl leading-relaxed">
+                    Redefining affordable living through community-centric design, abundant natural light, and high-quality materials.
+                </p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="flex flex-col lg:flex-row gap-20">
+<aside class="lg:w-1/4 order-2 lg:order-1">
+<div class="sticky top-32 space-y-12">
+<div>
+<h3 class="text-xs font-bold text-primary uppercase tracking-widest mb-6 border-l-2 border-primary pl-4">Article Data</h3>
+<dl class="space-y-6">
+<div>
+<dt class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Date</dt>
+<dd class="text-sm text-white font-mono">June 18, 2023</dd>
+</div>
+<div>
+<dt class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Category</dt>
+<dd class="text-sm text-white font-mono">Social Impact</dd>
+</div>
+<div>
+<dt class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Reading Time</dt>
+<dd class="text-sm text-white font-mono">6 Minutes</dd>
+</div>
+<div>
+<dt class="text-[10px] text-text-muted uppercase tracking-wider mb-1">Author</dt>
+<dd class="text-sm text-white font-mono">Elena Vance</dd>
+</div>
+</dl>
+</div>
+<div class="pt-8 border-t border-charcoal-lighter">
+<h3 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Share</h3>
+<div class="flex space-x-4">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">link</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+</div>
+</div>
+</div>
+</aside>
+<article class="lg:w-3/4 order-1 lg:order-2">
+<div class="prose prose-invert prose-lg max-w-none mb-20">
+<p class="lead text-2xl text-white font-light leading-relaxed mb-8">
+                        The perception of social housing has long been marred by the brutalist giants of the mid-20th century—monolithic structures that prioritized density over dignity. Our latest project challenges this narrative, proving that affordability does not require a compromise on aesthetic or spatial quality.
+                    </p>
+<p class="text-text-muted leading-relaxed mb-6">
+                        Located on the outskirts of Lyon, the "Solaris" complex reimagines the communal living experience. By breaking down the scale of the development into interconnected, mid-rise volumes, we have created a village-like atmosphere that encourages interaction while preserving individual privacy. The rigorous geometric facade is softened by the use of warm timber cladding and extensive vertical greenery.
+                    </p>
+<p class="text-text-muted leading-relaxed mb-6">
+                        Central to the design philosophy was the concept of the "active threshold." Rather than dark, narrow corridors, circulation spaces are expanded into generous, light-filled galleries that serve as extensions of the living units—spaces for children to play and neighbors to converse.
+                    </p>
+</div>
+<div class="relative bg-charcoal-light border-l-4 border-primary p-12 mb-20 my-16">
+<span class="material-symbols-outlined absolute top-8 left-8 text-6xl text-charcoal-lighter opacity-50">format_quote</span>
+<blockquote class="relative z-10">
+<p class="text-2xl md:text-3xl font-serif italic text-white leading-relaxed mb-6">
+                            "True sustainability in architecture is not just about energy efficiency; it is about creating spaces that people are proud to call home, ensuring the longevity of the community itself."
+                        </p>
+<footer class="text-sm font-bold text-primary uppercase tracking-widest">
+                            — Marcus Thorne, Lead Architect
+                        </footer>
+</blockquote>
+</div>
+<div class="prose prose-invert prose-lg max-w-none mb-20">
+<h3 class="text-xl font-bold text-white uppercase tracking-widest mb-6">Materiality &amp; Light</h3>
+<p class="text-text-muted leading-relaxed mb-6">
+                        Cost constraints in social housing often lead to the specification of synthetic, short-lifespan materials. Conversely, we invested heavily in the building envelope, utilizing prefabricated cross-laminated timber (CLT) panels. This not only reduced construction time by 30% but also imbued the interiors with a natural warmth and superior acoustic performance rarely seen in this sector.
+                    </p>
+<p class="text-text-muted leading-relaxed">
+                        Floor-to-ceiling windows are standard in every unit, a design choice aimed at democratizing access to natural light. Deep balconies provide passive solar shading in the summer while extending the usable living space, blurring the line between indoor and outdoor environments.
+                    </p>
+</div>
+<div class="border-t border-charcoal-lighter pt-16">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-3xl font-bold text-white uppercase tracking-wider">Visual Documentation</h2>
+<span class="text-xs font-mono text-text-muted">01 — 04</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<figure class="group cursor-pointer">
+<div class="relative h-80 overflow-hidden bg-charcoal-light mb-4">
+<img alt="Green community courtyard with people sitting on benches" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_FOtWkme-tSjbE1_WAF2bhxamAzUH-i54yr3797D2FvCg_hslmUhzuFwJrpfynsTg63oqDgS7_xiycR0gz8TUsIa8G6Q79TZaGyFg-bZSeJ_cVUgOZONG1gBintqisBy5x7FXc6U5OF9j6UTZX3US1kSGZAJXvkomTB781EKK5bBS6ArYWqhapJCdtUJ3XP8rTpA3iy3A7tKm3ueK_nLGKJT0iauKvoXk5mat6bUnqU3tCrOKD3S3_2EopGu5FrdVZmHrYOS3h4zb"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<figcaption class="flex justify-between items-start">
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">Community Courtyard</span>
+<span class="text-[10px] text-text-muted uppercase tracking-wider">Fig. 01</span>
+</figcaption>
+</figure>
+<figure class="group cursor-pointer">
+<div class="relative h-80 overflow-hidden bg-charcoal-light mb-4">
+<img alt="Modern interior of a unit with sunlight streaming in" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCunt9chRfP9SNDKs8Hz7SeHm5fDm4E6J2npOngYU7SzIC4vuuQ8QA2f5qzHn0xs-P49fxY-1HcpBUlelhptcf-RvlMqxnh8gQ6c0eZoCUFvC8Lb5OH1kEpNyvJNlvYzr_rbH8ZPBIhxRL6K7UkWhJO6AAJsS2JRItfDri625UGDZQ5fxsnK7ciLS2pDg8XY6NMnTEfpH33Rqd9zyqmTHqgX3GVz8DZlEf-0aDnx1P3vSVQRvkuDkGLxNa3CQY3Iys9fZbyz1J_v1_A"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<figcaption class="flex justify-between items-start">
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">Unit Interior</span>
+<span class="text-[10px] text-text-muted uppercase tracking-wider">Fig. 02</span>
+</figcaption>
+</figure>
+<figure class="group cursor-pointer">
+<div class="relative h-80 overflow-hidden bg-charcoal-light mb-4">
+<img alt="Close up of modern facade materials and patterns" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAei50QCuM4LHu3MRVm-AA1-3cjN7VOEbPodo0ctM-VfdY3nJ7UXbJQ6IvOU0MeiCT5rhYVboPx4n79Hu1wDs9ca2CJzoXo3lsH7ux3a_vwDTYFhwHx3mYJLuD17pWbDy-pkLm8vTrZQWrT4e5mWsYXJUXfUe1e3NgcDY5tgGgrbdj58aKZZVhy_FBLuJ7Mm2DJJl5sbUQB-Ej2Y6EW--JWrles1lnc3jLaW8KDUuJwj0ClPbmwVZLfbwdhXlGBN4OeelrTJZCUcVrC"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<figcaption class="flex justify-between items-start">
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">Facade Detail &amp; Module</span>
+<span class="text-[10px] text-text-muted uppercase tracking-wider">Fig. 03</span>
+</figcaption>
+</figure>
+<figure class="group cursor-pointer">
+<div class="relative h-80 overflow-hidden bg-charcoal-light mb-4">
+<img alt="Residents interacting in a common indoor space" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxENN6MB86gJQypZjyZemp2gEXgMSJrvbYJN1wJu-y4C7zTv3Qr2c77xcnG8Daqqm-qIEr0tXKVF_KLg0TD9sGbNA6Lu5r6PbMEO1-F4wzwdbPuVYNnMu7-fRQvDYK0Ea5p5MdwYqLrqndCg6CtcpAjCOinBsyw0F7rtWO1ZCmnJI700WOxqUHhPsr72638jM8WIQtNGIU4IkBm2tt0B_f_AEmkT3xOYgKJiEs9-JF9FU0uUt6b5hdtaaEQJnDSS4MzLrm4wopmd0m"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<figcaption class="flex justify-between items-start">
+<span class="text-sm font-bold text-white group-hover:text-primary transition-colors">Shared Living Spaces</span>
+<span class="text-[10px] text-text-muted uppercase tracking-wider">Fig. 04</span>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="mt-24 pt-12 border-t border-charcoal-lighter flex justify-between items-center group cursor-pointer">
+<div>
+<span class="text-[10px] text-text-muted uppercase tracking-widest mb-2 block">Next Article</span>
+<h4 class="text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors">Geometry in Motion</h4>
+</div>
+<span class="material-symbols-outlined text-4xl text-white group-hover:text-primary group-hover:translate-x-2 transition-all">arrow_forward</span>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                    Defining modern living through spatial innovation and minimalist design philosophy.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                    123 Innovation Blvd, <br/>Design District, NY 10012
+                </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

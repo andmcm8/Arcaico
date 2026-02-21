@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Passive Ventilation - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Electric Coral
+                        "background-dark": "#1A1A1A", // Charcoal
+                        "surface-dark": "#252525",
+                        "surface-darker": "#121212",
+                        "text-light": "#E0E0E0",
+                        "text-muted": "#A0A0A0",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #1A1A1A;
+            color: #E0E0E0;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-light font-sans antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center">
+<a class="text-2xl font-serif font-semibold tracking-wider uppercase text-white" href="#">Arcadia</a>
+</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary pb-1" href="#">Impact</a>
+<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#">Studio</a>
+<a class="px-5 py-2.5 text-sm font-medium bg-primary text-white rounded-full hover:bg-opacity-90 transition-all shadow-lg hover:shadow-primary/30" href="#">
+                        Start Project
+                    </a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="p-2 rounded-md hover:bg-white/10 text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative h-screen w-full overflow-hidden bg-surface-darker flex items-end pb-24">
+<div class="absolute inset-0 z-0">
+<img alt="Minimalist building interior showing a lightwell and natural air movement" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRTETA2jM8l9tBk-xCKHV38eYZdpcOn88KefThygYZ9pensxdAoRIBc-hHhEfYcJLQNbrK-niLd_sM1ysgsmMq07KFFftTezwDEmmKF-GfPrfBFvsEYydncDEEziXPeJv_kvCCBZUfLkOX7I-RE8oVREFqtn7ARKnMkkhpoAi6I0XhafW2fpkhHgpK4oj11NO7U5YtgDQsAnVDKT47UrEpI45BZBC1BZj81QJMH9zaQJM4Sm9PtIMqa4Ogve-_TfjxfZRfKl5RrEx1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-transparent to-[#1A1A1A]/30"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#1A1A1A]/80 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="flex flex-col md:flex-row justify-between items-end border-b border-white/20 pb-8">
+<div>
+<div class="flex items-center space-x-2 text-primary mb-4">
+<span class="text-xs font-mono tracking-widest uppercase border border-primary px-2 py-1 rounded">Tech Spec V1</span>
+</div>
+<h1 class="text-6xl lg:text-8xl font-serif font-light mb-2 leading-none text-white">
+                        Passive<br/>Ventilation
+                    </h1>
+<p class="text-2xl font-light text-primary mt-4 font-serif italic">Natural Airflow Systems</p>
+</div>
+<div class="hidden md:block text-right">
+<span class="block text-sm text-text-muted uppercase tracking-wider mb-1">Project ID</span>
+<span class="font-mono text-white">ARC-SUS-24-01</span>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-8 space-y-16">
+<section>
+<div class="flex items-center gap-4 mb-8">
+<span class="h-px w-12 bg-primary"></span>
+<h2 class="text-sm font-bold uppercase tracking-widest text-text-muted">System Overview</h2>
+</div>
+<div class="prose prose-lg prose-invert text-text-muted">
+<p class="text-xl text-white font-light leading-relaxed mb-6">
+                            Our passive ventilation strategy harnesses natural pressure differentials and thermal buoyancy to circulate fresh air without mechanical intervention. By aligning building orientation with prevailing winds, we achieve a consistent air exchange rate that significantly lowers energy consumption.
+                        </p>
+<p>
+                            The core mechanism relies on the stack effect within central atria. As air warms, it rises through vertical voids, pulling cool, fresh air in from lower operable facades. This continuous cycle effectively flushes out stale air and pollutants. Coupled with high-thermal-mass concrete floors, the system absorbs heat during the day and releases it at night, flattening the temperature curve and reducing the peak load on auxiliary cooling systems.
+                        </p>
+</div>
+</section>
+<section>
+<div class="flex items-center gap-4 mb-8">
+<span class="h-px w-12 bg-primary"></span>
+<h2 class="text-sm font-bold uppercase tracking-widest text-text-muted">Visual Documentation</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="group relative overflow-hidden rounded-sm bg-surface-dark border border-white/5">
+<div class="aspect-w-4 aspect-h-3 overflow-hidden relative">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all z-10"></div>
+<img alt="Technical diagram of air currents and pressure differentials" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTctrv020nhTOibvsG-M1J3F6DIiDuCaJbU3DBN-dv89BaDMGBO6syX8qiLcphoc38VBlB8NOU-QW6pVb-33p-PykPb0LVjs_MgQii68bupB2pxojIksefQ8gMd7Yd8EiOvymvZpPgs6dcZUXPhCGfgEpGtzMGMXkAMCTK9azNFbokwSWLAtXimVQigQF-mN5m9_mlaL8HVB1vfCRIxewphqgtYDforxeINekaalziVkAhZZSfGn6c3kyXILH-l8b4zbdVdQBWLtI6"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-black/80 backdrop-blur text-xs font-mono text-primary px-2 py-1">FIG 1.1: FLOW DYNAMICS</span>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-sm bg-surface-dark border border-white/5">
+<div class="aspect-w-4 aspect-h-3 overflow-hidden relative">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all z-10"></div>
+<img alt="Detail shot of operable facade louvers" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7wyMKpYS2Jp5lQ1Ffi_NYkU8pF91_aA94JVYGpV2TiYXSrbtZYvzRgt-CNSa7cF-DqzQs26QeQoejo5W9FmEIgrwrTgdQPlGFxgEqsOBY-GKCc3b2EZPOHw3H9PmR2t3s5fKNRfkSl6__XdR5b7Loka9ralAXifsAp4i9HgpyfK1Eh5yK32mKlrXDVRVoYX5SsHfNfRAk8YGdrTT_rNx0KHM97HyFfhuMvrOo0pS-mE_F28sbUBFebNOApH_paiM34yVCuQEk0Moh"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-black/80 backdrop-blur text-xs font-mono text-primary px-2 py-1">FIG 1.2: OPERABLE LOUVERS</span>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-sm bg-surface-dark border border-white/5 md:col-span-2">
+<div class="aspect-w-16 aspect-h-9 overflow-hidden relative">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all z-10"></div>
+<img alt="Render of interior void showing light and air space" class="object-cover w-full h-[400px] group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVRqfKXu024nWDBe0XbY35Zsu4fJKxT9JtbAjAiZ1ps0pB3TtcEUBGLuwz6dp8JJpak3Rd61GgfraBQvJIy-ykbGA7BFaECN0F23EXWUZbtnzT5apliNLO4MY4SXKBngaZEtRp_oL3AnlchQr9CUcYhUNMxmJE5vae8Xe9kJsjUzATBOLsnWwdYdgh5uAmw2yXpYRYGOln4eYn_qOHKF1fyTwfVXuk-pYAaD6-QTVHcmZc4QBzdikp_bp2SLgINCaPfOJ9crSiNKvD"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-black/80 backdrop-blur text-xs font-mono text-primary px-2 py-1">FIG 1.3: THERMAL CHIMNEY VOID</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-4 space-y-12 lg:pl-8 lg:border-l lg:border-white/10">
+<div class="bg-surface-dark p-8 rounded-sm border border-white/5 shadow-2xl">
+<h3 class="text-lg font-serif font-semibold text-white mb-6 pb-4 border-b border-white/10">Technical Data</h3>
+<ul class="space-y-6">
+<li>
+<div class="flex items-end justify-between mb-1">
+<span class="text-4xl font-bold text-primary">35%</span>
+<span class="material-symbols-outlined text-text-muted">hvac</span>
+</div>
+<span class="text-xs uppercase tracking-widest text-text-muted">HVAC Energy Reduction</span>
+</li>
+<li>
+<div class="flex items-end justify-between mb-1">
+<span class="text-4xl font-bold text-primary">100%</span>
+<span class="material-symbols-outlined text-text-muted">air</span>
+</div>
+<span class="text-xs uppercase tracking-widest text-text-muted">Fresh Air Circulation</span>
+</li>
+<li>
+<div class="flex items-end justify-between mb-1">
+<span class="text-xl font-bold text-white">Platinum</span>
+<span class="material-symbols-outlined text-text-muted">workspace_premium</span>
+</div>
+<span class="text-xs uppercase tracking-widest text-text-muted">LEED Compliance</span>
+</li>
+</ul>
+</div>
+<div class="relative pt-8">
+<span class="material-symbols-outlined text-6xl text-white/5 absolute top-0 left-0 -z-10 transform -translate-y-4">format_quote</span>
+<blockquote class="text-lg font-serif italic text-white leading-relaxed mb-4">
+                        "A building should breathe as naturally as the people inside it. By removing the barrier between interior climate and exterior atmosphere, we reconnect with the rhythm of the day."
+                    </blockquote>
+<cite class="not-italic flex items-center gap-3">
+<div class="h-px w-8 bg-primary"></div>
+<span class="text-xs font-bold uppercase tracking-wider text-text-muted">Elena Corvo, Lead Architect</span>
+</cite>
+</div>
+<div>
+<h3 class="text-xs font-bold uppercase tracking-widest text-text-muted mb-6">Related Specifications</h3>
+<ul class="space-y-4">
+<li>
+<a class="group flex items-center justify-between p-4 bg-surface-dark hover:bg-white/5 border border-white/5 rounded-sm transition-all" href="#">
+<span class="text-sm text-gray-300 group-hover:text-primary transition-colors">Thermal Mass Flooring</span>
+<span class="material-symbols-outlined text-sm text-gray-500 group-hover:text-primary">arrow_forward</span>
+</a>
+</li>
+<li>
+<a class="group flex items-center justify-between p-4 bg-surface-dark hover:bg-white/5 border border-white/5 rounded-sm transition-all" href="#">
+<span class="text-sm text-gray-300 group-hover:text-primary transition-colors">Smart Glazing Systems</span>
+<span class="material-symbols-outlined text-sm text-gray-500 group-hover:text-primary">arrow_forward</span>
+</a>
+</li>
+<li>
+<a class="group flex items-center justify-between p-4 bg-surface-dark hover:bg-white/5 border border-white/5 rounded-sm transition-all" href="#">
+<span class="text-sm text-gray-300 group-hover:text-primary transition-colors">Rainwater Harvesting</span>
+<span class="material-symbols-outlined text-sm text-gray-500 group-hover:text-primary">arrow_forward</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-surface-darker text-white pt-16 pb-8 border-t border-white/10 mt-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<h3 class="text-xl font-serif font-bold mb-6 tracking-widest">ARCADIA</h3>
+<p class="text-gray-400 text-sm mb-6">
+                        Designing spaces that honor the environment and elevate the human experience.
+                    </p>
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider mb-6 text-primary">Studio</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider mb-6 text-primary">Expertise</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-white transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Landscape</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Urban Planning</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider mb-6 text-primary">Contact</h4>
+<address class="not-italic text-sm text-gray-400 space-y-3">
+<p>123 Innovation Blvd,</p>
+<p>Design District, NY 10012</p>
+<p class="pt-2"><a class="hover:text-white transition-colors" href="mailto:hello@arcadiastudio.com">hello@arcadiastudio.com</a></p>
+<p><a class="hover:text-white transition-colors" href="tel:+15550192834">+1 (555) 019-2834</a></p>
+</address>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-gray-500">© 2024 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+<a class="text-xs text-gray-500 hover:text-white" href="#">Privacy Policy</a>
+<a class="text-xs text-gray-500 hover:text-white" href="#">Terms of Use</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

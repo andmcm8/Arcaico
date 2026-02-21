@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Designing the Metaverse - Arcadia Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Coral accent
+                        charcoal: "#1A1A1A", // Main background
+                        "charcoal-light": "#252525", // Slightly lighter for cards
+                        "charcoal-lighter": "#333333", // Borders/lines
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#A3A3A3",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem", // More minimalist/square
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.6) 60%, rgba(26,26,26,1) 100%);
+        }
+        .content-gradient {
+             background: linear-gradient(180deg, rgba(26,26,26,1) 0%, rgba(26,26,26,0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-charcoal text-text-main antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-charcoal-lighter transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="text-2xl font-bold tracking-widest text-white uppercase border-2 border-white px-2 py-1 hover:bg-white hover:text-charcoal transition-colors" href="#">Arcadia</a>
+</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-xs uppercase tracking-widest text-text-muted hover:text-primary transition-colors" href="#">Studio</a>
+<a class="text-xs uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#">News</a>
+<a class="ml-4 px-6 py-2 border border-text-main hover:border-primary text-white hover:text-primary text-xs font-bold transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-primary focus:outline-none">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[85vh] w-full flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Surreal digital architectural landscape with floating structures and neon accents" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCybrqM2bXQi9VO5zX9I7AuN9gHEg7B_KZPFsqfF1oFGne02vH82XxQ1CfcPXCeyf9oRH4wrOh61hGS5xTBgpncA7vK_fPgelhoG4mEH_CMYUL_pRtrE5F7Hc4qsB9RXjsLq9FwG-iQBHRrMMbn0wepFUaBAlNqDtemJhyzYfMm8H__nXcY6wa5tCQcFHctB4BJjYDegD-SsJvpPd0VrxSD8TtMeP4Pp2D1KtR_E4n0MOaSmrAaiguE2vRolx4SQjFTBLw6YkMFb3w"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 w-full">
+<div class="max-w-5xl">
+<div class="flex items-center space-x-4 mb-8">
+<a class="flex items-center text-text-muted hover:text-white transition-colors text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-lg mr-2">arrow_back</span>
+                        Back to Journal
+                    </a>
+</div>
+<h1 class="text-5xl md:text-8xl font-bold text-white mb-6 leading-none tracking-tight">Designing the<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">Metaverse</span></h1>
+<p class="text-xl md:text-2xl text-gray-300 font-light max-w-3xl leading-relaxed border-l-4 border-primary pl-6">
+                    When gravity is optional and materials are infinite, how do we define the architecture of virtual existence?
+                </p>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="flex flex-col lg:flex-row gap-20">
+<div class="lg:w-2/3">
+<div class="flex items-center space-x-2 mb-12">
+<span class="text-primary font-bold uppercase tracking-widest text-xs">Article Narrative</span>
+<span class="h-[1px] w-20 bg-charcoal-lighter"></span>
+</div>
+<div class="prose prose-lg prose-invert max-w-none text-gray-300 font-light leading-loose">
+<p class="first-letter:text-7xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left">
+                        The constraints of the physical world—gravity, material costs, weather, and zoning laws—have defined architectural practice for millennia. But as we step into the Metaverse, these constraints evaporate. We are entering an era of 'impossibility architecture,' where the only limit is the designer's imagination and the processing power of the rendering engine.
+                    </p>
+<p>
+                        However, total freedom presents its own paradox. Without the grounding rules of physics, spaces can become disorienting, alienating, and functionally useless. The challenge for the modern digital architect is not just to build spectacular forms, but to create environments that feel intuitive to the human consciousness, even when they defy earthly logic.
+                    </p>
+<h3 class="text-white font-bold text-2xl mt-12 mb-6 tracking-wide">Spatial Anchors in a Void</h3>
+<p>
+                        Human psychology relies on spatial cues to navigate. Up, down, near, far—these concepts are deeply ingrained in our neurology. In our recent project, <em>Etherial Commons</em>, we experimented with 'selective physics'. While the structure itself floats in a void, the user interaction zones mimic gravity to provide a sense of comfort and orientation. We used familiar textures—digital wood, hyper-realistic concrete—to create a tactile bridge between the user's memory of the physical world and their experience of the virtual one.
+                    </p>
+<div class="my-16 border-y border-charcoal-lighter py-12">
+<blockquote class="text-3xl font-light text-white italic leading-normal text-center">
+                            "In the metaverse, a roof doesn't need to keep out the rain. It exists solely to frame the sky or define intimacy."
+                        </blockquote>
+</div>
+<h3 class="text-white font-bold text-2xl mt-12 mb-6 tracking-wide">The Economy of Polygons</h3>
+<p>
+                        Just as physical architecture manages budgets for steel and glass, virtual architecture manages the 'budget' of polygons and render cycles. Optimization is the new structural engineering. A beautiful space that lags is a failed space. Our team is developing proprietary algorithms that dynamically adjust the complexity of architectural geometry based on the user's proximity, ensuring that the grandest visions remain performant across devices.
+                    </p>
+<p>
+                        We are witnessing the birth of a new vernacular. It is not modernism, nor brutalism, nor deconstructivism. It is <em>computational emergentism</em>—structures that grow, adapt, and respond to the social data of their inhabitants in real-time.
+                    </p>
+</div>
+<div class="mt-16 pt-8 border-t border-charcoal-lighter flex flex-col sm:flex-row justify-between items-center gap-6">
+<div class="flex space-x-3">
+<span class="px-3 py-1 border border-charcoal-lighter text-xs uppercase tracking-widest text-text-muted hover:text-white hover:border-primary transition-colors cursor-pointer">Digital</span>
+<span class="px-3 py-1 border border-charcoal-lighter text-xs uppercase tracking-widest text-text-muted hover:text-white hover:border-primary transition-colors cursor-pointer">Web3</span>
+<span class="px-3 py-1 border border-charcoal-lighter text-xs uppercase tracking-widest text-text-muted hover:text-white hover:border-primary transition-colors cursor-pointer">Theory</span>
+</div>
+<div class="flex space-x-4">
+<button class="text-text-muted hover:text-primary transition-colors"><span class="material-symbols-outlined">share</span></button>
+<button class="text-text-muted hover:text-primary transition-colors"><span class="material-symbols-outlined">bookmark</span></button>
+<button class="text-text-muted hover:text-primary transition-colors"><span class="material-symbols-outlined">thumb_up</span></button>
+</div>
+</div>
+</div>
+<aside class="lg:w-1/3 lg:sticky lg:top-32 h-fit space-y-12">
+<div class="bg-charcoal-light border border-charcoal-lighter p-8">
+<div class="flex items-center space-x-2 mb-8">
+<span class="text-primary font-bold uppercase tracking-widest text-xs">Article Data</span>
+<span class="h-[1px] flex-grow bg-charcoal-lighter"></span>
+</div>
+<ul class="space-y-6">
+<li class="flex justify-between items-end border-b border-charcoal-lighter pb-2">
+<span class="text-xs text-text-muted uppercase tracking-wider">Date</span>
+<span class="text-sm font-mono text-white">May 05, 2023</span>
+</li>
+<li class="flex justify-between items-end border-b border-charcoal-lighter pb-2">
+<span class="text-xs text-text-muted uppercase tracking-wider">Category</span>
+<span class="text-sm font-mono text-white">Digital / VR</span>
+</li>
+<li class="flex justify-between items-end border-b border-charcoal-lighter pb-2">
+<span class="text-xs text-text-muted uppercase tracking-wider">Read Time</span>
+<span class="text-sm font-mono text-white">8 Min</span>
+</li>
+<li class="flex justify-between items-end border-b border-charcoal-lighter pb-2">
+<span class="text-xs text-text-muted uppercase tracking-wider">Author</span>
+<span class="text-sm font-mono text-white">Elena Vourakis</span>
+</li>
+</ul>
+<div class="mt-8 flex items-center space-x-4">
+<div class="w-12 h-12 bg-gray-600 rounded-full overflow-hidden">
+<img alt="Author" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVjE2Hmu5aWsUbfP9S39XkkGxOq5Z91cuQ2ZX_2QO0WJxuccgHOnC8Cp3BPXueTwrN0lUPTQE082-fZnDQz4F3cIFy8-TMOUB_zldEpdJturJahUn65pAGj2zQvKJwtmyh4HxSeJOAvVah7iZIayr0E2PX7oGzJK2ZYWuGK4CNrdcKdRVFH9WZ__8Z6wjYcFp8eYgwelm_OzXn30tGbdbEbb6FBIm9AODN_FuwTxMVq7L3q5Eldl-mYzrHhEiT5wj5LDPAcomLbUTY"/>
+</div>
+<div>
+<p class="text-white text-sm font-bold">Elena Vourakis</p>
+<p class="text-xs text-text-muted uppercase tracking-wider">Head of Digital Environments</p>
+</div>
+</div>
+</div>
+<div class="relative pl-8 border-l-2 border-primary">
+<span class="absolute -left-[9px] -top-3 text-charcoal bg-primary rounded-full p-1">
+<span class="material-symbols-outlined text-sm font-bold">format_quote</span>
+</span>
+<h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-4">Key Insight</h4>
+<p class="text-xl text-white font-serif italic leading-relaxed">
+                        "The metaverse isn't a replacement for reality; it's a testing ground for unconstrained architectural thought that will inevitably bleed back into our physical cities."
+                    </p>
+</div>
+<div>
+<div class="flex items-center space-x-2 mb-6">
+<span class="text-white font-bold uppercase tracking-widest text-xs">Related Reading</span>
+<span class="h-[1px] flex-grow bg-charcoal-lighter"></span>
+</div>
+<div class="space-y-6">
+<a class="group block" href="#">
+<div class="aspect-video bg-charcoal-light mb-3 overflow-hidden">
+<img alt="Smart Cities" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 transform group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4IAr8RYH2rWnOLJUtYFytEsAE1Z5mJnP83XVYj13Eg_7Gv8Z-h69lEh82-d3y7Usb6kqEiS1M6JAxm9eldlW9v7OYIv82ag9Fj2RXZtLJLKMvYeeiJOVHay-mVUvnTe-XOzpxbYbK2YDGzPdKuOODdRDEMl88zZFZMJmwZGzMsZLz0C74bhjh65EVMCGhmgboy5S3YV7EGCU_gD3Yl7eLesWvlhRLHANRgdiO3yZuEsPLGtJw6bZ_yV15_HvI2uhMqN3Vc_aoC-oV"/>
+</div>
+<h5 class="text-white text-sm font-bold group-hover:text-primary transition-colors">Smart Cities: Data &amp; Design</h5>
+</a>
+<a class="group block" href="#">
+<div class="aspect-video bg-charcoal-light mb-3 overflow-hidden">
+<img alt="Geometry" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 transform group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs3dUzWDTKBeVRRrFhKEwBwr6wse-ntaVAZ38kHvW9_YeyKCGgrC_NE3WRHAFEYHJB2ttCVx2l45OAbFWf_RI0kezfQDiiC0hd8T5e8vUlJkzU0ywN1FsmLB325N2mAdQCtUEYKJWJQjq03IdtNfCtwtGZxEQJ4LQgGOfh8BBR21tRtHwkCAUuXFcXfl4j0Dgpq8dXPI-3lKzLIKBiNfBFoSucQYxME22t-3Nyq4AWVrlI2laeRFBmCyPWKLbbk7KgGPd7L235LErr"/>
+</div>
+<h5 class="text-white text-sm font-bold group-hover:text-primary transition-colors">Geometry in Motion</h5>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<section class="border-t border-charcoal-lighter bg-charcoal-light/30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="flex justify-between items-end mb-16">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<span class="w-8 h-[2px] bg-primary"></span>
+<span class="text-primary font-bold uppercase tracking-widest text-xs">Visual Documentation</span>
+</div>
+<h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">Project Renders <span class="font-serif italic text-text-muted">&amp;</span> Wireframes</h2>
+</div>
+<div class="hidden md:block text-right">
+<p class="text-text-muted text-sm font-mono">Index: 01 — 06</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[300px]">
+<div class="group relative overflow-hidden md:col-span-1 md:row-span-2 bg-charcoal">
+<img alt="Vertical render" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiU6uyXjmZATnggCdzy_7sw9esEfBALQ5Kywao9XKgkHPkcUGXkiUJ4oz9CpfpwtiJV6pWb41NM98WByhJfNP0-rBLKdr_fdnkDJSuBUcUA7QCCb9vuRnITIoo48o4lSnt5ko06VN6t1ExFHQ0KCw8ajOYe0_leg2GAma4AhQfuJ28vd4FCT6p5JTrLSPiHzGXSVO_dSVwITJ9pUkwCMBXzKlaM8tGmQn64sG3UVad9LWhPd0bPo2QcJUJEX1jYE-f6WSveY2KZnmI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest mb-1 block">Concept 01</span>
+<h4 class="text-white font-bold">The Infinite Tower</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden md:col-span-2 md:row-span-1 bg-charcoal">
+<img alt="Network overlay" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4IAr8RYH2rWnOLJUtYFytEsAE1Z5mJnP83XVYj13Eg_7Gv8Z-h69lEh82-d3y7Usb6kqEiS1M6JAxm9eldlW9v7OYIv82ag9Fj2RXZtLJLKMvYeeiJOVHay-mVUvnTe-XOzpxbYbK2YDGzPdKuOODdRDEMl88zZFZMJmwZGzMsZLz0C74bhjh65EVMCGhmgboy5S3YV7EGCU_gD3Yl7eLesWvlhRLHANRgdiO3yZuEsPLGtJw6bZ_yV15_HvI2uhMqN3Vc_aoC-oV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest mb-1 block">Wireframe Analysis</span>
+<h4 class="text-white font-bold">Data Topography</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-charcoal">
+<img alt="Abstract form" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7cDUEoXAgelQlxz9gXjUAVeJ_3Q-A2Qa-NdSMbhUrHBkNguS9C56T7CNQ3XcjCrUyu-n6a-JrFjDMvJmnFBMzsnNhLDIqqMfDjKLiVwnH80c6r_FOT6Z_QsU7ZRifpuHZ-T7kjqwtji3JDAdlywptPrmPd85o-1ahhsk4hpnKglp_8VLYUQ-Fs95vGfxdIT0wrUIGOz2pIXOVdODMMj6JcDAr4v8Xd6a7ySa8S9UVl_iI949wNdSlUVDOAbSWs6_bkfH-HZ1p8I3g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest mb-1 block">Material Study</span>
+<h4 class="text-white font-bold">Liquid Chrome</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-charcoal">
+<img alt="Parametric ceiling" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnyGZvY2IlHOv4RlgZseQ95cfHK7y_bTl8HDzQKmMI5zxzmnQwI8W-mNzWaN-641ukDqonuzjmGADpIc3Cte0_4ggkAqSyY8LjqcUzL7v9-MCIpMHf5xpaA8Sdi6Y99xGtE4R2El74CdRXDZHo4Adx6LtGxHD1cOwaXVXvkqqe_ur5KLzgNEY3OvJA_38puFYbhYUPaJd08qO1-yWbDtAFtzQ1JctO-Omwkt6IgcFRHa8E85uDZ-wGb8PmJrEThowP1cwXhUL6A84A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest mb-1 block">Interior Logic</span>
+<h4 class="text-white font-bold">Parametric Void</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden md:col-span-2 md:row-span-1 bg-charcoal">
+<img alt="Floating architecture" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkhcEGOuly5BOPciC0UHxNGpDnUSa00E8yRDP9jC3BUvTIxccIlr5EJ-vha0G27yoM2rwCXlpLnYbqxKxVKc6Qma2FYuk1YE6-KWU0kLf58dMAlrZguJlJbsLgiOL5_-GX6SalGEzQKnuczo1veKyp2zlIYkW3n7cUVmtbqSPk0MDWWpjawKsUulYyag6ZfN-Kt3zGw-RixwrE0eTzjQt1Uh6eBBV8kYaLUDStVq-SCarZQSbuW0GXKbqgJ_Iov9_co9xXn6BF6AJu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest mb-1 block">Environment</span>
+<h4 class="text-white font-bold">Zero-G Habitat</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-charcoal">
+<img alt="3d printing" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMt9RW4OJr8c5BClsoFn3OfgZn9cQznzOVMdhowTGRQcC8aVgfjlph7w_6_Jbhh6GktdwfFmrJpTqZCoUx8MJboWKrsNL2HNW3skUG3-Ew5xyUgj_euZECpiWbbGTjgjUwYp-Mygrp_e-7lC20CYRhzlOwtvgEmR4OWiQv5K0LZXSoYOdpLG3K-91QZosdfDgaXAReuCDnUn4ruKNfQOd2V_E7Q90BPrNWD1j2PuzYqp6CGu34kpNPoUwN1tHcopsIgXKvWGaValKv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest mb-1 block">Fabrication</span>
+<h4 class="text-white font-bold">Robotic Assembly</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="bg-charcoal border-t border-charcoal-lighter">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<a class="group border-b md:border-b-0 md:border-r border-charcoal-lighter p-12 flex flex-col items-start hover:bg-charcoal-light transition-colors" href="#">
+<span class="text-xs text-text-muted uppercase tracking-widest mb-4 group-hover:text-primary transition-colors">Previous Article</span>
+<h3 class="text-2xl text-white font-bold">Rewilding Urban Spaces</h3>
+</a>
+<a class="group p-12 flex flex-col items-end text-right hover:bg-charcoal-light transition-colors" href="#">
+<span class="text-xs text-text-muted uppercase tracking-widest mb-4 group-hover:text-primary transition-colors">Next Article</span>
+<h3 class="text-2xl text-white font-bold">Architecture as Sculpture</h3>
+</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-charcoal border-t border-charcoal-lighter pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold tracking-widest text-white uppercase border border-white px-2 py-1 inline-block mb-6">Arcadia</span>
+<p class="text-sm text-text-muted leading-relaxed">
+                    Defining modern living through spatial innovation and minimalist design philosophy.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Studio</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Projects</h4>
+<ul class="space-y-3 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</h4>
+<div class="flex space-x-6 mb-6">
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">alternate_email</span></a>
+</div>
+<p class="text-xs text-text-muted">
+                    123 Innovation Blvd, <br/>Design District, NY 10012
+                </p>
+</div>
+</div>
+<div class="border-t border-charcoal-lighter pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-xs text-text-muted font-mono">© 2023 Arcadia Studio. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-xs text-text-muted hover:text-white uppercase tracking-wider" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

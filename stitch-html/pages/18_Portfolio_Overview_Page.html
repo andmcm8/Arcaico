@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arcadia Studio - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6B6B", // Electric Coral
+                        "background-dark": "#1A1A1A", // Charcoal
+                        "surface-dark": "#252525",
+                        "text-light": "#FFFFFF", // Pure White
+                        "text-muted": "#A3A3A3",
+                        "slate-gray": "#4A4A4A",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1A1A1A; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }.masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+        @media (min-width: 1280px) {
+            .masonry-grid {
+                column-count: 4;
+            }
+        }
+        .break-inside-avoid {
+            break-inside: avoid;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-light font-sans transition-colors duration-300 antialiased min-h-screen flex flex-col">
+<header class="fixed top-0 w-full z-50 bg-background-dark/95 backdrop-blur-md border-b border-gray-800 transition-colors duration-300">
+<div class="max-w-[1600px] mx-auto px-6 h-24 flex items-center justify-between">
+<a class="flex items-center gap-4 group" href="#">
+<div class="w-10 h-10 bg-primary rounded-sm flex items-center justify-center text-white font-display font-bold text-xl shadow-lg group-hover:bg-red-500 transition-colors">A</div>
+<span class="text-2xl font-display font-semibold tracking-wide uppercase text-white">Arcadia</span>
+</a>
+<nav class="hidden md:flex items-center gap-10 text-sm font-medium tracking-widest uppercase">
+<a class="text-primary border-b border-primary pb-1" href="#">Projects</a>
+<a class="text-text-muted hover:text-white transition-colors" href="#">Studio</a>
+<a class="text-text-muted hover:text-white transition-colors" href="#">Expertise</a>
+<a class="text-text-muted hover:text-white transition-colors" href="#">News</a>
+<a class="text-text-muted hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="p-2 text-text-muted hover:text-white transition-colors">
+<span class="material-icons">search</span>
+</button>
+<button class="hidden md:flex items-center gap-2 bg-transparent border border-gray-600 px-6 py-3 rounded-sm text-xs uppercase tracking-wider font-semibold hover:border-primary hover:text-primary text-white transition-all duration-300">
+                    Start Project
+                </button>
+<button class="md:hidden p-2 text-text-muted hover:text-white">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-40 pb-20 px-6">
+<div class="max-w-[1600px] mx-auto">
+<div class="mb-20 text-center md:text-left border-b border-gray-800 pb-12">
+<h1 class="text-5xl md:text-7xl font-display font-light mb-8 text-white">
+                    Selected <span class="text-primary italic font-serif">Works</span>
+</h1>
+<p class="text-gray-400 max-w-3xl text-xl font-light leading-relaxed">
+                    Defining modern living through spatial innovation. We create environments that inspire, endure, and harmonize with their surroundings in a sophisticated dark palette.
+                </p>
+</div>
+<div class="sticky top-24 z-40 bg-background-dark/95 backdrop-blur-sm py-6 mb-12 border-b border-gray-800 overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-4 min-w-max">
+<button class="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-semibold bg-primary text-white shadow-lg shadow-primary/20 transition-all">
+                        All
+                    </button>
+<button class="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-semibold bg-slate-gray text-white hover:bg-primary hover:text-white transition-all duration-300">
+                        Residential
+                    </button>
+<button class="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-semibold bg-slate-gray text-white hover:bg-primary hover:text-white transition-all duration-300">
+                        Commercial
+                    </button>
+<button class="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-semibold bg-slate-gray text-white hover:bg-primary hover:text-white transition-all duration-300">
+                        Cultural
+                    </button>
+<button class="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-semibold bg-slate-gray text-white hover:bg-primary hover:text-white transition-all duration-300">
+                        Urban Planning
+                    </button>
+<button class="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-semibold bg-slate-gray text-white hover:bg-primary hover:text-white transition-all duration-300">
+                        Interior
+                    </button>
+</div>
+</div>
+<div class="masonry-grid w-full">
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Modern glass house exterior at dusk" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA46ynr9pHWOUwpJke7A0VMWS0kokFR9imOZv9shud7qjrFahBPQ1TcZKNeaiTOoD_9JZfsaOQVxvcf5Ga2a-AKrw2lQCbyWpFfo_D8GkixV5pFW4OwCIHeVZ5hJlMyLTlZDpXBEpWNSyBayYOhrZzt2K2eyOCvUMDRCQ1y-Rh_cPeENMEwJ-t1qzjQ47_vW0HU_74zHnSecysPVFSW7ReIUdrzU1ZG2pDNR8zunHlPQNHbh7c4b9hH5MfubGrD3JwLsbLLPW6u7QpP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Residential</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">The Glass Pavilion</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>4,500 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Montecito, CA</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2023</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="High rise corporate building facade" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqAkzlao2jR6cDLh3VTAQS7uCgL1XzsspD3jFWYw3F2Y66agN4dIdTtqpVZiaDlAS3KAOrU6rDj2JlsigePQmeq2la9-zrfOY3Bt_8gf2K9_frX18bVbVNneLLzZZFfQ5BCb85bgGdLBsl2LkebLs4mtER7K-YijxkDK_pJRqV_xVl6s4dCYgTtHAczeJRs3UPyQsNMvvxu4b5nNPVSJCJuTGg86Fvc43qvw-Kee1nlT5WFMObO04H-KuVPkUsT4Hs8OdrtxYLnZij"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Commercial</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Vertex Tower</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>120,000 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Berlin, DE</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2022</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Minimalist white villa interior" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFY4CipVpIsRxPLj1-7op1xhE4y7wfBSd5_0tboPAeCpqIUGkwt6rnX59mCKrJAsaP6HfFL1TyUUUfdmzrLXgtMAX7oGfLcKwvd_qatwduSIsX6MGPQkH2_S3NJRdBz6iQe5enKYmu5y4F7YK_w_OnFz0clYEneqaVb4GojNrnFUjfrG0VXBY5Mg72rEJJLw3_Zf1nyVT6URyfC_Mh82wZ1dthaFg7V_vEHU_OaMPzlS8HQfYEF76_COZzxAgMsXlFjVwmSz2TL3Vc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Interior</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Oasis Villa</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>3,200 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Dubai, UAE</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2023</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Modern sustainable apartment complex" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG1GpCyOQCDX4jnY1xm46f32XW74HdtWY0P2-ngBf4yLdbJWdF-na9-zy8O27-lQg2MUo8Ni6-PVKrTvf0ekQXn1NjrE0-q-bRFwCGmz7S42zQm2lApHZ_C8VFrVSIjZBetM2a0m5HPuz0P5EqwdOK2R73UpMzwq-Dmge4bDBIv5JHt22cI-BDN_osvR-uga7FYX-tUb3jjJCSE5F8bi5LLmWNUVs6g8HTtp_TH5oWpaeP9SI-w1ouAdttdWASQ6ruSRWz7rqKFK77"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Urban Planning</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">The Vertical Forest</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>50 Acres</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Singapore</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2025</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Abstract architectural detail shot" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBEWcEHQWaI1qqC7VYAoAOQspFiHi6OCy5Z7UCvuINJOOaWBDFt8cAvvTAKTatBv0pAFrt5aVfSIcSm8n0O28dzsd2Xf5l3eOL1k8WKnAe7-VppvCnQOfmbrYA2TthZZYUFnXKyJR1rQhROaNZotBAKY4K1G5ID2e4z9l1oeQnUbWGXMLVWWWApvmoNDyRCb1AcbFypux8yZkyK91Bz1lA9FsSgGc4HJwDd-OPthXmajzOrrx2g8fWzMebWhJc1CgutKBsTs7gAXWq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Concept</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Void Structure</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>Concept</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Kyoto, JP</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2023</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Large modern mansion with pool" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7iig4vA_LfPXhgErZLT3qqAhg-Hd5TaPtrHeg1deDgyJo5eU3EF61wZMaFa7E-4t1phrOYZnnMuJHBThBVP0Egtm6BJTIGmmLHQLMfZoOAUxsme8nFiMG4XeqDwQ__av4ltaK3E37z6eGOOSjQ7HBH0HkP0w4M2lulpw7jnPzHSR2StBraWeHa_qMuLEUL7bRfD6DaUJXvSY3XR-8XUddcbLD7EXHB23bzLDCb4V1zdtuDPIyCeDd2DUIc580qzQE3Z-_bUER1Zuq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Residential</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Vantage Point Villa</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>5,100 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Cape Town, SA</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2021</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Minimalist concrete residence in desert" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDX5F7BXqJeEhgLmZqsrIlPEdJl7LEdPDlVGjHYIB8_PmfxU-ynCU3P48CTGoI2KCZCazjSYhS4WfKo0l-eCB1VIU2ONo8L5jp7Kspxz0OaTBDOovNo6oRCYBRLvh_BwCPRFZxNbY__mpVQENU-Ajqe4cI2f9bLKTSm2Rjkkc0v1f8H3bpZFs6HC3yVl4s-yG_Lj7Mw7qkN-7r_2921Bi-SbAk9e7JumGiaUfKQwb6ZAtmPttPzxkKejraeKYUkWgYtmFFjz9rNuPd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Residential</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Desert Obelisk</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>3,800 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Arizona, USA</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2024</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Futuristic eco-friendly office building" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiVGst5SUiNARFkYSgInFIuby_NEsSJKOEoSKisrLZPpBQ0r20uY-wn5JBzxcPrqUq2RfkctMoDe2RBN38dkg8HD50cce3zIBcp3hRRuCzhvwULjhhHRcmgDOTbCP9kHyqH-3MRMGNMt2_baISu3vAEx7lns_AXwGegelreOueWrDgnkwsnptHfE5zZEIHNIfHkSvoXEPksZ43X4_EL-P0_NGXq_5ROXTMa0QgOwFDJbpZGz0MiCD8nPpXCm3RZeo3jk_kJy2hWStR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Commercial</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Nexus Hub</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>25,000 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Toronto, CA</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2024</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Solar-powered pavilion with curved roof" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK2OZXAKs32pTZtI60Ywxb7R0donI4OIDY_uy5LdoETjvQNk0jk6tQ1qY7JNvV8yJqEee-hIoozo2JJI1qebmpStweu8JpXpwfzEEjZKQWLWZjeVSsUoZzZHLYVJ6lM2lXPIloVrgr13JCJdpPmXxI8Cy1bEHfWJBxXnVRVQmorOo7SjA-ew-nq3TvHE8PLXFD2ps_351dUA8D5Pda3JdtapyZGKSp1Aj7gNUhqLSn0VxBy2Hfso-kFSGwDiPVdW2GwmljljbfFCOt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Public Space</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Solaris Pavilion</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>12,000 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Austin, TX</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2024</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Modern urban plaza with trees and benches" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-CgWrz-tynf9yNvx-u22yUwj_tzQItrm4c0bbK_ev64A2a5cUtCg7Wt2HkbOgbG61F_V2Rtj-LdtB8uMz8CwtPX7jxX5_wj-657AjxXYV06VLIoZPCDL0vpA4m-caZOTPaAudZRRNBVj59awPT-Flk3TDbNo5TdIUSUZS6pv34LyojBe_K1ee8XFIcU5avvEeeogRJKbRuWg6mpUeGZkslz2uAZQIzkrEfsJUuWd8Q77DG7v5wbm3LNKtgFSMy2NaYUbMxZ1sl0Kx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Public Space</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Urban Plaza</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>8,000 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Berlin, DE</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2025</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Modern gallery exterior with light installation" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUWfwNHo_keFedyuN3cFm68Zysr19ZzTSWQtT7Ab4iytHID8I2RXCzA9zvqa24x7r9pkprnJOqmaJQrUOsI__R4KXlrD8DbhYjw27QGw8k3ToucwQQ4EfqybiezaTZuydNE6pAlct7pMRlCBkLRLg2p0TTr7HNXTPiWNfjba1HX6Nm1ZMeLWr-gmbc9929HnVo-YLUe9cmcGqRz3_YfrIL8nZAszOe9QORWuPwvwVQV7ZVpH0bwLucz72ivvhmaH3qTXz52yEiP_gH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Cultural</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Lumina Gallery</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>8,000 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Helsinki, FI</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2023</span>
+</div>
+</div>
+</div>
+<div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-sm cursor-pointer bg-surface-dark">
+<div class="relative overflow-hidden">
+<img alt="Modern riverside villa at sunset" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9bhruYgPfZUCVcx-r9tALfRqyr8y3s8sDkxKwrxD0UtWXTsOJrVv8hro8evAxDptiJcw-hjD4oIH1qrzy7SG-3KKjZMD0dlLdPdKG-MU12P8gLQo1lb7dexUCCegedbT4kFWHsW859IQ90X-yAhs4RJefqJJggzV3S4bJACwOFb217B9g3ckzCbT4OUxXtDOO4V6F4_iCaBa7Ba7h3M_--pphTwNVuD_EbO6pfH5MRxWoHK-oncn4wnKUo1wmAgSkRjHER6kyYDoK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 z-10">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Residential</span>
+<h3 class="text-white text-3xl font-display font-medium mb-3">Riverside Villa</h3>
+<div class="flex items-center text-gray-300 text-xs tracking-[0.15em] uppercase gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-75">
+<span>5,000 SQFT</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Kyoto, JP</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>2024</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-16">
+<button class="border border-gray-600 text-white bg-transparent hover:bg-surface-dark hover:border-primary hover:text-primary px-10 py-4 rounded-sm text-sm uppercase tracking-widest font-semibold transition-all duration-300">
+                    Load More Projects
+                </button>
+</div>
+</div>
+</main>
+<footer class="bg-black border-t border-gray-800 py-16 px-6">
+<div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded-sm flex items-center justify-center text-white font-display font-bold text-lg">A</div>
+<span class="text-xl font-display font-semibold tracking-wide uppercase text-white">Arcadia</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                    Shaping the future through sustainable, innovative, and timeless architectural design.
+                </p>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-icons text-xl">camera_alt</span></a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-icons text-xl">language</span></a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-icons text-xl">email</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Explore</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Urban Planning</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Visit Us</h4>
+<address class="not-italic text-sm text-gray-400 space-y-3">
+<p>123 Innovation Blvd,<br/>Design District, NY 10012</p>
+<p class="pt-2"><a class="hover:text-primary transition-colors" href="tel:+15550192834">+1 (555) 019-2834</a></p>
+<p><a class="hover:text-primary transition-colors" href="mailto:hello@arcadiastudio.com">hello@arcadiastudio.com</a></p>
+</address>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Stay Updated</h4>
+<form class="space-y-4">
+<p class="text-xs text-gray-400">Receive our latest insights and project news.</p>
+<div class="relative">
+<input class="w-full bg-surface-dark border border-gray-700 rounded-sm py-2 px-3 text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none text-white placeholder-gray-500" placeholder="Email Address" type="email"/>
+<button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-primary hover:text-red-500" type="button">
+<span class="material-icons text-lg">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="max-w-[1600px] mx-auto mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+<p>© 2024 Arcadia Studio. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Use</a>
+</div>
+</div>
+</footer>
+</body></html>
